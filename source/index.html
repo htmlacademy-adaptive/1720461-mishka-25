@@ -62,22 +62,22 @@
 
 
     <main class="main-container">
-      <h1 class="h1-title">Милые штучки ручной работы для дома</h1>
+      <h1 class="title title--h1">Милые штучки ручной работы для дома</h1>
 
       <section class="catalog">
         <div class="catalog__wrapper">
           <h2 class="visually-hidden">Каталог различных товаров</h2>
-          <a class="catalog__interior catalog-interior" href="#">Предметы интерьера</a>
-          <a class="catalog__toys catalog-toys" href="#">Детские игрушки</a>
+          <a class="catalog__interior catalog__interior--image catalog-interior" href="#">Предметы интерьера</a>
+          <a class="catalog__toys catalog__toys--image catalog-toys" href="#">Детские игрушки</a>
         </div>
       </section>
 
       <section class="week-product">
         <div class="week-product__wrapper">
-          <h2 class="week-product__title">Товар недели</h2>
+          <h2 class="week-product__title title title--h2_decorated">Товар недели</h2>
           <!-- Можно ли сюда добавить <article>? Это похоже на самостоятельный блок, который можно вставить в другом месте и смысл от этого не потеряется. Я решил добавить.  -->
           <article class="week-product__article article">
-            <h3 class="week-product__subtitle">Вязаные корзинки</h3>
+            <h3 class="week-product__subtitle title title--h2">Вязаные корзинки</h3>
             <p class="week-product__text-content">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трёх размерах.</p>
             <dl class="week-product__list">
               <div class="week-product__item">
@@ -100,9 +100,48 @@
         </div>
       </section>
 
+      <section class="advantages">
+        <div class="advantages__wrapper">
+          <h2 class="advantages__title title title--h2">Коротко о нас:</h2>
+          <ul class="advantages__list">
+            <li class="advantages__item advantages__item--ecological">Экологически чистые материалы</li>
+            <li class="advantages__item advantages__item--nordic">Скандинавский стиль по российской цене</li>
+            <li class="advantages__item advantages__item--like">Увеличивает лайки на фотографиях</li>
+            <li class="advantages__item advantages__item--handmade">Связано вручную с любовью и умилением</li>
+            <li class="advantages__item advantages__item--national">Поддержка отечественного производителя</li>
+            <li class="advantages__item advantages__item--gift">Поставляется в подарочной упаковке</li>
+          </ul>
+        </div>
+      </section>
 
+      <section class="reviews">
+        <div class="reviews__wrapper">
+          <h2 class="reviews__title title title--h2">Отзывы</h2>
+          <p class="reviews__text-content">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+          <cite class="reviews__cite">
+            <b class="reviews__author">Анастасия Красильникова</b>
+            @misssssiskras
+          </cite>
 
+          <div class="reviews__control buttons-control">
+            <button class="reviews__control-button reviews__control-button--left control-button" type="button">
+              <svg class="reviews__control-button-icon" width="50" height="26" viewbox="0 0 50 26" xmlns="http://www.w3.org/2000/svg">
+                <path d="M50 11H7.7L15.8 2.8L13 0L0 13L13 26L15.8 23.2L7.7 15H50V11Z"/>
+              </svg>
+              <span class="visually-hidden">Предыдущий отзыв</span>
+            </button>
+            <button class="reviews__control-button reviews__control-button--right control-button" type="button">
+              <svg class="reviews__control-button-icon" width="50" height="26" viewbox="0 0 50 26" xmlns="http://www.w3.org/2000/svg">
+                <path d="M50 11H7.7L15.8 2.8L13 0L0 13L13 26L15.8 23.2L7.7 15H50V11Z"/>
+              </svg>
+              <span class="visually-hidden">Следующий отзыв</span>
+            </button>
+          </div>
 
+          <button class="reviews__button button button--primary" type="button">Написать</button>
+        </div>
+
+      </section>
 
     </main>
 
