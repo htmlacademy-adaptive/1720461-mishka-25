@@ -4,16 +4,10 @@
   <meta charset="utf-8">
   <title>HTML Academy: Мишка</title>
   <style>
-    /* временно написал инлайновые стили в разметку */
-    .page {
+    .body {
       width: 320px;
       height: 100%;
       margin: 0 auto;
-    }
-    .body {
-      min-width: 320px;
-      min-height: 100%;
-      margin: 0;
     }
   </style>
 </head>
@@ -79,29 +73,28 @@
       <div class="week-product__wrapper">
         <h2 class="week-product__title title title--h2_decorated">Товар недели</h2>
 
-        <!-- можно ли сюда добавить <article>? Это похоже на самостоятельный блок, который можно вставить в другом месте и смысл от этого не потеряется. Я решил добавить.  -->
         <article class="week-product__article article">
           <h3 class="week-product__subtitle title title--h2">Вязаные корзинки</h3>
           <p class="week-product__text-content">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трёх размерах.</p>
-          <!-- <dl> ниже это правильный выбор? Или как-то иначе нужно разметить? -->
-          <dl class="week-product__list">
-            <div class="week-product__item">
-              <dt class="week-product__term">Цвет:</dt>
-              <dd class="week-product__description">тиффани/серый</dd>
-            </div>
-            <div class="week-product__item">
-              <dt class="week-product__term">Диаметр:</dt>
-              <dd class="week-product__description">25 см</dd>
-            </div>
-            <div class="week-product__item">
-              <dt class="week-product__term">Высота:</dt>
-              <dd class="week-product__description">15 см</dd>
-            </div>
-          </dl>
+
+          <table class="week-product__table">
+            <tr class="week-product__row">
+              <th class="week-product__data">Цвет:</th>
+              <td class="week-product__data">тиффани/серый</td>
+            </tr>
+            <tr class="week-product__row">
+              <th class="week-product__data">Диаметр:</th>
+              <td class="week-product__data">25 см</td>
+            </tr>
+            <tr class="week-product__row">
+              <th class="week-product__data">Высота:</th>
+              <td class="week-product__data">15 см</td>
+            </tr>
+          </table>
+
           <img class="week-product__image" src="img/products/product-image-triple-set-mobile.jpg" width="260" height="315" alt="Фото трех вязаных корзинок маленького, среднего, большого размера, а также зеленого и розового цветов.">
-          <!-- тег <b> ниже это правильный вариант? -->
-          <b class="week-product__price">Цена 990 руб.</b>
-          <button class="week-product__button button button--primary" type="button">Заказать</button>
+          <span class="week-product__price">Цена 990 руб.</span>
+          <a class="week-product__button open-modal button button--primary">Заказать</a>
         </article>
 
       </div>
@@ -128,11 +121,10 @@
         <h2 class="reviews__title title title--h2">Отзывы</h2>
         <blockquote class="reviews__author-review">
           <p class="reviews__text-content">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-          <cite class="reviews__author">
+          <span class="reviews__author">
             <b class="reviews__author-name">Анастасия Красильникова</b>
-            <!-- нужно ли оборачивать текст ниже в какой-либо тег? Или того, что он внутри <cite> достаточно? -->
             @misssssiskras
-          </cite>
+          </span>
         </blockquote>
 
         <div class="reviews__control buttons-control">
@@ -158,7 +150,6 @@
     <section class="contacts">
       <div class="contacts__wrapper">
         <h2 class="contacts__title title title--h2">Контакты</h2>
-        <!-- <dl> ниже это правильный выбор? Или как-то иначе нужно разметить? -->
         <dl class="contacts__list">
           <div class="contacts__item">
             <dt class="contacts__term">e-mail:</dt>
@@ -173,7 +164,6 @@
             </dd>
           </div>
         </dl>
-        <!-- я правильно сделал карту? -->
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.3018931483289!2d30.322276154757713!3d59.938716497749525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x62740c0ffcd8a91f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsIDEwMSwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsINCg0L7RgdGB0LjRjywgMTkxMTg2!5e0!3m2!1sru!2suk!4v1649000168325!5m2!1sru!2suk" width="320" height="454" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
         <button class="contacts__button button button--primary" type="button">Напишите нам</button>
@@ -184,8 +174,7 @@
 
   <footer class="main-footer">
     <div class="main-footer__wrapper">
-      <div class="main-footer__social social">
-        <!-- можно здесь использовать вариант как сделано ниже, или нужно использовать тег <b> как в демо? -->
+      <div class="main-footer__social social"> -->
         <h2 class="visually-hidden">Наши социальные сети</h2>
         <ul class="social__list">
           <li class="social__item">
@@ -217,8 +206,7 @@
 
       <div class="main-footer__copyright copyright">
         <h2 class="visually-hidden">Копирайт</h2>
-        <!-- можно ли ниже поставить тег <p>? -->
-        <b class="copyright__text">Разработано:</b>
+        <span class="copyright__text">Разработано:</span>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <svg width="27" height="35" fill="#63D1BB" viewbox="0 0 27 35" xmlns="http://www.w3.org/2000/svg">
             <path d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z"/>
