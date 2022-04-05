@@ -2,14 +2,8 @@
 <html class="page" lang="ru">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Мишка</title>
-  <style>
-    .body {
-      width: 320px;
-      height: 100%;
-      margin: 0 auto;
-    }
-  </style>
 </head>
 
 
@@ -27,10 +21,10 @@
       <div class="main-navigation__wrapper">
         <ul class="main-navigation__list site-list">
           <li class="site-list__item">
-            <a class="site-list__link" href="#">Каталог товаров</a>
+            <a class="site-list__link">Каталог товаров</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="#">Вязание на заказ</a>
+            <a class="site-list__link" href="form.html">Вязание на заказ</a>
           </li>
         </ul>
 
@@ -57,20 +51,20 @@
 
 
   <main class="main-catalog-container">
-    <h1 class="title title--h1">Вязание на заказ</h1>
+    <h1 class="title title--main">Каталог товаров</h1>
 
     <section class="catalog-products">
-      <h2 class="catalog-products__title title title--h2">Каталог товаров</h2>
+      <h2 class="visually-hidden">Каталог различных товаров</h2>
       <ul class="catalog-products-list">
         <li class="catalog-products-list__item product-card">
           <article class="product-card__wrapper">
             <a class="product-card__link" href="#">
               <img class="product-card__image" src="img/products/product-image-blue-toy-mobile.jpg" width="260" height="195" alt="Вязанная детская игрушка голубого цвета в виде зайчика.">
-              <h3 class="product-card__title title title--h3">Зайчик-попрыгайчик</h3>
+              <h3 class="product-card__title title title--small">Зайчик-попрыгайчик</h3>
             </a>
             <p class="product-card__text-description">Рост 30 см, вес 200 г</p>
             <span class="product-card__price">1200 руб.</span>
-            <a class="product-card__button_link button-add-to-cart" href="#">
+            <a class="product-card__button-link button-add-to-cart" href="#">
               <svg class="button-add-to-cart-icon" aria-hidden="true" focusable="false" width="20" height="19" viewbox="0 0 20 19" xmlns="http://www.w3.org/2000/svg">
                 <path opacity="0.2" d="M20.1884 6.85716H16.6377L13.1884 0.380944C12.9855 -8.61287e-06 12.5797 -0.0952351 12.1739 0.0952412C11.7681 0.285717 11.6667 0.66667 11.8696 1.04762L15.0145 6.85716H5.7826L8.92753 1.04762C9.13043 0.66667 8.92754 0.285717 8.6232 0.0952412C8.2174 -0.0952351 7.8116 0.0952295 7.6087 0.380944L4.1594 6.85716H0.811583C0.405785 6.85716 0 7.14286 0 7.61905C0 8 0.304336 8.38094 0.811583 8.38094H1.01449L1.92753 11.2381C1.72463 11.3333 1.62317 11.5238 1.62317 11.8095C1.62317 12.1905 1.92753 12.4762 2.33332 12.4762L4.05797 18H16.942L18.6667 12.4762C19.0725 12.4762 19.3768 12.1905 19.3768 11.8095C19.3768 11.619 19.2754 11.3333 19.0725 11.2381L19.9855 8.38094H20.1884C20.5942 8.38094 21 8.09524 21 7.61905C21 7.14286 20.5942 6.85716 20.1884 6.85716ZM15.6232 16.4762H5.07247L3.85506 12.381H16.942L15.6232 16.4762ZM17.2464 10.9524H3.34782L2.53623 8.28573H18.058L17.2464 10.9524Z"/>
               </svg>
@@ -83,11 +77,11 @@
           <article class="product-card__wrapper">
             <a class="product-card__link" href="#">
               <img class="product-card__image" src="img/products/product-image-white-orange-basket-mobile.jpg" width="260" height="195" alt="Вязанная детская игрушка голубого цвета в виде зайчика.">
-              <h3 class="product-card__title title title--h3">Корзинка для белья</h3>
+              <h3 class="product-card__title title title--small">Корзинка для белья</h3>
             </a>
             <p class="product-card__text-description">Диаметр 15 см, высота 10 см</p>
             <span class="product-card__price">690 руб.</span>
-            <a class="product-card__button_link button-add-to-cart" href="#">
+            <a class="product-card__button-link button-add-to-cart" href="#">
               <svg class="button-add-to-cart-icon" aria-hidden="true" focusable="false" width="20" height="19" viewbox="0 0 20 19" xmlns="http://www.w3.org/2000/svg">
                 <path opacity="0.2" d="M20.1884 6.85716H16.6377L13.1884 0.380944C12.9855 -8.61287e-06 12.5797 -0.0952351 12.1739 0.0952412C11.7681 0.285717 11.6667 0.66667 11.8696 1.04762L15.0145 6.85716H5.7826L8.92753 1.04762C9.13043 0.66667 8.92754 0.285717 8.6232 0.0952412C8.2174 -0.0952351 7.8116 0.0952295 7.6087 0.380944L4.1594 6.85716H0.811583C0.405785 6.85716 0 7.14286 0 7.61905C0 8 0.304336 8.38094 0.811583 8.38094H1.01449L1.92753 11.2381C1.72463 11.3333 1.62317 11.5238 1.62317 11.8095C1.62317 12.1905 1.92753 12.4762 2.33332 12.4762L4.05797 18H16.942L18.6667 12.4762C19.0725 12.4762 19.3768 12.1905 19.3768 11.8095C19.3768 11.619 19.2754 11.3333 19.0725 11.2381L19.9855 8.38094H20.1884C20.5942 8.38094 21 8.09524 21 7.61905C21 7.14286 20.5942 6.85716 20.1884 6.85716ZM15.6232 16.4762H5.07247L3.85506 12.381H16.942L15.6232 16.4762ZM17.2464 10.9524H3.34782L2.53623 8.28573H18.058L17.2464 10.9524Z"/>
               </svg>
@@ -100,11 +94,11 @@
           <article class="product-card__wrapper">
             <a class="product-card__link" href="#">
               <img class="product-card__image" src="img/products/product-image-big-basket-with-toys-mobile.jpg" width="260" height="195" alt="Вязанная детская игрушка голубого цвета в виде зайчика.">
-              <h3 class="product-card__title title title--h3">Большая корзинка для игрушек</h3>
+              <h3 class="product-card__title title title--small">Большая корзинка для игрушек</h3>
             </a>
             <p class="product-card__text-description">Диаметр 30 см, высота 30 см</p>
             <span class="product-card__price">1500 руб.</span>
-            <a class="product-card__button_link button-add-to-cart" href="#">
+            <a class="product-card__button-link button-add-to-cart" href="#">
               <svg class="button-add-to-cart-icon" aria-hidden="true" focusable="false" width="20" height="19" viewbox="0 0 20 19" xmlns="http://www.w3.org/2000/svg">
                 <path opacity="0.2" d="M20.1884 6.85716H16.6377L13.1884 0.380944C12.9855 -8.61287e-06 12.5797 -0.0952351 12.1739 0.0952412C11.7681 0.285717 11.6667 0.66667 11.8696 1.04762L15.0145 6.85716H5.7826L8.92753 1.04762C9.13043 0.66667 8.92754 0.285717 8.6232 0.0952412C8.2174 -0.0952351 7.8116 0.0952295 7.6087 0.380944L4.1594 6.85716H0.811583C0.405785 6.85716 0 7.14286 0 7.61905C0 8 0.304336 8.38094 0.811583 8.38094H1.01449L1.92753 11.2381C1.72463 11.3333 1.62317 11.5238 1.62317 11.8095C1.62317 12.1905 1.92753 12.4762 2.33332 12.4762L4.05797 18H16.942L18.6667 12.4762C19.0725 12.4762 19.3768 12.1905 19.3768 11.8095C19.3768 11.619 19.2754 11.3333 19.0725 11.2381L19.9855 8.38094H20.1884C20.5942 8.38094 21 8.09524 21 7.61905C21 7.14286 20.5942 6.85716 20.1884 6.85716ZM15.6232 16.4762H5.07247L3.85506 12.381H16.942L15.6232 16.4762ZM17.2464 10.9524H3.34782L2.53623 8.28573H18.058L17.2464 10.9524Z"/>
               </svg>
@@ -117,10 +111,10 @@
 
     <section class="production">
       <div class="production__wrapper">
-        <h2 class="production_title title title--h2">Процесс производства</h2>
-        <img class="production_image" src="img/products/product-image-green-basket-mobile.jpg" width="250" height="160" alt="Вязанная зеленая корзинка.">
+        <h2 class="production__title title title--medium">Процесс производства</h2>
+        <img class="production__image" src="img/products/product-image-green-basket-mobile.jpg" width="250" height="160" alt="Вязанная зеленая корзинка.">
         <p class="production__text-content">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-        <button class="production__order-button order-button" type="button">Сделать заказ</button>
+        <a class="production__order-button button button--primary" href="#">Сделать заказ</a>
       </div>
     </section>
 
