@@ -1,0 +1,13 @@
+@import "global/variables.scss";
+
+.main-footer {
+  background-color: $color-bg-footer;
+}
+
+.copyright__text {
+  font-size: 19px;
+  line-height: 18px;
+  font-weight: 700;
+  color: $color-text-primary;
+  background-color: $color-bg-footer;
+}

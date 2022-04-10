@@ -1,0 +1,29 @@
+@import "global/variables.scss";
+
+.contacts__list,
+.contacts__e-mail {
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+  color: $color-text-secondary;
+  background-color: $color-bg-primary;
+}
+
+.contacts__term,
+.contacts__description,
+.contacts__address {
+  display: inline;
+}
+
+.contacts__address {
+  font-style: normal;
+}
+
+.contacts__button {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+}
