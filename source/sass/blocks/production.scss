@@ -1,0 +1,26 @@
+@import "global/variables.scss";
+
+.production__title {
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-image: url("../../img/icons/video-camera.svg");
+}
+
+.production__text-content {
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  color: $color-text-secondary;
+  background-color: $color-bg-primary;
+}
+
+.production__order-button {
+  font-size: 18px;
+  line-height: 16px;
+  text-align: center;
+}

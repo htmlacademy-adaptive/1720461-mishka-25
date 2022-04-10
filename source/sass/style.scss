@@ -1,3 +1,4 @@
+// общие стили
 @use "global/variables.scss";
 @use "global/fonts.scss";
 @use "blocks/body.scss";
@@ -7,12 +8,23 @@
 @use "blocks/button.scss";
 @use "blocks/title.scss";
 @use "blocks/visually-hidden.scss";
+
+// шапка
 @use "blocks/site-list.scss";
 @use "blocks/user-list.scss";
+
+// главный файл
 @use "blocks/main-container.scss";
 @use "blocks/catalog.scss";
 @use "blocks/week-product.scss";
 @use "blocks/advantages.scss";
 @use "blocks/reviews.scss";
 @use "blocks/contacts.scss";
+
+// футер
 @use "blocks/main-footer.scss";
+
+//  файл каталога
+@use "blocks/product-card.scss";
+@use "blocks/production.scss";
+
