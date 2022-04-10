@@ -1,0 +1,11 @@
+@import "global/variables.scss";
+
+.order-form-name__field,
+.order-form-surname__field,
+.order-form-patronymic__field {
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 700;
+  color: $color-text-primary;
+  background-color: $color-bg-primary;
+}
