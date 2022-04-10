@@ -1,11 +1,10 @@
 @import "global/variables.scss";
 
-.body {
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
-  font-size: 15px;
+.site-list__link {
+  font-size: 17px;
   line-height: 24px;
-  font-weight: 400;
+  font-weight: 700;
   color: $color-text-primary;
   background-color: $color-bg-primary;
 }
+
