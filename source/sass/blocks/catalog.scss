@@ -1,0 +1,28 @@
+@import "global/variables.scss";
+
+.catalog__interior {
+  display: block;
+  padding: 24px 160px 31px 30px;
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: 700;
+  color: $color-text-inverse;
+  background-color: $color-brand;
+  background-image: url("../../img/icons/interior.svg");
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.catalog__toys {
+  display: block;
+  padding: 24px 160px 31px 30px;
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: 700;
+  color: $color-text-inverse;
+  background-color: $color-intense;
+  background-image: url("../../img/icons/toy.svg");
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+

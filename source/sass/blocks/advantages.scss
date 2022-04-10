@@ -1,0 +1,34 @@
+@import "global/variables.scss";
+
+.advantages__item {
+  padding-top: 83px;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+  background-repeat: no-repeat;
+  background-size: auto;
+
+  &--ecological {
+    background-image: url("../../img/icons/flower-icon.svg");
+  }
+
+  &--nordic {
+    background-image: url("../../img/icons/nordic-icon.svg");
+  }
+
+  &--like {
+    background-image: url("../../img/icons/heart-icon.svg");
+  }
+
+  &--handmade {
+    background-image: url("../../img/icons/tangle-icon.svg");
+  }
+
+  &--national {
+    background-image: url("../../img/icons/rocket-icon.svg");
+  }
+
+  &--gift {
+    background-image: url("../../img/icons/gift-icon.svg");
+  }
+}

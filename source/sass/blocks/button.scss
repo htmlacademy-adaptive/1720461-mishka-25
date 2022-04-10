@@ -1,0 +1,15 @@
+@import "global/variables.scss";
+
+.button {
+  display: block;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: 700;
+  color: $color-text-secondary;
+  background-color: $color-bg-primary;
+  border: 2px solid $color-border-secondary;
+}

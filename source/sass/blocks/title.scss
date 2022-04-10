@@ -1,6 +1,8 @@
 @import "global/variables.scss";
 
 .title {
+  margin: 0;
+  padding: 0;
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-size: 27px;
@@ -8,4 +10,14 @@
   font-weight: 700;
   color: $color-text-primary;
   background-color: $color-bg-primary;
+
+  &--medium {
+    font-size: 25px;
+  }
+}
+
+.title--main-container {
+  background-image: url("../../img/backgrounds/bg-image-house-shelf-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: auto;
 }
