@@ -1,0 +1,33 @@
+@import "global/variables.scss";
+
+.order-form__text-content {
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  color: $color-text-secondary;
+  background-color: $color-bg-primary;
+}
+
+.order-form__group {
+  border: none;
+}
+
+.order-form__title {
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: 700;
+  color: $color-text-brand;
+  background-color: $color-bg-primary;
+  text-transform: uppercase;
+}
+
+.order-form__text-required {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  color: $color-text-secondary;
+}

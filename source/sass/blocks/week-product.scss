@@ -1,0 +1,45 @@
+@import "global/variables.scss";
+
+.week-product__title {
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+  color: $color-text-brand;
+  background-color: $color-bg-primary;
+  text-transform: uppercase;
+}
+
+.week-product__text-content {
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
+  color: $color-text-secondary;
+  background-color: $color-bg-primary;
+}
+
+.week-product__table {
+  font-size: 15px;
+  line-height: 20px;
+  color: $color-text-secondary;
+  background-color: $color-bg-primary;
+}
+
+.week-product__data {
+  font-weight: 400;
+  text-align: left;
+}
+
+.week-product__price {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  color: $color-text-secondary;
+  background-color: $color-bg-primary;
+}
+
+.week-product__button {
+  padding: 16px 70px;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
+}
