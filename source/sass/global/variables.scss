@@ -1,4 +1,4 @@
-
+// Color variables
 $color-brand: #63d1bb;
 $color-intense: #56c3b2;
 $color-accent: #149080;
@@ -16,3 +16,18 @@ $color-bg-form-secondary: #f1f1f1;
 
 $color-border-primary: #000000;
 $color-border-secondary: #444444;
+
+
+// Viewport variables
+$width-mobile-only: 767px;
+$width-tablet: 768px;
+$width-desktop: 1200px;
+
+
+@media (min-width: $width-tablet) {
+
+}
+
+@media (min-width: $width-desktop) {
+
+}

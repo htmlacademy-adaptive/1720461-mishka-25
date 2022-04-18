@@ -1,7 +1,17 @@
 @import "global/variables.scss";
 
+.catalog__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $width-tablet) {
+    flex-direction: row;
+  }
+}
+
 .catalog__interior {
   display: block;
+  margin: 0 -30px;
   padding: 24px 160px 31px 30px;
   font-size: 19px;
   line-height: 24px;
@@ -11,10 +21,24 @@
   background-image: url("../../img/icons/interior.svg");
   background-repeat: no-repeat;
   background-size: auto;
+  background-position: right bottom;
+
+  @media (min-width: $width-tablet) {
+    flex-grow: 1;
+    max-width: 334px;
+    margin: 0 -50px;
+  }
+
+  @media (min-width: $width-desktop) {
+    flex-grow: 1;
+    max-width: 525px;
+    margin: 0 -75px;
+  }
 }
 
 .catalog__toys {
   display: block;
+  margin: 0 -30px;
   padding: 24px 160px 31px 30px;
   font-size: 19px;
   line-height: 24px;
@@ -24,4 +48,17 @@
   background-image: url("../../img/icons/toy.svg");
   background-repeat: no-repeat;
   background-size: auto;
+  background-position: right bottom;
+
+  @media (min-width: $width-tablet) {
+    flex-grow: 1;
+    max-width: 334px;
+    margin: 0 -50px;
+  }
+
+  @media (min-width: $width-desktop) {
+    flex-grow: 1;
+    max-width: 525px;
+    margin: 0 -75px;
+  }
 }

@@ -1,0 +1,19 @@
+@import "global/variables.scss";
+
+.title-container {
+  margin: 0 -30px;
+  background-color: $color-bg-primary;
+  background-image: url("../../img/backgrounds/bg-image-house-shelf-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-width: $width-tablet) {
+    margin: 0 -50px;
+    background-image: url("../../img/backgrounds/bg-image-house-shelf-tablet.jpg");
+  }
+
+  @media (min-width: $width-desktop) {
+    margin: 0 -75px;
+    background-image: url("../../img/backgrounds/bg-image-house-shelf-desktop.jpg");
+  }
+}

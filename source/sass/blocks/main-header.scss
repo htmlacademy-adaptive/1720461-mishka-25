@@ -1,0 +1,18 @@
+@import "global/variables.scss";
+
+.main-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-header__logo {
+  height: 35px;
+
+  @media (min-width: $width-tablet) {
+    height: 46px;
+  }
+
+  @media (min-width: $width-desktop) {
+    height: 72px;
+  }
+}
