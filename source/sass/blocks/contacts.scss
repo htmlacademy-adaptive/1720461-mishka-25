@@ -1,5 +1,10 @@
 @import "global/variables.scss";
 
+.contacts__title {
+  padding-top: 38px;
+  padding-bottom: 28px;
+}
+
 .contacts__list,
 .contacts__e-mail {
   font-size: 14px;
@@ -12,7 +17,13 @@
 .contacts__term,
 .contacts__description,
 .contacts__address {
-  display: inline;
+  display: inline-block;
+  margin: 0;
+}
+
+.contacts__term {
+
+  width: 90px;
 }
 
 .contacts__address {

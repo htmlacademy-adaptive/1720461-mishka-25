@@ -1,5 +1,10 @@
 @import "global/variables.scss";
 
+.reviews__title {
+  padding-top: 58px;
+  padding-bottom: 14px;
+}
+
 .reviews__author-review {
   margin: 0;
   padding: 0;
@@ -7,7 +12,7 @@
 
 .reviews__text-content {
   margin: 0;
-  padding: 0;
+  padding-bottom: 33px;
   font-size: 15px;
   line-height: 30px;
   font-weight: 400;
@@ -16,20 +21,43 @@
 }
 
 .reviews__author-name {
+  padding-bottom: 5px;
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
 }
 
 .reviews__author-nickname {
+  display: block;
+  padding-bottom: 30px;
   font-size: 17px;
   line-height: 30px;
   font-weight: 400;
 }
 
+.reviews__control {
+  display: flex;
+  padding-bottom: 38px;
+}
+
+.reviews__control-button {
+  display: block;
+  padding: 12px 38px;
+
+  &--right {
+    transform: rotate(180deg);
+  }
+}
+
+.reviews__control-button-icon {
+  display: block;
+}
+
 .reviews__button {
-  padding-top: 16px;
-  padding-bottom: 16px;
+  display: block;
+  min-width: 260px;
+  margin-bottom: 45px;
+  padding: 15px 65px;
   font-size: 18px;
   line-height: 20px;
   font-weight: 700;
