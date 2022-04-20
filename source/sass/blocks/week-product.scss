@@ -35,10 +35,10 @@
     grid-template-columns: 292px 120px 214px;
     grid-template-rows:
       128px
-      90px
-      112px
-      24px
-      52px;
+      118px
+      170px
+      57px
+      104px;
     grid-template-areas:
       "title title title"
       "text image image"
@@ -52,7 +52,7 @@
     grid-template-rows:
       207px
       90px
-      112px
+      170px
       24px
       52px;
     grid-template-areas:
@@ -89,15 +89,26 @@
   font-weight: 400;
   color: $color-text-secondary;
   background-color: $color-bg-primary;
+
+  @media (min-width: $width-tablet) {
+    padding-bottom: 48px;
+  }
 }
 
 .week-product__table {
   grid-area: table;
-
   font-size: 15px;
   line-height: 20px;
   color: $color-text-secondary;
   background-color: $color-bg-primary;
+
+  @media (min-width: $width-tablet) {
+    padding-bottom: 57px;
+  }
+
+  @media (min-width: $width-desktop) {
+
+  }
 }
 
 .week-product__data {
@@ -129,13 +140,32 @@
   font-weight: 700;
   color: $color-text-secondary;
   background-color: $color-bg-primary;
+  text-align: center;
+
+  @media (min-width: $width-tablet) {
+    font-size: 20px;
+    padding-bottom: 33px;
+  }
+
+  @media (min-width: $width-desktop) {
+
+  }
 }
 
 .week-product__button {
+
   grid-area: button;
   margin-bottom: 36px;
   padding: 16px 70px;
   font-size: 18px;
   line-height: 20px;
   text-align: center;
+
+  @media (min-width: $width-tablet) {
+    margin-bottom: 48px;
+  }
+
+  @media (min-width: $width-desktop) {
+
+  }
 }

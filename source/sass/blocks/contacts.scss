@@ -1,8 +1,22 @@
 @import "global/variables.scss";
 
+.contacts__wrapper {
+  @media (min-width: $width-tablet) {
+    background-image: url("../../img/flag.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: 600px 45px;
+  }
+}
+
 .contacts__title {
   padding-top: 38px;
   padding-bottom: 28px;
+
+  @media (min-width: $width-tablet) {
+    padding-top: 68px;
+    padding-bottom: 49px;
+  }
 }
 
 .contacts__list,
@@ -15,11 +29,17 @@
 }
 
 .contacts__e-mail {
+  padding-bottom: 4px;
   border-bottom: 1px solid $color-text-brand-underline;
 }
 
 .contacts__list {
   padding-bottom: 62px;
+
+  @media (min-width: $width-tablet) {
+    display: flex;
+    padding-bottom: 49px;
+  }
 }
 
 .contacts__term,
@@ -35,8 +55,12 @@
 
 .contacts__item {
   display: grid;
-  grid-template-columns: 90px 170px;
+  grid-template-columns: 76px 183px;
   grid-template-rows: 50px;
+
+  @media (min-width: $width-tablet) {
+    grid-template-columns: 90px 230px;
+  }
 
   &--second {
     grid-template-rows: 90px;
@@ -45,6 +69,9 @@
 
 .contacts__address {
   font-style: normal;
+  @media (min-width: $width-tablet) {
+    max-width: 257px;
+  }
 }
 
 .contacts__button {
@@ -56,10 +83,21 @@
   line-height: 20px;
   font-weight: 700;
   text-align: center;
+
+  @media (min-width: $width-tablet) {
+    margin: 55px auto 57px auto;
+  }
 }
 
 .contacts__iframe {
   margin-left: -30px;
   margin-right: -30px;
   padding-bottom: 42px;
+
+  @media (min-width: $width-tablet) {
+    width: 768px;
+    height: 457px;
+    margin-left: -50px;
+    margin-right: -50px;
+  }
 }

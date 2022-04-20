@@ -1,7 +1,21 @@
 @import "global/variables.scss";
 
 .main-footer {
+  margin-right: -30px;
+  margin-left: -30px;
   background-color: $color-bg-footer;
+
+  @media (min-width: $width-tablet) {
+    margin-right: -50px;
+    margin-left: -50px;
+  }
+}
+
+.main-footer__wrapper {
+  @media (min-width: $width-tablet) {
+    display: flex;
+    justify-content: space-around;
+  }
 }
 
 .main-footer__copyright {

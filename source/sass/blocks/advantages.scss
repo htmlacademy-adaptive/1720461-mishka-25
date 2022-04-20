@@ -1,7 +1,23 @@
 @import "global/variables.scss";
 
+.advantages__wrapper {
+  padding-bottom: 83px;
+}
+
 .advantages__title {
   padding-top: 31px;
+
+  @media (min-width: $width-tablet) {
+    padding-top: 56px;
+  }
+}
+
+.advantages__list {
+  @media (min-width: $width-tablet) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 70px;
+  }
 }
 
 .advantages__item {
@@ -15,25 +31,49 @@
 
   &--ecological {
     background-image: url("../../img/icons/flower-icon.svg");
+
+    @media (min-width: $width-tablet) {
+      order: 0;
+    }
   }
 
   &--nordic {
     background-image: url("../../img/icons/nordic-icon.svg");
+
+    @media (min-width: $width-tablet) {
+      order: 2;
+    }
   }
 
   &--like {
     background-image: url("../../img/icons/heart-icon.svg");
+
+    @media (min-width: $width-tablet) {
+      order: 4;
+    }
   }
 
   &--handmade {
     background-image: url("../../img/icons/tangle-icon.svg");
+
+    @media (min-width: $width-tablet) {
+      order: 1;
+    }
   }
 
   &--national {
     background-image: url("../../img/icons/rocket-icon.svg");
+
+    @media (min-width: $width-tablet) {
+      order: 3;
+    }
   }
 
   &--gift {
     background-image: url("../../img/icons/gift-icon.svg");
+
+    @media (min-width: $width-tablet) {
+      order: 5;
+    }
   }
 }

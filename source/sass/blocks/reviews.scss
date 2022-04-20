@@ -1,8 +1,26 @@
 @import "global/variables.scss";
 
+.reviews__wrapper {
+  position: relative;
+
+  @media (min-width: $width-tablet) {
+    margin-bottom: 68px;
+    margin-left: - 50px;
+    background-image: url("../../img/backgrounds/bg-lace-tablet.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+}
+
 .reviews__title {
   padding-top: 58px;
   padding-bottom: 14px;
+
+  @media (min-width: $width-tablet) {
+    padding-top: 83px;
+    padding-bottom: 39px;
+    padding-left: 50px;
+  }
 }
 
 .reviews__author-review {
@@ -18,6 +36,20 @@
   font-weight: 400;
   color: $color-text-secondary;
   background-color: $color-bg-primary;
+
+  @media (min-width: $width-tablet) {
+    max-width: 668px;
+    padding-bottom: 61px;
+    padding-left: 50px;
+    font-size: 17px;
+    background-color: transparent;
+  }
+}
+
+.reviews__author {
+  @media (min-width: $width-tablet) {
+    padding-left: 50px;
+  }
 }
 
 .reviews__author-name {
@@ -33,11 +65,21 @@
   font-size: 17px;
   line-height: 30px;
   font-weight: 400;
+
+  @media (min-width: $width-tablet) {
+    padding-left: 50px;
+  }
 }
 
 .reviews__control {
   display: flex;
   padding-bottom: 38px;
+
+  @media (min-width: $width-tablet) {
+    position: absolute;
+    top: 325px;
+    right: 0;
+  }
 }
 
 .reviews__control-button {
@@ -46,9 +88,17 @@
   background-color: $color-bg-primary;
   border: 1px solid $color-border-control-button;
 
+  @media (min-width: $width-tablet) {
+    padding-right: 18px;
+    border: none;
+  }
 
   &--right {
     transform: rotate(180deg);
+
+    @media (min-width: $width-tablet) {
+      padding-right: 18px;
+    }
   }
 }
 
@@ -65,4 +115,10 @@
   line-height: 20px;
   font-weight: 700;
   text-align: center;
+
+  @media (min-width: $width-tablet) {
+    position: absolute;
+    top: 60px;
+    right: 0;
+  }
 }
