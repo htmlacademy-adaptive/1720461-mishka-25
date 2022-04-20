@@ -1,5 +1,16 @@
 @import "global/variables.scss";
 
+.social__list {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 27px;
+}
+
+.social__item + .social__item {
+  padding-left: 30px;
+}
+
 .social__link {
   background-color: $color-bg-footer;
 }

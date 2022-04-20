@@ -43,6 +43,9 @@
 .reviews__control-button {
   display: block;
   padding: 12px 38px;
+  background-color: $color-bg-primary;
+  border: 1px solid $color-border-control-button;
+
 
   &--right {
     transform: rotate(180deg);
