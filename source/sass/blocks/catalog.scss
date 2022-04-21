@@ -1,64 +1,81 @@
 @import "global/variables.scss";
 
-.catalog__wrapper {
+.catalog__list {
   display: flex;
   flex-direction: column;
+  margin: 0 -30px;
+  padding: 0;
+  list-style: none;
 
   @media (min-width: $width-tablet) {
     flex-direction: row;
+    margin: 0;
+  }
+
+  @media (min-width: $width-desktop) {
+    justify-content: center;
   }
 }
 
-.catalog__interior {
+.catalog__item {
   display: block;
-  margin: 0 -30px;
-  padding: 24px 160px 31px 30px;
-  font-size: 19px;
-  line-height: 24px;
-  font-weight: 700;
-  color: $color-text-inverse;
-  background-color: $color-brand;
-  background-image: url("../../img/icons/interior.svg");
   background-repeat: no-repeat;
   background-size: auto;
   background-position: right bottom;
 
   @media (min-width: $width-tablet) {
-    flex-grow: 1;
-    max-width: 334px;
-    margin: 0;
+    min-width: 334px;
+    min-height: 119px;
   }
 
   @media (min-width: $width-desktop) {
-    flex-grow: 1;
-    max-width: 525px;
-    margin: 0;
+    min-width: 525px;
+  }
+
+  &--interior {
+    color: $color-text-inverse;
+    background-color: $color-brand;
+    background-image: url("../../img/icons/interior.svg");
+  }
+
+  &--toys {
+    background-color: $color-intense;
+    background-image: url("../../img/icons/toy.svg");
   }
 }
 
-.catalog__toys {
+
+.catalog__link {
   display: block;
-  margin: 0 -30px;
   padding: 24px 160px 31px 30px;
   font-size: 19px;
   line-height: 24px;
   font-weight: 700;
-  color: $color-text-inverse;
-  background-color: $color-intense;
-  background-image: url("../../img/icons/toy.svg");
-  background-repeat: no-repeat;
-  background-size: auto;
-  background-position: right bottom;
+  background-color: transparent;
 
-  @media (min-width: $width-tablet) {
-    flex-grow: 1;
-    max-width: 334px;
-    margin: 0;
+  &--interior {
+    color: $color-text-inverse;
+
+    @media (min-width: $width-tablet) {
+      padding: 25px 167px 34px 36px;
+    }
+
+    @media (min-width: $width-desktop) {
+      max-width: 140px;
+      padding-right: 350px;
+    }
   }
 
-  @media (min-width: $width-desktop) {
-    flex-grow: 1;
-    max-width: 525px;
-    margin: 0;
+  &--toys {
+    color: $color-text-inverse;
+
+    @media (min-width: $width-tablet) {
+      padding: 25px 167px 34px 36px;
+    }
+
+    @media (min-width: $width-desktop) {
+      max-width: 140px;
+      padding-right: 350px;
+    }
   }
 }
