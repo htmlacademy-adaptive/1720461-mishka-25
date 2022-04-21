@@ -2,6 +2,11 @@
 
 .advantages__wrapper {
   padding-bottom: 83px;
+
+  @media (min-width: $width-desktop) {
+    padding-left: 170px;
+    padding-right: 300px;
+  }
 }
 
 .advantages__title {
@@ -9,6 +14,10 @@
 
   @media (min-width: $width-tablet) {
     padding-top: 56px;
+  }
+
+  @media (min-width: $width-tablet) {
+    padding-bottom: 12px;
   }
 }
 

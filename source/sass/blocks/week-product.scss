@@ -24,8 +24,8 @@
   }
 
   @media (min-width: $width-desktop) {
-    top: 120px;
-    left: 0;
+    top: 125px;
+    left: 25px;
   }
 }
 
@@ -48,13 +48,13 @@
   }
 
   @media (min-width: $width-desktop) {
-    grid-template-columns: 135px 292px 200px 330px;
+    grid-template-columns: 170px 292px 200px 380px;
     grid-template-rows:
       207px
-      90px
-      170px
-      24px
-      52px;
+      130px
+      223px
+      57px
+      125px;
     grid-template-areas:
       ". title title title"
       ". text image image"
@@ -107,7 +107,7 @@
   }
 
   @media (min-width: $width-desktop) {
-
+    padding-bottom: 109px;
   }
 }
 
@@ -146,17 +146,13 @@
     font-size: 20px;
     padding-bottom: 33px;
   }
-
-  @media (min-width: $width-desktop) {
-
-  }
 }
 
 .week-product__button {
 
   grid-area: button;
   margin-bottom: 36px;
-  padding: 16px 70px;
+  padding: 16px 86px;
   font-size: 18px;
   line-height: 20px;
   text-align: center;
@@ -166,6 +162,6 @@
   }
 
   @media (min-width: $width-desktop) {
-
+    margin-bottom: 73px;
   }
 }
