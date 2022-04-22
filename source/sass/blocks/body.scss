@@ -2,10 +2,8 @@
 
 .body {
   box-sizing: border-box;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
-  padding-right: 30px;
-  padding-left: 30px;
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-size: 15px;
@@ -13,20 +11,4 @@
   font-weight: 400;
   color: $color-text-primary;
   background-color: $color-bg-primary;
-
-
-  // фиксированная ширина времена до введения резиновой верстки
-  width: 320px;
-
-  @media (min-width: $width-tablet) {
-    width: 768px;
-    padding-right: 50px;
-    padding-left: 50px;
-  }
-
-  @media (min-width: $width-desktop) {
-    width: 1200px;
-    padding-right: 75px;
-    padding-left: 75px;
-  }
 }

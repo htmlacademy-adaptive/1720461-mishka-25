@@ -2,12 +2,29 @@
 
 .week-product__wrapper {
   position: relative;
+  width: 320px;
+  margin: 0 auto;
+  padding-right: 30px;
+  padding-left: 30px;
+  box-sizing: border-box;
+
+  @media (min-width: $width-tablet) {
+    width: $width-tablet;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: $width-desktop;
+    padding-right: 75px;
+    padding-left: 75px;
+  }
 }
 
 .week-product__title {
   position: absolute;
   top: 62px;
-  left: 0;
+  left: 30px;
   font-size: 17px;
   line-height: 20px;
   font-weight: 700;
@@ -17,7 +34,7 @@
 
   @media (min-width: $width-tablet) {
     top: 50px;
-    left: 550px;
+    left: 600px;
     max-width: 100px;
     line-height: 17px;
     text-align: center;
@@ -25,7 +42,7 @@
 
   @media (min-width: $width-desktop) {
     top: 125px;
-    left: 25px;
+    left: 100px;
   }
 }
 
@@ -48,7 +65,7 @@
   }
 
   @media (min-width: $width-desktop) {
-    grid-template-columns: 170px 292px 200px 380px;
+    grid-template-columns: 175px 292px 200px 380px;
     grid-template-rows:
       207px
       130px

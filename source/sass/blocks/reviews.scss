@@ -2,17 +2,28 @@
 
 .reviews__wrapper {
   position: relative;
+  width: 320px;
+  margin: 0 auto;
+  padding-right: 30px;
+  padding-left: 30px;
+  box-sizing: border-box;
 
   @media (min-width: $width-tablet) {
+    width: $width-tablet;
     margin-bottom: 68px;
-    margin-left: -50px;
+    padding-right: 50px;
+    padding-left: 50px;
     background-image: url("../../img/backgrounds/bg-lace-tablet.jpg");
     background-repeat: no-repeat;
     background-size: auto;
+    background-position: 75px 0;
   }
 
   @media (min-width: $width-desktop) {
-    margin-left: 0;
+    width: $width-desktop;
+    // margin-left: 0;
+    padding-right: 75px;
+    padding-left: 250px;
   }
 }
 
@@ -23,23 +34,17 @@
   @media (min-width: $width-tablet) {
     padding-top: 83px;
     padding-bottom: 39px;
-    padding-left: 50px;
   }
 
   @media (min-width: $width-desktop) {
     padding-top: 78px;
     padding-bottom: 35px;
-    padding-left: 170px;
   }
 }
 
 .reviews__author-review {
   margin: 0;
   padding: 0;
-
-  @media (min-width: $width-desktop) {
-    padding-left: 170px;
-  }
 }
 
 .reviews__text-content {
@@ -54,24 +59,12 @@
   @media (min-width: $width-tablet) {
     max-width: 668px;
     padding-bottom: 61px;
-    padding-left: 50px;
     font-size: 17px;
     background-color: transparent;
   }
 
   @media (min-width: $width-desktop) {
     max-width: 810px;
-    padding-left: 0;
-  }
-}
-
-.reviews__author {
-  @media (min-width: $width-tablet) {
-    padding-left: 50px;
-  }
-
-  @media (min-width: $width-desktop) {
-    padding-left: 0;
   }
 }
 
@@ -88,14 +81,6 @@
   font-size: 17px;
   line-height: 30px;
   font-weight: 400;
-
-  @media (min-width: $width-tablet) {
-    padding-left: 50px;
-  }
-
-  @media (min-width: $width-desktop) {
-    padding-left: 0;
-  }
 }
 
 .reviews__control {
@@ -104,12 +89,13 @@
 
   @media (min-width: $width-tablet) {
     position: absolute;
-    top: 325px;
-    right: 0;
+    top: 350px;
+    right: 35px;
   }
 
   @media (min-width: $width-desktop) {
-    top: 355px;
+    top: 320px;
+    right: 65px;
   }
 }
 
@@ -158,13 +144,13 @@
   @media (min-width: $width-tablet) {
     position: absolute;
     top: 60px;
-    right: 0;
+    right: 50px;
     min-width: 175px;
     padding: 15px 26px;
   }
 
   @media (min-width: $width-desktop) {
     top: 60px;
-    right: 0;
+    right: 75px;
   }
 }

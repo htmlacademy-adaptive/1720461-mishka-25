@@ -1,11 +1,20 @@
 @import "global/variables.scss";
 
 .contacts__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  padding-right: 30px;
+  padding-left: 30px;
+  box-sizing: border-box;
+
   @media (min-width: $width-tablet) {
+    width: $width-tablet;
+    padding-right: 50px;
+    padding-left: 50px;
     background-image: url("../../img/flag.svg");
     background-repeat: no-repeat;
     background-size: auto;
-    background-position: 600px 45px;
+    background-position: 655px 45px;
   }
 
   @media (min-width: $width-desktop) {
@@ -21,9 +30,12 @@
       ". title map"
       ". list map"
       ". button map";
+    width: $width-desktop;
     padding-top: 71px;
+    padding-right: 75px;
     padding-bottom: 105px;
-    background-position: 60px 131px;
+    padding-left: 75px;
+    background-position: 130px 131px;
   }
 }
 
@@ -122,20 +134,17 @@
     margin: 0;
     width: 230px;
     padding: 0;
-
   }
 }
 
 .contacts__iframe {
   margin-left: -30px;
-  margin-right: -30px;
   padding-bottom: 42px;
 
   @media (min-width: $width-tablet) {
     width: 768px;
     height: 457px;
     margin-left: -50px;
-    margin-right: -50px;
   }
 
   @media (min-width: $width-desktop) {
@@ -143,7 +152,5 @@
     width: 527px;
     height: 457px;
     margin-left: 0;
-    margin-right: 0;
-    padding-bottom: 0;
   }
 }

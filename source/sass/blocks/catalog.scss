@@ -1,9 +1,28 @@
 @import "global/variables.scss";
 
+.catalog__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  box-sizing: border-box;
+
+  @media (min-width: $width-tablet) {
+    width: $width-tablet;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: $width-desktop;
+    padding-right: 75px;
+    padding-left: 75px;
+  }
+}
+
+
 .catalog__list {
   display: flex;
   flex-direction: column;
-  margin: 0 -30px;
+  margin: 0;
   padding: 0;
   list-style: none;
 

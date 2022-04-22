@@ -1,19 +1,27 @@
 @import "global/variables.scss";
 
 .title-container {
-  margin: 0 -30px;
+  width: 320px;
+  margin: 0 auto;
+  padding-right: 30px;
+  padding-left: 30px;
+  box-sizing: border-box;
   background-color: $color-bg-primary;
   background-image: url("../../img/backgrounds/bg-image-house-shelf-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 
   @media (min-width: $width-tablet) {
-    margin: 0 -50px;
+    width: $width-tablet;
+    padding-right: 50px;
+    padding-left: 50px;
     background-image: url("../../img/backgrounds/bg-image-house-shelf-tablet.jpg");
   }
 
   @media (min-width: $width-desktop) {
-    margin: 0 -75px;
+    width: $width-desktop;
+    padding-right: 75px;
+    padding-left: 75px;
     background-image: url("../../img/backgrounds/bg-image-house-shelf-desktop.jpg");
   }
 }
