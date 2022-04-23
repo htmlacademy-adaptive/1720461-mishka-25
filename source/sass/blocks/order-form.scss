@@ -1,33 +1,207 @@
 @import "global/variables.scss";
 
+.order-form {
+  width: 320px;
+  margin: 0 auto;
+  padding-right: 30px;
+  padding-left: 30px;
+  box-sizing: border-box;
+
+  @media (min-width: $width-tablet) {
+    width: $width-tablet;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: $width-desktop;
+    padding-right: 75px;
+    padding-left: 75px;
+  }
+}
+
 .order-form__text-content {
   margin: 0;
   padding: 0;
+  padding-top: 17px;
+  padding-bottom: 29px;
   font-size: 13px;
   line-height: 24px;
   font-weight: 400;
   color: $color-text-secondary;
   background-color: $color-bg-primary;
+
+  @media (min-width: $width-tablet) {
+    padding-top: 66px;
+    padding-bottom: 63px;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $width-desktop) {
+    max-width: 702px;
+    padding-top: 116px;
+  }
 }
 
 .order-form__group {
+  margin: 0;
+  padding: 0;
   border: none;
 }
 
 .order-form__title {
+  display: flex;
+  min-width: 260px;
   font-size: 17px;
   line-height: 16px;
   font-weight: 700;
   color: $color-text-brand;
   background-color: $color-bg-primary;
   text-transform: uppercase;
+
+  &--type {
+    padding-bottom: 30px;
+  }
+
+  &--color {
+    padding-bottom: 25px;
+  }
+
+  &--name-surname-patronymic {
+    padding-bottom: 29px;
+  }
+
+  &--phone {
+    padding-bottom: 5px;
+  }
+
+  &--email {
+    padding-bottom: 5px;
+  }
+
+  &--textarea {
+    padding-bottom: 23px;
+  }
+}
+
+.order-form__title::after {
+  content: "";
+  flex-grow: 1;
+  margin-top: -7px;
+  margin-bottom: 7px;
+  margin-left: 20px;
+  border-bottom: 1px solid $color-text-brand-underline;
+}
+
+.order-form__list {
+  &--type {
+    padding-bottom: 20px;
+  }
+
+  &--color {
+    padding-bottom: 10px;
+  }
+
+  &--name-surname-patronymic {
+    padding-bottom: 13px;
+  }
+}
+
+.order-form__item {
+  &--type {
+    padding-bottom: 11px;
+  }
+
+  &--color {
+    padding-bottom: 23px;
+  }
+}
+
+.order-form-name__wrapper,
+.order-form-surname__wrapper,
+.order-form-patronymic__wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 22px;
+}
+
+.order-form-name__input,
+.order-form-surname__input,
+.order-form-patronymic__input {
+  padding-top: 17px;
+  padding-bottom: 17px;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 400;
+  border: none;
+  border-bottom: 2px solid $color-border-primary;
+}
+
+.order-form-name__input::placeholder,
+.order-form-surname__input::placeholder,
+.order-form-patronymic__input::placeholder {
+  font-family: "Open Sans", sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 400;
+  color: rgba($color-text-primary, 0.3);
+}
+
+.order-form__phone-wrapper,
+.order-form__email-wrapper {
+  padding-bottom: 35px;
+}
+
+.order-form__textarea-wrapper {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 15px;
+}
+
+.order-form-phone__input,
+.order-form-email__input,
+.order-form-textarea__input {
+  padding-top: 14px;
+  padding-bottom: 20px;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 400;
+  border: none;
+  border-bottom: 2px solid $color-border-primary;
+}
+
+.order-form-textarea__input {
+  min-width: 260px;
+  min-height: 142px;
+  box-sizing: border-box;
+  padding-top: 17px;
+  padding-right: 17px;
+  padding-left: 17px;
+  border: 2px solid $color-border-primary;
+}
+
+.order-form-phone__input::placeholder,
+.order-form-email__input::placeholder,
+.order-form-textarea__input::placeholder {
+  font-family: "Open Sans", sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 400;
+  color: rgba($color-text-primary, 0.3);
 }
 
 .order-form__text-required {
   margin: 0;
   padding: 0;
+  padding-bottom: 30px;
   font-size: 14px;
   line-height: 16px;
   font-weight: 400;
   color: $color-text-secondary;
+}
+
+.order-form__button {
+  min-width: 260px;
+  margin-bottom: 55px;
 }
