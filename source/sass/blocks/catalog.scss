@@ -1,27 +1,104 @@
 @import "global/variables.scss";
 
-.catalog__interior {
-  display: block;
-  padding: 24px 160px 31px 30px;
-  font-size: 19px;
-  line-height: 24px;
-  font-weight: 700;
-  color: $color-text-inverse;
-  background-color: $color-brand;
-  background-image: url("../../img/icons/interior.svg");
-  background-repeat: no-repeat;
-  background-size: auto;
+.catalog__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  box-sizing: border-box;
+
+  @media (min-width: $width-tablet) {
+    width: $width-tablet;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: $width-desktop;
+    padding-right: 75px;
+    padding-left: 75px;
+  }
 }
 
-.catalog__toys {
+
+.catalog__list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @media (min-width: $width-tablet) {
+    flex-direction: row;
+    margin: 0;
+  }
+
+  @media (min-width: $width-desktop) {
+    justify-content: center;
+  }
+}
+
+.catalog__item {
+  display: block;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: right bottom;
+
+  @media (min-width: $width-tablet) {
+    min-width: 334px;
+    min-height: 119px;
+  }
+
+  @media (min-width: $width-desktop) {
+    min-width: 525px;
+  }
+
+  &--interior {
+    color: $color-text-inverse;
+    background-color: $color-brand;
+    background-image: url("../../img/icons/interior.svg");
+  }
+
+  &--toys {
+    background-color: $color-intense;
+    background-image: url("../../img/icons/toy.svg");
+  }
+}
+
+
+.catalog__link {
   display: block;
   padding: 24px 160px 31px 30px;
   font-size: 19px;
   line-height: 24px;
   font-weight: 700;
-  color: $color-text-inverse;
-  background-color: $color-intense;
-  background-image: url("../../img/icons/toy.svg");
-  background-repeat: no-repeat;
-  background-size: auto;
+  background-color: transparent;
+
+  &--interior {
+    color: $color-text-inverse;
+
+    @media (min-width: $width-tablet) {
+      padding: 25px 167px 34px 36px;
+      font-size: 20px;
+      line-height: 30px;
+    }
+
+    @media (min-width: $width-desktop) {
+      max-width: 140px;
+      padding-right: 350px;
+    }
+  }
+
+  &--toys {
+    color: $color-text-inverse;
+
+    @media (min-width: $width-tablet) {
+      padding: 25px 167px 34px 36px;
+      font-size: 20px;
+      line-height: 30px;
+    }
+
+    @media (min-width: $width-desktop) {
+      max-width: 140px;
+      padding-right: 350px;
+    }
+  }
 }

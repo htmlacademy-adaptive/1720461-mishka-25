@@ -9,15 +9,70 @@
   line-height: 30px;
   font-weight: 700;
   color: $color-text-primary;
-  background-color: $color-bg-primary;
+
+  @media (min-width: $width-tablet) {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $width-desktop) {
+    font-size: 53px;
+    line-height: 57px;
+  }
 
   &--medium {
     font-size: 25px;
-  }
-}
 
-.title--main-container {
-  background-image: url("../../img/backgrounds/bg-image-house-shelf-mobile.jpg");
-  background-repeat: no-repeat;
-  background-size: auto;
+    @media (min-width: $width-tablet) {
+      font-size: 43px;
+      line-height: 50px;
+    }
+
+    @media (min-width: $width-desktop) {
+      font-size: 53px;
+      line-height: 57px;
+    }
+  }
+
+  &--main-container {
+    display: block;
+    max-width: 260px;
+    margin: 0 auto;
+    padding-top: 90px;
+    padding-bottom: 120px;
+    text-align: center;
+
+    @media (min-width: $width-tablet) {
+      max-width: 668px;
+      padding-top: 155px;
+      padding-bottom: 372px;
+    }
+
+    @media (min-width: $width-desktop) {
+      max-width: 700px;
+      padding-top: 157px;
+      padding-bottom: 355px;
+    }
+  }
+
+  &--main-form-container {
+    display: block;
+    max-width: 260px;
+    margin: 0 auto;
+    padding-top: 74px;
+    padding-bottom: 74px;
+    text-align: center;
+
+    @media (min-width: $width-tablet) {
+      max-width: 420px;
+      padding-top: 101px;
+      padding-bottom: 75px;
+    }
+
+    @media (min-width: $width-desktop) {
+      max-width: 507px;
+      padding-top: 102px;
+      padding-bottom: 96px;
+    }
+  }
 }

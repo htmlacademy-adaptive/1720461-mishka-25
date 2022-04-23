@@ -1,0 +1,37 @@
+@import "global/variables.scss";
+
+.logo__image-mobile {
+  display: block;
+
+  @media (min-width: $width-tablet) {
+    display: none;
+  }
+
+  @media (min-width: $width-desktop) {
+    display: none;
+  }
+}
+
+.logo__image-tablet {
+  display: none;
+
+  @media (min-width: $width-tablet) {
+    display: block;
+  }
+
+  @media (min-width: $width-desktop) {
+    display: none;
+  }
+}
+
+.logo__image-desktop {
+  display: none;
+
+  @media (min-width: $width-tablet) {
+    display: none;
+  }
+
+  @media (min-width: $width-desktop) {
+    display: block;
+  }
+}

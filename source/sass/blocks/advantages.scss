@@ -1,5 +1,46 @@
 @import "global/variables.scss";
 
+.advantages__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  padding-right: 30px;
+  padding-bottom: 83px;
+  padding-left: 30px;
+  box-sizing: border-box;
+
+  @media (min-width: $width-tablet) {
+    width: $width-tablet;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: $width-desktop;
+    padding-right: 375px;
+    padding-left: 250px;
+  }
+}
+
+.advantages__title {
+  padding-top: 31px;
+
+  @media (min-width: $width-tablet) {
+    padding-top: 56px;
+  }
+
+  @media (min-width: $width-tablet) {
+    padding-bottom: 12px;
+  }
+}
+
+.advantages__list {
+  @media (min-width: $width-tablet) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 70px;
+  }
+}
+
 .advantages__item {
   padding-top: 83px;
   font-size: 17px;
@@ -7,28 +48,53 @@
   font-weight: 700;
   background-repeat: no-repeat;
   background-size: auto;
+  background-position: 0 27px;
 
   &--ecological {
     background-image: url("../../img/icons/flower-icon.svg");
+
+    @media (min-width: $width-tablet) {
+      order: 0;
+    }
   }
 
   &--nordic {
     background-image: url("../../img/icons/nordic-icon.svg");
+
+    @media (min-width: $width-tablet) {
+      order: 2;
+    }
   }
 
   &--like {
     background-image: url("../../img/icons/heart-icon.svg");
+
+    @media (min-width: $width-tablet) {
+      order: 4;
+    }
   }
 
   &--handmade {
     background-image: url("../../img/icons/tangle-icon.svg");
+
+    @media (min-width: $width-tablet) {
+      order: 1;
+    }
   }
 
   &--national {
     background-image: url("../../img/icons/rocket-icon.svg");
+
+    @media (min-width: $width-tablet) {
+      order: 3;
+    }
   }
 
   &--gift {
     background-image: url("../../img/icons/gift-icon.svg");
+
+    @media (min-width: $width-tablet) {
+      order: 5;
+    }
   }
 }
