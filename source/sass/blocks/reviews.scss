@@ -16,14 +16,15 @@
     background-image: url("../../img/backgrounds/bg-lace-tablet.jpg");
     background-repeat: no-repeat;
     background-size: auto;
-    background-position: 75px 0;
+    background-position: 0 0;
   }
 
   @media (min-width: $width-desktop) {
     width: $width-desktop;
-    // margin-left: 0;
+
     padding-right: 75px;
     padding-left: 250px;
+    background-position: 75px 0;
   }
 }
 

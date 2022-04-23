@@ -6,6 +6,7 @@
 
   @media (min-width: $width-tablet) {
     width: $width-tablet;
+    box-sizing: border-box;
     background-image: url("../../img/flag.svg");
     background-repeat: no-repeat;
     background-size: auto;
@@ -14,6 +15,7 @@
 
   @media (min-width: $width-desktop) {
     width: $width-desktop;
+    box-sizing: border-box;
     display: grid;
     grid-template-columns: 170px 350px 527px;
     grid-template-rows:
@@ -23,9 +25,11 @@
       52px;
     grid-template-areas:
       ". . map"
-      ". title map"
-      ". list map"
+      ". contacts map"
+      ". contacts map"
       ". button map";
+    padding-right: 75px;
+    padding-left: 75px;
     background-position: 130px 131px;
   }
 }
@@ -41,10 +45,11 @@
   }
 
   @media (min-width: $width-desktop) {
-    padding-top: 71px;
-    padding-right: 75px;
-    padding-bottom: 105px;
-    padding-left: 75px;
+    grid-area: contacts;
+    // padding-top: 71px;
+    // padding-right: 75px;
+    // padding-bottom: 105px;
+    // padding-left: 75px;
   }
 }
 
@@ -58,7 +63,7 @@
   }
 
   @media (min-width: $width-desktop) {
-    grid-area: title;
+    // grid-area: title;
     padding: 0;
   }
 }
@@ -87,7 +92,7 @@
 
   @media (min-width: $width-desktop) {
     display: grid;
-    grid-area: list;
+    // grid-area: list;
   }
 }
 
@@ -128,6 +133,8 @@
   display: block;
   min-width: 260px;
   margin-bottom: 39px;
+  margin-right: auto;
+  margin-left: auto;
   padding: 15px 38px;
   font-size: 18px;
   line-height: 20px;
@@ -135,7 +142,8 @@
   text-align: center;
 
   @media (min-width: $width-tablet) {
-    margin: 55px auto 57px auto;
+    margin-top: 55px;
+    margin-bottom: 57px;
   }
 
   @media (min-width: $width-desktop) {

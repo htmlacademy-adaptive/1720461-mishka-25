@@ -5,9 +5,24 @@
 }
 
 .main-footer__wrapper {
+  margin: 0 auto;
+
   @media (min-width: $width-tablet) {
     display: flex;
     justify-content: space-around;
+    width: $width-tablet;
+    box-sizing: border-box;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+
+  @media (min-width: $width-desktop) {
+    display: flex;
+    justify-content: space-around;
+    width: $width-desktop;
+    box-sizing: border-box;
+    padding-right: 75px;
+    padding-left: 75px;
   }
 }
 
