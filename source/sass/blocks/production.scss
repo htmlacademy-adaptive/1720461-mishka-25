@@ -21,9 +21,16 @@
 }
 
 .production__article {
+  display: flex;
+  flex-direction: column;
   padding-top: 22px;
   padding-bottom: 33px;
   border: 1px solid $color-border-catalog-article;
+
+  @media (min-width: $width-tablet) {
+    padding-bottom: 46px;
+    margin-bottom: 64px;
+  }
 }
 
 .production__title {
@@ -37,11 +44,24 @@
   background-size: auto;
   background-image: url("../../img/icons/video-camera.svg");
   background-position: 34px 13px;
+
+  @media (min-width: $width-tablet) {
+    padding: 0 0 25px 91px;
+    font-size: 20px;
+    background-position: 40px 0;
+  }
 }
 
 .production__image {
   display: block;
   padding-bottom: 35px;
+
+  @media (min-width: $width-tablet) {
+    order: -1;
+    min-width: 668px;
+    min-height: 455px;
+    padding-bottom: 41px;
+  }
 }
 
 .production__text-content {
@@ -54,6 +74,13 @@
   font-weight: 400;
   color: $color-text-secondary;
   background-color: $color-bg-primary;
+
+  @media (min-width: $width-tablet) {
+    padding-right: 17px;
+    padding-bottom: 41px;
+    padding-left: 40px;
+    font-size: 15px;
+  }
 }
 
 .production__order-button {
@@ -62,4 +89,8 @@
   font-size: 18px;
   line-height: 16px;
   text-align: center;
+
+  @media (min-width: $width-tablet) {
+    min-width: 584px;
+  }
 }
