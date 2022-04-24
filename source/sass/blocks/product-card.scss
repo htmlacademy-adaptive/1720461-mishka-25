@@ -11,6 +11,12 @@
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "photo text";
   }
+
+  @media (min-width: $width-desktop) {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
 }
 
 .product-card__link {
@@ -21,6 +27,11 @@
 
 .product-card__image {
   display: block;
+
+  @media (min-width: $width-tablet) {
+    min-width: 316px;
+    min-height: 462px;
+  }
 }
 
 .product-card__layout-wrapper {

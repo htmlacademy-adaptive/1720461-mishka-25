@@ -31,6 +31,15 @@
     padding-bottom: 46px;
     margin-bottom: 64px;
   }
+
+  @media (min-width: $width-desktop) {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas:
+      "image title"
+      "image text"
+      "image button";
+  }
 }
 
 .production__title {
@@ -50,6 +59,10 @@
     font-size: 20px;
     background-position: 40px 0;
   }
+
+  @media (min-width: $width-desktop) {
+    grid-area: title;
+  }
 }
 
 .production__image {
@@ -61,6 +74,10 @@
     min-width: 668px;
     min-height: 455px;
     padding-bottom: 41px;
+  }
+
+  @media (min-width: $width-desktop) {
+    grid-area: image;
   }
 }
 
@@ -81,6 +98,10 @@
     padding-left: 40px;
     font-size: 15px;
   }
+
+  @media (min-width: $width-desktop) {
+    grid-area: text;
+  }
 }
 
 .production__order-button {
@@ -92,5 +113,12 @@
 
   @media (min-width: $width-tablet) {
     min-width: 584px;
+  }
+
+  @media (min-width: $width-desktop) {
+    grid-area: button;
+    min-width: 230px;
+    max-height: 52px;
+    box-sizing: border-box;
   }
 }

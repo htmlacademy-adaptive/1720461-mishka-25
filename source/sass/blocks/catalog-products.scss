@@ -22,4 +22,11 @@
 
 .catalog-products-list {
   padding-top: 30px;
+
+  @media (min-width: $width-desktop) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 50px;
+    max-width: 316px;
+  }
 }
