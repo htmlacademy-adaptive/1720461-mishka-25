@@ -75,4 +75,26 @@
       padding-bottom: 96px;
     }
   }
+
+  &--main-catalog {
+    display: block;
+    min-width: 240px;
+    margin: 0 auto;
+    padding-top: 74px;
+    padding-bottom: 74px;
+    box-sizing: border-box;
+    text-align: center;
+
+    @media (min-width: $width-tablet) {
+      min-width: 402px;
+      padding-top: 100px;
+      padding-bottom: 75px;
+    }
+
+    @media (min-width: $width-desktop) {
+      min-width: 486px;
+      padding-top: 102px;
+      padding-bottom: 96px;
+    }
+  }
 }
