@@ -23,6 +23,7 @@
 .production__article {
   display: flex;
   flex-direction: column;
+  margin-bottom: 58px;
   padding-top: 22px;
   padding-bottom: 33px;
   border: 1px solid $color-border-catalog-article;
@@ -105,11 +106,12 @@
 }
 
 .production__order-button {
-  max-width: 192px;
+  min-width: 192px;
   margin: 0 auto;
   font-size: 18px;
   line-height: 16px;
   text-align: center;
+  box-sizing: border-box;
 
   @media (min-width: $width-tablet) {
     min-width: 584px;
@@ -119,6 +121,5 @@
     grid-area: button;
     min-width: 230px;
     max-height: 52px;
-    box-sizing: border-box;
   }
 }

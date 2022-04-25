@@ -29,6 +29,7 @@
       ". contacts map"
       ". button map";
     padding-right: 75px;
+    padding-bottom: 105px;
     padding-left: 75px;
     background-position: 130px 131px;
   }
@@ -164,6 +165,7 @@
 
   @media (min-width: $width-desktop) {
     grid-area: map;
+    padding-bottom: 0;
     width: 527px;
     height: 457px;
   }
