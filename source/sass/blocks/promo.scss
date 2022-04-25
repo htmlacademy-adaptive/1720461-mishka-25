@@ -1,6 +1,16 @@
 @import "global/variables.scss";
 
-.title-wrapper {
+.promo {
+  &--form {
+    background-color: $color-bg-form-secondary;
+  }
+
+  &--catalog {
+    background-color: $color-bg-form-secondary;
+  }
+}
+
+.promo__wrapper {
   width: 320px;
   margin: 0 auto;
   padding-right: 30px;
@@ -32,9 +42,5 @@
     @media (min-width: $width-desktop) {
       background-image: url("../../img/backgrounds/bg-image-house-shelf-desktop.jpg");
     }
-  }
-
-  &--form {
-    background-color: $color-bg-form-secondary;
   }
 }

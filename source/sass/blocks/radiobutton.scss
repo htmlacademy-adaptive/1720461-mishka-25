@@ -6,4 +6,8 @@
   font-weight: 700;
   color: $color-text-primary;
   background-color: $color-bg-primary;
+
+  @media (min-width: $width-tablet) {
+    font-size: 19px;
+  }
 }
