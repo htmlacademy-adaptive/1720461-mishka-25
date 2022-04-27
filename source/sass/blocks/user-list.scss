@@ -1,9 +1,21 @@
 @import "global/variables.scss";
 
 .user-list__link {
+  position: relative;
+  display: block;
+  padding: 28px 0;
+  padding-left: 46px;
+
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
   color: $color-text-primary;
   background-color: $color-bg-primary;
+}
+
+.user-list__link-search-icon,
+.user-list__link-cart-icon {
+  position: absolute;
+  top: 39%;
+  left: 0;
 }

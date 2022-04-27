@@ -1,6 +1,20 @@
 @import "global/variables.scss";
 
 .promo {
+  background-color: $color-bg-primary;
+  background-image: url("../../img/backgrounds/bg-image-house-shelf-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+
+  @media (min-width: $width-tablet) {
+    background-image: url("../../img/backgrounds/bg-image-house-shelf-tablet.jpg");
+  }
+
+  @media (min-width: $width-desktop) {
+    background-image: url("../../img/backgrounds/bg-image-house-shelf-desktop.jpg");
+  }
+
   &--form {
     background-color: $color-bg-form-secondary;
   }
@@ -27,20 +41,5 @@
     width: $width-desktop;
     padding-right: 75px;
     padding-left: 75px;
-  }
-
-  &--main {
-    background-color: $color-bg-primary;
-    background-image: url("../../img/backgrounds/bg-image-house-shelf-mobile.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    @media (min-width: $width-tablet) {
-      background-image: url("../../img/backgrounds/bg-image-house-shelf-tablet.jpg");
-    }
-
-    @media (min-width: $width-desktop) {
-      background-image: url("../../img/backgrounds/bg-image-house-shelf-desktop.jpg");
-    }
   }
 }

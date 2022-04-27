@@ -22,8 +22,15 @@
   }
 }
 
+.main-header__logo-wrapper {
+  display: flex;
+  min-width: 260px;
+  min-height: 79px;
+}
+
 .main-header__logo {
   height: 35px;
+  margin: auto;
 
   @media (min-width: $width-tablet) {
     height: 46px;

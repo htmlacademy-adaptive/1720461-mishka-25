@@ -1,0 +1,50 @@
+@import "global/variables.scss";
+
+
+.main-navigation__toogle {
+  position: absolute;
+  top: 26px;
+  right: 31px;
+  display: block;
+  width: 21px;
+  height: 20px;
+  padding: 0;
+  background-color: $color-bg-primary;
+  cursor: pointer;
+  border: none;
+}
+
+.main-navigation--closed .main-navigation__toogle::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 20px;
+  height: 2px;
+  background-color: $color-toogle-primary;
+  box-shadow:
+    0 5px 0 0 $color-toogle-primary,
+    0 10px 0 0 $color-toogle-primary;
+}
+
+.main-navigation--opened .main-navigation__toogle {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 9px;
+    right: -3px;
+    width: 28px;
+    height: 2px;
+    background-color: $color-toogle-primary;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
