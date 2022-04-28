@@ -1,6 +1,5 @@
 @import "global/variables.scss";
 
-
 .main-navigation__toogle {
   position: absolute;
   top: 26px;
@@ -12,10 +11,24 @@
   background-color: $color-bg-primary;
   cursor: pointer;
   border: none;
+
+  @media (min-width: $width-tablet) {
+    display: none;
+  }
 }
 
 .main-navigation__wrapper {
   background-color: $color-bg-primary;
+}
+
+.main-navigation__wrapper-layout {
+  @media (min-width: $width-tablet) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      ". user"
+      "site promo";
+  }
 }
 
 .main-navigation--closed .main-navigation__toogle::before {
@@ -29,24 +42,6 @@
   box-shadow:
     0 6px 0 0 $color-toogle-primary,
     0 12px 0 0 $color-toogle-primary;
-}
-
-@media (max-width: $width-mobile-only) {
-  .main-navigation--closed .main-navigation__wrapper {
-    display: none;
-  }
-
-  .main-navigation--opened .main-navigation__wrapper {
-    position: absolute;
-  }
-
-  .main-navigation--nojavascript .main-navigation__toogle {
-    display: none;
-  }
-
-  .main-navigation--nojavascript .main-navigation__wrapper {
-    position: static;
-  }
 }
 
 .main-navigation--opened .main-navigation__toogle {
@@ -68,5 +63,39 @@
 
   &::after {
     transform: rotate(-45deg);
+  }
+}
+
+@media (max-width: $width-mobile-only) {
+  .main-navigation--closed .main-navigation__wrapper {
+    display: none;
+  }
+
+  .main-navigation--opened .main-navigation__wrapper {
+    position: absolute;
+  }
+
+  .main-navigation--nojavascript .main-navigation__toogle {
+    display: none;
+  }
+
+  .main-navigation--nojavascript .main-navigation__wrapper {
+    position: static;
+  }
+}
+
+.main-navigation__list {
+  @media (min-width: $width-tablet) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.main-navigation__promo-text {
+  display: none;
+
+  @media (min-width: $width-tablet) {
+    display: inline-block;
+    grid-area: promo;
   }
 }

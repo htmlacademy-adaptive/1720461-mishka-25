@@ -1,5 +1,11 @@
 @import "global/variables.scss";
 
+.user-list {
+  @media (min-width: $width-tablet) {
+    grid-area: user;
+  }
+}
+
 .user-list__item {
   min-width: 320px;
   box-sizing: border-box;
@@ -7,6 +13,11 @@
   padding-left: 30px;
   border-top: 1px solid $color-border-navigation;
   border-bottom: 1px solid $color-border-navigation;
+
+  @media (min-width: $width-tablet) {
+    min-width: auto;
+    padding: 0;
+  }
 }
 
 .user-list__link {
@@ -19,6 +30,11 @@
   font-weight: 700;
   color: $color-text-primary;
   background-color: $color-bg-primary;
+
+  @media (min-width: $width-tablet) {
+    order: -1;
+    padding: 0;
+  }
 }
 
 .user-list__link-search-icon,
@@ -26,4 +42,17 @@
   position: absolute;
   top: 39%;
   left: 0;
+}
+
+.user-list__link-search-icon {
+  @media (min-width: $width-tablet) {
+    top: 35%;
+    left: 35%;
+  }
+}
+
+.user-list__link-description {
+  @media (min-width: $width-tablet) {
+    display: none;
+  }
 }

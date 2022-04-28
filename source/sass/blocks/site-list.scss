@@ -1,5 +1,11 @@
 @import "global/variables.scss";
 
+.site-list {
+  @media (min-width: $width-tablet) {
+    grid-area: site;
+  }
+}
+
 .site-list__item {
   min-width: 320px;
   box-sizing: border-box;
@@ -7,6 +13,11 @@
   padding-left: 30px;
   border-top: 1px solid $color-border-navigation;
   border-bottom: 1px solid $color-border-navigation;
+
+  @media (min-width: $width-tablet) {
+    min-width: auto;
+    padding: 0;
+  }
 }
 
 .site-list__link {
@@ -18,4 +29,8 @@
   font-weight: 700;
   color: $color-text-primary;
   background-color: $color-bg-primary;
+
+  @media (min-width: $width-tablet) {
+    padding: 0;
+  }
 }

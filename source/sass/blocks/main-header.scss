@@ -5,6 +5,19 @@
   flex-direction: column;
   width: 320px;
   margin: 0 auto;
+  box-sizing: border-box;
+
+  @media (min-width: $width-tablet) {
+    min-width: $width-tablet;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+}
+
+.main-header__layout {
+  @media (min-width: $width-tablet) {
+    display: grid;
+  }
 }
 
 .main-header__logo-wrapper {
@@ -13,6 +26,13 @@
   min-height: 79px;
   border-top: 1px solid $color-border-navigation;
   border-bottom: 1px solid $color-border-navigation;
+
+  @media (min-width: $width-tablet) {
+    display: inline-block;
+    // временно добавил
+    display: none;
+    width: 320px;
+  }
 }
 
 .main-header__logo {
