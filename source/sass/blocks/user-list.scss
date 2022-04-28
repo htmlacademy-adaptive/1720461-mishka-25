@@ -1,11 +1,19 @@
 @import "global/variables.scss";
 
+.user-list__item {
+  min-width: 320px;
+  box-sizing: border-box;
+  padding-right: 30px;
+  padding-left: 30px;
+  border-top: 1px solid $color-border-navigation;
+  border-bottom: 1px solid $color-border-navigation;
+}
+
 .user-list__link {
   position: relative;
   display: block;
   padding: 28px 0;
   padding-left: 46px;
-
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;

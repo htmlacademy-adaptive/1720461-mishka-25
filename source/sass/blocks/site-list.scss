@@ -1,18 +1,21 @@
 @import "global/variables.scss";
 
-// .site-list__item {
-
-// }
+.site-list__item {
+  min-width: 320px;
+  box-sizing: border-box;
+  padding-right: 30px;
+  padding-left: 30px;
+  border-top: 1px solid $color-border-navigation;
+  border-bottom: 1px solid $color-border-navigation;
+}
 
 .site-list__link {
   display: block;
   padding: 28px 0;
   padding-left: 46px;
-
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
   color: $color-text-primary;
-
-  border-bottom: 1px solid $color-border-navigation;
+  background-color: $color-bg-primary;
 }

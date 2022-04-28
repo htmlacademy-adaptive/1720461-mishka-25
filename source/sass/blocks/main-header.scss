@@ -5,27 +5,14 @@
   flex-direction: column;
   width: 320px;
   margin: 0 auto;
-  padding-right: 30px;
-  padding-left: 30px;
-  box-sizing: border-box;
-
-  @media (min-width: $width-tablet) {
-    width: $width-tablet;
-    padding-right: 50px;
-    padding-left: 50px;
-  }
-
-  @media (min-width: $width-desktop) {
-    width: $width-desktop;
-    padding-right: 75px;
-    padding-left: 75px;
-  }
 }
 
 .main-header__logo-wrapper {
   display: flex;
-  min-width: 260px;
+  min-width: 320px;
   min-height: 79px;
+  border-top: 1px solid $color-border-navigation;
+  border-bottom: 1px solid $color-border-navigation;
 }
 
 .main-header__logo {

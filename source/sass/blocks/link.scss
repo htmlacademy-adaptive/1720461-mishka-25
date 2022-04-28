@@ -7,7 +7,8 @@
   line-height: 24px;
   font-weight: 400;
   color: $color-text-primary;
-  background-color: $color-bg-primary;
+  // это свойство больше мешает, чем помогает
+  // background-color: $color-bg-primary;
   text-decoration: none;
   cursor: pointer;
 }
