@@ -1,5 +1,12 @@
 @import "global/variables.scss";
 
+.main-header {
+  @media (min-width: $width-tablet) {
+    position: relative;
+    border-bottom: 2px solid $color-border-navigation;
+  }
+}
+
 .main-header__wrapper {
   display: flex;
   flex-direction: column;
@@ -14,24 +21,19 @@
   }
 }
 
-.main-header__layout {
-  @media (min-width: $width-tablet) {
-    display: grid;
-  }
-}
-
 .main-header__logo-wrapper {
   display: flex;
+  flex-wrap: wrap;
   min-width: 320px;
   min-height: 79px;
   border-top: 1px solid $color-border-navigation;
   border-bottom: 1px solid $color-border-navigation;
 
   @media (min-width: $width-tablet) {
-    display: inline-block;
-    // временно добавил
-    display: none;
-    width: 320px;
+    position: absolute;
+    min-width: 35.5%;
+    min-height: 88px;
+    border: none;
   }
 }
 
@@ -41,6 +43,7 @@
 
   @media (min-width: $width-tablet) {
     height: 46px;
+    margin: auto 0;
   }
 
   @media (min-width: $width-desktop) {

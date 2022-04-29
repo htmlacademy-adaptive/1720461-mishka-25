@@ -3,6 +3,13 @@
 .user-list {
   @media (min-width: $width-tablet) {
     grid-area: user;
+    justify-content: flex-end;
+  }
+}
+
+.user-list .user-list__link {
+  @media (min-width: $width-tablet) {
+    align-items: center;
   }
 }
 
@@ -15,8 +22,12 @@
   border-bottom: 1px solid $color-border-navigation;
 
   @media (min-width: $width-tablet) {
-    min-width: auto;
+    display: flex;
+    min-width: 82px;
+    min-height: 88px;
     padding: 0;
+    border: none;
+    border-left: 2px solid $color-border-navigation;
   }
 }
 
@@ -32,8 +43,24 @@
   background-color: $color-bg-primary;
 
   @media (min-width: $width-tablet) {
+    display: flex;
     order: -1;
-    padding: 0;
+  }
+}
+
+.user-list__search-link {
+  @media (min-width: $width-tablet) {
+    width: 18px;
+    height: 18px;
+    margin: auto;
+    padding: 33px 30px 31px 30px;
+  }
+}
+
+.user-list__cart-link {
+  @media (min-width: $width-tablet) {
+    margin: auto;
+    padding: 32px 0 32px 30px;
   }
 }
 
@@ -46,8 +73,14 @@
 
 .user-list__link-search-icon {
   @media (min-width: $width-tablet) {
-    top: 35%;
-    left: 35%;
+    position: static;
+  }
+}
+
+.user-list__link-cart-icon {
+  @media (min-width: $width-tablet) {
+    position: static;
+    margin-right: 30px;
   }
 }
 

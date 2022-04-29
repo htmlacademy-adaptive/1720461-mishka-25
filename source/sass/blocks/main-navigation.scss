@@ -24,10 +24,14 @@
 .main-navigation__wrapper-layout {
   @media (min-width: $width-tablet) {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 48% 52%;
+    grid-template-rows:
+      min-content
+      min-content;
     grid-template-areas:
       ". user"
       "site promo";
+    background-color: transparent;
   }
 }
 
@@ -95,7 +99,11 @@
   display: none;
 
   @media (min-width: $width-tablet) {
-    display: inline-block;
+    display: flex;
+    align-self: center;
+    justify-self: flex-end;
     grid-area: promo;
+    margin-bottom: -74px;  // при переполнении это не помогает
+    background-color: transparent;
   }
 }
