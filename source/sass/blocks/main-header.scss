@@ -19,6 +19,12 @@
     padding-right: 50px;
     padding-left: 50px;
   }
+
+  @media (min-width: $width-desktop) {
+    min-width: $width-desktop;
+    padding-right: 75px;
+    padding-left: 75px;
+  }
 }
 
 .main-header__logo-wrapper {
@@ -34,6 +40,11 @@
     min-width: 35.5%;
     min-height: 88px;
     border: none;
+  }
+
+  @media (min-width: $width-desktop) {
+    left: 43.5%;
+    min-width: 13%;
   }
 }
 
