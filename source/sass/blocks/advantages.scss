@@ -1,16 +1,29 @@
 @import "global/variables.scss";
 
+.advantages {
+  background-image: url("../../img/zigzag-line-mobile.svg");
+  background-repeat: repeat-x;
+
+  @media (min-width: $width-tablet) {
+    background-image: url("../../img/zigzag-line-tablet.svg");
+  }
+
+  @media (min-width: $width-desktop) {
+    background-image: url("../../img/zigzag-line-desktop.svg");
+  }
+}
+
 .advantages__wrapper {
   width: 320px;
   margin: 0 auto;
   padding-right: 30px;
-  padding-bottom: 83px;
   padding-left: 30px;
   box-sizing: border-box;
 
   @media (min-width: $width-tablet) {
     width: $width-tablet;
     padding-right: 50px;
+    padding-bottom: 83px;
     padding-left: 50px;
   }
 
@@ -22,14 +35,16 @@
 }
 
 .advantages__title {
-  padding-top: 31px;
+  padding-top: 37px;
 
   @media (min-width: $width-tablet) {
-    padding-top: 56px;
+    padding-top: 73px;
+    padding-bottom: 12px;
   }
 
-  @media (min-width: $width-tablet) {
-    padding-bottom: 12px;
+  @media (min-width: $width-desktop) {
+    padding-top: 91px;
+    padding-bottom: 9px;
   }
 }
 

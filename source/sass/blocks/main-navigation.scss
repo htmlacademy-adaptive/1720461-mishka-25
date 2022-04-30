@@ -1,0 +1,119 @@
+@import "global/variables.scss";
+
+.main-navigation__toogle {
+  position: absolute;
+  top: 26px;
+  right: 30px;
+  display: block;
+  width: 21px;
+  height: 20px;
+  padding: 0;
+  background-color: $color-bg-primary;
+  cursor: pointer;
+  border: none;
+
+  @media (min-width: $width-tablet) {
+    display: none;
+  }
+}
+
+.main-navigation__wrapper {
+  background-color: $color-bg-primary;
+}
+
+.main-navigation__wrapper-layout {
+  @media (min-width: $width-tablet) {
+    display: grid;
+    grid-template-columns: 48% 52%;
+    grid-template-rows:
+      min-content
+      min-content;
+    grid-template-areas:
+      ". user"
+      "site delivery";
+    background-color: transparent;
+  }
+
+  @media (min-width: $width-desktop) {
+    grid-template-columns: 40% 20% 40%;
+    grid-template-rows:
+      min-content
+      min-content;
+    grid-template-areas:
+      "site . user"
+      "promo . delivery";
+  }
+}
+
+.main-navigation--closed .main-navigation__toogle::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 20px;
+  height: 2px;
+  background-color: $color-toogle-primary;
+  box-shadow:
+    0 6px 0 0 $color-toogle-primary,
+    0 12px 0 0 $color-toogle-primary;
+}
+
+.main-navigation--opened .main-navigation__toogle {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 9px;
+    right: -3px;
+    width: 28px;
+    height: 2px;
+    background-color: $color-toogle-primary;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+@media (max-width: $width-mobile-only) {
+  .main-navigation--closed .main-navigation__wrapper {
+    display: none;
+  }
+
+  .main-navigation--opened .main-navigation__wrapper {
+    position: absolute;
+  }
+
+  .main-navigation--nojavascript .main-navigation__toogle {
+    display: none;
+  }
+
+  .main-navigation--nojavascript .main-navigation__wrapper {
+    position: static;
+  }
+}
+
+.main-navigation__list {
+  @media (min-width: $width-tablet) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.main-navigation__promo-delivery {
+  display: none;
+
+  @media (min-width: $width-tablet) {
+    display: flex;
+    align-self: center;
+    justify-self: flex-end;
+    grid-area: delivery;
+    margin-bottom: -74px;  // при переполнении это не помогает
+    background-color: transparent;
+  }
+}

@@ -1,5 +1,18 @@
 @import "global/variables.scss";
 
+.contacts {
+  background-image: url("../../img/zigzag-line-mobile.svg");
+  background-repeat: repeat-x;
+
+  @media (min-width: $width-tablet) {
+    background-image: url("../../img/zigzag-line-tablet.svg");
+  }
+
+  @media (min-width: $width-desktop) {
+    background-image: url("../../img/zigzag-line-desktop.svg");
+  }
+}
+
 .contacts__wrapper {
   width: 320px;
   margin: 0 auto;
@@ -7,10 +20,10 @@
   @media (min-width: $width-tablet) {
     width: $width-tablet;
     box-sizing: border-box;
-    background-image: url("../../img/flag.svg");
+    background-image: url("../../img/icons/flag.svg");
     background-repeat: no-repeat;
     background-size: auto;
-    background-position: 655px 45px;
+    background-position: 655px 62px;
   }
 
   @media (min-width: $width-desktop) {
@@ -28,9 +41,11 @@
       ". contacts map"
       ". contacts map"
       ". button map";
+    padding-top: 94px;
     padding-right: 75px;
+    padding-bottom: 105px;
     padding-left: 75px;
-    background-position: 130px 131px;
+    background-position: 130px 160px;
   }
 }
 
@@ -46,25 +61,22 @@
 
   @media (min-width: $width-desktop) {
     grid-area: contacts;
-    // padding-top: 71px;
-    // padding-right: 75px;
-    // padding-bottom: 105px;
-    // padding-left: 75px;
+    padding: 0;
   }
 }
 
 .contacts__title {
-  padding-top: 38px;
+  padding-top: 44px;
   padding-bottom: 28px;
 
   @media (min-width: $width-tablet) {
-    padding-top: 68px;
+    padding-top: 85px;
     padding-bottom: 49px;
   }
 
   @media (min-width: $width-desktop) {
-    // grid-area: title;
-    padding: 0;
+    padding-top: 0;
+    padding-bottom: 35px;
   }
 }
 
@@ -78,7 +90,7 @@
 }
 
 .contacts__e-mail {
-  padding-bottom: 4px;
+  padding-bottom: 3px;
   border-bottom: 1px solid $color-text-brand-underline;
 }
 
@@ -92,7 +104,6 @@
 
   @media (min-width: $width-desktop) {
     display: grid;
-    // grid-area: list;
   }
 }
 
@@ -155,11 +166,15 @@
 }
 
 .contacts__iframe {
+  width: 320px;
+  height: 454px;
   padding-bottom: 42px;
+  border: none;
 
   @media (min-width: $width-tablet) {
     width: 768px;
     height: 457px;
+    padding-bottom: 0;
   }
 
   @media (min-width: $width-desktop) {

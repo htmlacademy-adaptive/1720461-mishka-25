@@ -12,8 +12,10 @@
 // header
 @use "blocks/main-header.scss";
 @use "blocks/logo.scss";
+@use "blocks/main-navigation.scss";
 @use "blocks/site-list.scss";
 @use "blocks/user-list.scss";
+@use "blocks/promo-list.scss";
 
 // main file
 @use "blocks/main-container.scss";

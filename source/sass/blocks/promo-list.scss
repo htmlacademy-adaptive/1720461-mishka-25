@@ -1,0 +1,38 @@
+@import "global/variables.scss";
+
+.promo-list {
+  display: none;
+
+  @media (min-width: $width-desktop) {
+    display: flex;
+    grid-area: promo;
+    margin-bottom: -74px;
+    justify-content: flex-start;
+  }
+}
+
+.promo-list__item {
+  @media (min-width: $width-desktop) {
+    display: flex;
+  }
+}
+
+.promo-list__link {
+  @media (min-width: $width-desktop) {
+    display: block;
+    margin: auto;
+    padding: 0;
+    padding-right: 25px;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 700;
+    color: $color-text-primary;
+    background-color: transparent;
+  }
+}
+
+.promo-list__sale-link {
+  @media (min-width: $width-desktop) {
+    padding-left: 40px;
+  }
+}

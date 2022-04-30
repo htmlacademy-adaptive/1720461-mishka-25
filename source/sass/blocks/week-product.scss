@@ -113,6 +113,7 @@
 }
 
 .week-product__table {
+  min-width: 260px;
   grid-area: table;
   font-size: 15px;
   line-height: 20px;
@@ -130,13 +131,20 @@
 
 .week-product__data {
   min-width: 100px;
-  padding-bottom: 14px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   font-weight: 400;
   text-align: left;
+  border-bottom: 1px solid $color-border-navigation;
+}
+
+.week-product__row:first-child .week-product__data {
+  padding-top: 0;
 }
 
 .week-product__image {
   grid-area: image;
+  padding-top: 26px;
   padding-bottom: 26px;
 
   @media (min-width: $width-tablet) {

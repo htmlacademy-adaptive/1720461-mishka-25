@@ -1,32 +1,60 @@
 @import "global/variables.scss";
 
+.main-header {
+  @media (min-width: $width-tablet) {
+    position: relative;
+    border-bottom: 2px solid $color-border-navigation;
+  }
+}
+
 .main-header__wrapper {
   display: flex;
   flex-direction: column;
   width: 320px;
   margin: 0 auto;
-  padding-right: 30px;
-  padding-left: 30px;
   box-sizing: border-box;
 
   @media (min-width: $width-tablet) {
-    width: $width-tablet;
+    min-width: $width-tablet;
     padding-right: 50px;
     padding-left: 50px;
   }
 
   @media (min-width: $width-desktop) {
-    width: $width-desktop;
+    min-width: $width-desktop;
     padding-right: 75px;
     padding-left: 75px;
   }
 }
 
+.main-header__logo-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 320px;
+  min-height: 79px;
+  border-top: 1px solid $color-border-navigation;
+  border-bottom: 1px solid $color-border-navigation;
+
+  @media (min-width: $width-tablet) {
+    position: absolute;
+    min-width: 35.5%;
+    min-height: 88px;
+    border: none;
+  }
+
+  @media (min-width: $width-desktop) {
+    left: 43.5%;
+    min-width: 13%;
+  }
+}
+
 .main-header__logo {
   height: 35px;
+  margin: auto;
 
   @media (min-width: $width-tablet) {
     height: 46px;
+    margin: auto 0;
   }
 
   @media (min-width: $width-desktop) {
