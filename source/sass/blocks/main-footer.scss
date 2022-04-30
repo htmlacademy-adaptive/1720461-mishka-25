@@ -2,10 +2,16 @@
 
 .main-footer {
   background-color: $color-bg-footer;
+
+  @media (min-width: $width-tablet) {
+    display: flex;
+    align-content: center;
+    min-height: 143px;
+  }
 }
 
 .main-footer__wrapper {
-  margin: 0 auto;
+  margin: auto;
 
   @media (min-width: $width-tablet) {
     display: flex;
@@ -32,4 +38,16 @@
   align-items: center;
   padding-top: 22px;
   padding-bottom: 23px;
+}
+
+.main-footer__decoration {
+  margin-right: 30px;
+  margin-left: 30px;
+  border-top: 1px solid $color-border-footer;
+
+  @media (min-width: $width-tablet) {
+    margin-right: 0;
+    margin-left: 0;
+    border-top: none;
+  }
 }

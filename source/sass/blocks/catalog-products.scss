@@ -23,6 +23,10 @@
 .catalog-products-list {
   padding-top: 30px;
 
+  @media (min-width: $width-tablet) {
+    padding-top: 67px;
+  }
+
   @media (min-width: $width-desktop) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
