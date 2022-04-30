@@ -1,5 +1,20 @@
 @import "global/variables.scss";
 
+
+.catalog {
+  @media (min-width: $width-tablet) {
+    background-image: url("../../img/zigzag-fill-tablet.svg");
+    background-repeat: repeat-x;
+    background-position: 0 101%;
+    z-index: 5;
+  }
+
+  @media (min-width: $width-desktop) {
+    background-image: url("../../img/zigzag-fill-desktop.svg");
+  }
+}
+
+
 .catalog__wrapper {
   width: 320px;
   margin: 0 auto;
@@ -36,6 +51,7 @@
   }
 }
 
+
 .catalog__item {
   display: block;
   background-repeat: no-repeat;
@@ -44,22 +60,34 @@
 
   @media (min-width: $width-tablet) {
     min-width: 334px;
-    min-height: 119px;
+    min-height: 127px;
+    z-index: -1;
   }
 
   @media (min-width: $width-desktop) {
     min-width: 525px;
+    min-height: 136px;
   }
 
   &--interior {
     color: $color-text-inverse;
     background-color: $color-brand;
     background-image: url("../../img/icons/interior.svg");
+    background-position: 88% 50%;
+
+    @media (min-width: $width-desktop) {
+      background-position: 88% 40%;
+    }
   }
 
   &--toys {
     background-color: $color-intense;
     background-image: url("../../img/icons/toy.svg");
+    background-position: 90% 50%;
+
+    @media (min-width: $width-desktop) {
+      background-position: 88% 40%;
+    }
   }
 }
 
