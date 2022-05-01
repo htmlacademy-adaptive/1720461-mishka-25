@@ -1,5 +1,6 @@
 @import "global/variables.scss";
 
+
 .user-list {
   @media (min-width: $width-tablet) {
     grid-area: user;
@@ -7,11 +8,13 @@
   }
 }
 
+
 .user-list .user-list__link {
   @media (min-width: $width-tablet) {
     align-items: center;
   }
 }
+
 
 .user-list__item {
   min-width: 320px;
@@ -36,6 +39,7 @@
   }
 }
 
+
 .user-list__link {
   position: relative;
   display: block;
@@ -53,6 +57,7 @@
   }
 }
 
+
 .user-list__search-link {
   @media (min-width: $width-tablet) {
     width: 18px;
@@ -62,12 +67,14 @@
   }
 }
 
+
 .user-list__cart-link {
   @media (min-width: $width-tablet) {
     margin: auto;
     padding: 32px 0 32px 30px;
   }
 }
+
 
 .user-list__link-search-icon,
 .user-list__link-cart-icon {
@@ -76,11 +83,13 @@
   left: 0;
 }
 
+
 .user-list__link-search-icon {
   @media (min-width: $width-tablet) {
     position: static;
   }
 }
+
 
 .user-list__link-cart-icon {
   @media (min-width: $width-tablet) {
@@ -88,6 +97,7 @@
     margin-right: 30px;
   }
 }
+
 
 .user-list__link-description {
   @media (min-width: $width-tablet) {

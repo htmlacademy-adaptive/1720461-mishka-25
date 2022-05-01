@@ -1,5 +1,6 @@
 @import "global/variables.scss";
 
+
 .contacts {
   background-image: url("../../img/zigzag-line-mobile.svg");
   background-repeat: repeat-x;
@@ -12,6 +13,7 @@
     background-image: url("../../img/zigzag-line-desktop.svg");
   }
 }
+
 
 .contacts__wrapper {
   width: 320px;
@@ -44,6 +46,7 @@
   }
 }
 
+
 .contacts__container {
   padding-right: 30px;
   padding-left: 30px;
@@ -59,6 +62,7 @@
     padding: 0;
   }
 }
+
 
 .contacts__title {
   padding-top: 44px;
@@ -79,6 +83,7 @@
   }
 }
 
+
 .contacts__title::after {
   @media (min-width: $width-tablet) {
     content: "";
@@ -97,6 +102,7 @@
   }
 }
 
+
 .contacts__list,
 .contacts__e-mail {
   font-size: 14px;
@@ -106,10 +112,12 @@
   background-color: $color-bg-primary;
 }
 
+
 .contacts__e-mail {
   padding-bottom: 3px;
   border-bottom: 1px solid $color-text-brand-underline;
 }
+
 
 .contacts__list {
   padding-bottom: 62px;
@@ -124,6 +132,7 @@
   }
 }
 
+
 .contacts__term,
 .contacts__description,
 .contacts__address {
@@ -131,9 +140,11 @@
   margin: 0;
 }
 
+
 .contacts__term {
   width: 90px;
 }
+
 
 .contacts__item {
   display: grid;
@@ -149,6 +160,7 @@
   }
 }
 
+
 .contacts__address {
   font-style: normal;
 
@@ -156,6 +168,7 @@
     max-width: 257px;
   }
 }
+
 
 .contacts__button {
   display: block;
@@ -181,6 +194,7 @@
     padding: 0;
   }
 }
+
 
 .contacts__iframe {
   width: 320px;

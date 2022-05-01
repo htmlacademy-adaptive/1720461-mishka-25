@@ -1,5 +1,6 @@
 @import "global/variables.scss";
 
+
 .site-list {
   @media (min-width: $width-tablet) {
     margin-bottom: -74px;
@@ -44,17 +45,20 @@
   }
 }
 
+
 .site-list__catalog-item {
   @media (min-width: $width-desktop) {
     border-right: 2px solid $color-border-navigation;
   }
 }
 
+
 .site-list__order-item {
   @media (min-width: $width-desktop) {
     padding-right: 0;
   }
 }
+
 
 .site-list__link {
   display: block;
@@ -79,6 +83,7 @@
     font-size: 17px;
   }
 }
+
 
 .site-list__order-link {
   @media (min-width: $width-desktop) {

@@ -1,5 +1,6 @@
 @import "global/variables.scss";
 
+
 .promo {
   &--main {
     background-color: $color-bg-primary;
@@ -33,6 +34,7 @@
     }
   }
 }
+
 
 .promo__wrapper {
   width: 320px;

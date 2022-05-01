@@ -1,11 +1,47 @@
 @import "global/variables.scss";
 
+
+.checkbox__custom {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+
+.checkbox__custom + .checkbox__field::before {
+  content: "";
+  display: inline-block;
+  width: 38px;
+  height: 38px;
+  margin-right: 23px;
+  background-image: url("../../img/icons/checkbox-empty.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100%;
+
+  @media (min-width: $width-tablet) {
+    width: 52px;
+    height: 52px;
+  }
+}
+
+
+.checkbox__custom:checked + .checkbox__field::before {
+  background-image: url("../../img/icons/checkbox-checked.svg");
+}
+
+
 .checkbox__field {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 38px 1fr;
+  column-gap: 23px;
   font-size: 17px;
   line-height: 18px;
   font-weight: 700;
   color: $color-text-primary;
   background-color: transparent;
+  user-select: none;
 
   @media (min-width: $width-tablet) {
     font-size: 19px;

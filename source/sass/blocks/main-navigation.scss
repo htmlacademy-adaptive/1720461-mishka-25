@@ -1,5 +1,6 @@
 @import "global/variables.scss";
 
+
 .main-navigation__toogle {
   position: absolute;
   top: 26px;
@@ -17,10 +18,12 @@
   }
 }
 
+
 .main-navigation__wrapper {
   background-color: $color-bg-primary;
   margin: 0 auto;
 }
+
 
 .main-navigation__wrapper-layout {
   @media (min-width: $width-tablet) {
@@ -60,6 +63,7 @@
     0 12px 0 0 $color-toogle-primary;
 }
 
+
 .main-navigation--opened .main-navigation__toogle {
   &::before,
   &::after {
@@ -81,6 +85,7 @@
     transform: rotate(-45deg);
   }
 }
+
 
 @media (max-width: $width-mobile-only) {
   .main-navigation--opened {
@@ -107,12 +112,14 @@
   }
 }
 
+
 .main-navigation__list {
   @media (min-width: $width-tablet) {
     display: flex;
     flex-wrap: wrap;
   }
 }
+
 
 .main-navigation__promo-delivery {
   display: none;
