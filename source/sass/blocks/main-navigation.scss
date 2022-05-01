@@ -19,6 +19,7 @@
 
 .main-navigation__wrapper {
   background-color: $color-bg-primary;
+  margin: 0 auto;
 }
 
 .main-navigation__wrapper-layout {
@@ -44,6 +45,7 @@
       "promo . delivery";
   }
 }
+
 
 .main-navigation--closed .main-navigation__toogle::before {
   content: "";
@@ -81,12 +83,19 @@
 }
 
 @media (max-width: $width-mobile-only) {
+  .main-navigation--opened {
+    margin: 0 auto;
+  }
+
   .main-navigation--closed .main-navigation__wrapper {
     display: none;
   }
 
   .main-navigation--opened .main-navigation__wrapper {
     position: absolute;
+    top: 81px;
+    left: 0;
+    width: 100%;
   }
 
   .main-navigation--nojavascript .main-navigation__toogle {

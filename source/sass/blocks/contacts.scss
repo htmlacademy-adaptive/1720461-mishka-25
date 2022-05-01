@@ -20,10 +20,6 @@
   @media (min-width: $width-tablet) {
     width: $width-tablet;
     box-sizing: border-box;
-    background-image: url("../../img/icons/flag.svg");
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-position: 655px 62px;
   }
 
   @media (min-width: $width-desktop) {
@@ -45,7 +41,6 @@
     padding-right: 75px;
     padding-bottom: 105px;
     padding-left: 75px;
-    background-position: 130px 160px;
   }
 }
 
@@ -70,13 +65,35 @@
   padding-bottom: 28px;
 
   @media (min-width: $width-tablet) {
-    padding-top: 85px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 63px;
     padding-bottom: 49px;
   }
 
   @media (min-width: $width-desktop) {
+    position: relative;
     padding-top: 0;
     padding-bottom: 35px;
+  }
+}
+
+.contacts__title::after {
+  @media (min-width: $width-tablet) {
+    content: "";
+    display: flex;
+    width: 47px;
+    height: 81px;
+    background-image: url("../../img/icons/flag.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+
+  @media (min-width: $width-desktop) {
+    position: absolute;
+    left: -35%;
+    order: -1;
   }
 }
 

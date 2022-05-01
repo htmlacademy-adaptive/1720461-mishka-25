@@ -46,6 +46,14 @@
 .reviews__author-review {
   margin: 0;
   padding: 0;
+
+  @media (min-width: $width-tablet) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "review review"
+      "author control";
+  }
 }
 
 .reviews__text-content {
@@ -58,6 +66,7 @@
   background-color: $color-bg-primary;
 
   @media (min-width: $width-tablet) {
+    grid-area: review;
     max-width: 668px;
     padding-bottom: 61px;
     font-size: 17px;
@@ -66,6 +75,12 @@
 
   @media (min-width: $width-desktop) {
     max-width: 810px;
+  }
+}
+
+.reviews__author {
+  @media (min-width: $width-tablet) {
+    grid-area: author;
   }
 }
 
@@ -89,14 +104,12 @@
   padding-bottom: 38px;
 
   @media (min-width: $width-tablet) {
-    position: absolute;
-    top: 350px;
-    right: 30px;
+    grid-area: control;
   }
 
   @media (min-width: $width-desktop) {
-    top: 320px;
-    right: 65px;
+    // top: 320px;
+    // right: 65px;
   }
 }
 

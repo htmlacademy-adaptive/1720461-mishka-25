@@ -21,6 +21,11 @@
   border-top: 1px solid $color-border-navigation;
   border-bottom: 1px solid $color-border-navigation;
 
+  @media (max-width: $width-mobile-only) {
+    width: 320px;
+    margin: 0 auto;
+  }
+
   @media (min-width: $width-tablet) {
     display: flex;
     min-width: 82px;
