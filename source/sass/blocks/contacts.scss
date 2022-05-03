@@ -1,5 +1,6 @@
 @import "global/variables.scss";
 
+
 .contacts {
   background-image: url("../../img/zigzag-line-mobile.svg");
   background-repeat: repeat-x;
@@ -13,6 +14,7 @@
   }
 }
 
+
 .contacts__wrapper {
   width: 320px;
   margin: 0 auto;
@@ -20,10 +22,6 @@
   @media (min-width: $width-tablet) {
     width: $width-tablet;
     box-sizing: border-box;
-    background-image: url("../../img/icons/flag.svg");
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-position: 655px 62px;
   }
 
   @media (min-width: $width-desktop) {
@@ -45,9 +43,9 @@
     padding-right: 75px;
     padding-bottom: 105px;
     padding-left: 75px;
-    background-position: 130px 160px;
   }
 }
+
 
 .contacts__container {
   padding-right: 30px;
@@ -65,20 +63,45 @@
   }
 }
 
+
 .contacts__title {
   padding-top: 44px;
   padding-bottom: 28px;
 
   @media (min-width: $width-tablet) {
-    padding-top: 85px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 63px;
     padding-bottom: 49px;
   }
 
   @media (min-width: $width-desktop) {
+    position: relative;
     padding-top: 0;
     padding-bottom: 35px;
   }
 }
+
+
+.contacts__title::after {
+  @media (min-width: $width-tablet) {
+    content: "";
+    display: flex;
+    width: 47px;
+    height: 81px;
+    background-image: url("../../img/icons/flag.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+
+  @media (min-width: $width-desktop) {
+    position: absolute;
+    left: -35%;
+    order: -1;
+  }
+}
+
 
 .contacts__list,
 .contacts__e-mail {
@@ -89,10 +112,12 @@
   background-color: $color-bg-primary;
 }
 
+
 .contacts__e-mail {
   padding-bottom: 3px;
   border-bottom: 1px solid $color-text-brand-underline;
 }
+
 
 .contacts__list {
   padding-bottom: 62px;
@@ -107,6 +132,7 @@
   }
 }
 
+
 .contacts__term,
 .contacts__description,
 .contacts__address {
@@ -114,9 +140,11 @@
   margin: 0;
 }
 
+
 .contacts__term {
   width: 90px;
 }
+
 
 .contacts__item {
   display: grid;
@@ -132,6 +160,7 @@
   }
 }
 
+
 .contacts__address {
   font-style: normal;
 
@@ -139,6 +168,7 @@
     max-width: 257px;
   }
 }
+
 
 .contacts__button {
   display: block;
@@ -164,6 +194,7 @@
     padding: 0;
   }
 }
+
 
 .contacts__iframe {
   width: 320px;

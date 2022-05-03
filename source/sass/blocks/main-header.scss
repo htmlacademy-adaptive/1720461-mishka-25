@@ -1,5 +1,6 @@
 @import "global/variables.scss";
 
+
 .main-header {
   @media (min-width: $width-tablet) {
     position: relative;
@@ -7,10 +8,11 @@
   }
 }
 
+
 .main-header__wrapper {
   display: flex;
   flex-direction: column;
-  width: 320px;
+  min-width: 320px;
   margin: 0 auto;
   box-sizing: border-box;
 
@@ -26,6 +28,7 @@
     padding-left: 75px;
   }
 }
+
 
 .main-header__logo-wrapper {
   display: flex;
@@ -47,6 +50,7 @@
     min-width: 13%;
   }
 }
+
 
 .main-header__logo {
   height: 35px;

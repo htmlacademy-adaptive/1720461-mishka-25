@@ -1,28 +1,40 @@
 @import "global/variables.scss";
 
+
 .promo {
-  background-color: $color-bg-primary;
-  background-image: url("../../img/backgrounds/bg-image-house-shelf-mobile.jpg");
-  background-repeat: no-repeat;
-  background-position: 50% 0;
-  background-size: cover;
+  &--main {
+    background-color: $color-bg-primary;
+    background-image: url("../../img/backgrounds/bg-image-house-shelf-mobile.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
 
-  @media (min-width: $width-tablet) {
-    background-image: url("../../img/backgrounds/bg-image-house-shelf-tablet.jpg");
+    @media (min-width: $width-tablet) {
+      background-image: url("../../img/backgrounds/bg-image-house-shelf-tablet.jpg");
+    }
+
+    @media (min-width: $width-desktop) {
+      background-image: url("../../img/backgrounds/bg-image-house-shelf-desktop.jpg");
+    }
   }
 
-  @media (min-width: $width-desktop) {
-    background-image: url("../../img/backgrounds/bg-image-house-shelf-desktop.jpg");
-  }
-
-  &--form {
-    background-color: $color-bg-form-secondary;
-  }
-
+  &--form,
   &--catalog {
     background-color: $color-bg-form-secondary;
+
+    @media (min-width: $width-tablet) {
+      background-image: url("../../img/zigzag-fill-tablet.svg");
+      background-repeat: repeat-x;
+      background-position: 0 101%;
+      z-index: 5;
+    }
+
+    @media (min-width: $width-desktop) {
+      background-image: url("../../img/zigzag-fill-desktop.svg");
+    }
   }
 }
+
 
 .promo__wrapper {
   width: 320px;

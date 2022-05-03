@@ -1,5 +1,6 @@
 @import "global/variables.scss";
 
+
 .main-navigation__toogle {
   position: absolute;
   top: 26px;
@@ -17,9 +18,12 @@
   }
 }
 
+
 .main-navigation__wrapper {
   background-color: $color-bg-primary;
+  margin: 0 auto;
 }
+
 
 .main-navigation__wrapper-layout {
   @media (min-width: $width-tablet) {
@@ -45,6 +49,7 @@
   }
 }
 
+
 .main-navigation--closed .main-navigation__toogle::before {
   content: "";
   position: absolute;
@@ -57,6 +62,7 @@
     0 6px 0 0 $color-toogle-primary,
     0 12px 0 0 $color-toogle-primary;
 }
+
 
 .main-navigation--opened .main-navigation__toogle {
   &::before,
@@ -80,13 +86,21 @@
   }
 }
 
+
 @media (max-width: $width-mobile-only) {
+  .main-navigation--opened {
+    margin: 0 auto;
+  }
+
   .main-navigation--closed .main-navigation__wrapper {
     display: none;
   }
 
   .main-navigation--opened .main-navigation__wrapper {
     position: absolute;
+    top: 81px;
+    left: 0;
+    width: 100%;
   }
 
   .main-navigation--nojavascript .main-navigation__toogle {
@@ -98,12 +112,14 @@
   }
 }
 
+
 .main-navigation__list {
   @media (min-width: $width-tablet) {
     display: flex;
     flex-wrap: wrap;
   }
 }
+
 
 .main-navigation__promo-delivery {
   display: none;

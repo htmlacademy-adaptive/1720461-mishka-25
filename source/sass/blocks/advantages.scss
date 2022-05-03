@@ -1,5 +1,6 @@
 @import "global/variables.scss";
 
+
 .advantages {
   background-image: url("../../img/zigzag-line-mobile.svg");
   background-repeat: repeat-x;
@@ -12,6 +13,7 @@
     background-image: url("../../img/zigzag-line-desktop.svg");
   }
 }
+
 
 .advantages__wrapper {
   width: 320px;
@@ -34,6 +36,7 @@
   }
 }
 
+
 .advantages__title {
   padding-top: 37px;
 
@@ -48,6 +51,7 @@
   }
 }
 
+
 .advantages__list {
   @media (min-width: $width-tablet) {
     display: grid;
@@ -55,6 +59,7 @@
     column-gap: 70px;
   }
 }
+
 
 .advantages__item {
   padding-top: 83px;

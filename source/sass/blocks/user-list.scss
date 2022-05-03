@@ -1,5 +1,6 @@
 @import "global/variables.scss";
 
+
 .user-list {
   @media (min-width: $width-tablet) {
     grid-area: user;
@@ -7,11 +8,13 @@
   }
 }
 
+
 .user-list .user-list__link {
   @media (min-width: $width-tablet) {
     align-items: center;
   }
 }
+
 
 .user-list__item {
   min-width: 320px;
@@ -20,6 +23,11 @@
   padding-left: 30px;
   border-top: 1px solid $color-border-navigation;
   border-bottom: 1px solid $color-border-navigation;
+
+  @media (max-width: $width-mobile-only) {
+    width: 320px;
+    margin: 0 auto;
+  }
 
   @media (min-width: $width-tablet) {
     display: flex;
@@ -30,6 +38,7 @@
     border-left: 2px solid $color-border-navigation;
   }
 }
+
 
 .user-list__link {
   position: relative;
@@ -48,6 +57,7 @@
   }
 }
 
+
 .user-list__search-link {
   @media (min-width: $width-tablet) {
     width: 18px;
@@ -57,12 +67,14 @@
   }
 }
 
+
 .user-list__cart-link {
   @media (min-width: $width-tablet) {
     margin: auto;
     padding: 32px 0 32px 30px;
   }
 }
+
 
 .user-list__link-search-icon,
 .user-list__link-cart-icon {
@@ -71,11 +83,13 @@
   left: 0;
 }
 
+
 .user-list__link-search-icon {
   @media (min-width: $width-tablet) {
     position: static;
   }
 }
+
 
 .user-list__link-cart-icon {
   @media (min-width: $width-tablet) {
@@ -83,6 +97,7 @@
     margin-right: 30px;
   }
 }
+
 
 .user-list__link-description {
   @media (min-width: $width-tablet) {
