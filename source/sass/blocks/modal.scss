@@ -1,0 +1,111 @@
+@import "global/variables.scss";
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba($color-bg-primary, 0.9);
+  z-index: 100;
+}
+
+.modal__container {
+  min-width: 320px;
+  height: auto;
+  margin: auto;
+  margin-top: 150px;
+  box-sizing: border-box;
+  padding: 29px 30px 46px 30px;
+  background-color: $color-bg-primary;
+  border-top: 1px solid $color-border-modal;
+  box-shadow: 0 5px 10px rgba($color-box-shadow-modal, 0.25);
+
+  @media (min-width: $width-tablet) {
+    min-width: auto;
+    max-width: 566px;
+    border: none;
+    outline: 1px solid $color-border-modal;
+    box-shadow: 0 5px 10px rgba($color-box-shadow-modal, 0.25);
+  }
+}
+
+.modal__title {
+  max-width: 176px;
+  margin: 0 auto;
+  padding-bottom: 14px;
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+
+  @media (min-width: $width-tablet) {
+    max-width: 381px;
+    padding-bottom: 11px;
+    font-size: 30px;
+    line-height: 57px;
+  }
+}
+
+.modal__text-content {
+  max-width: 176px;
+  margin: 0 auto;
+  padding-bottom: 22px;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 400;
+  text-align: center;
+
+  @media (min-width: $width-tablet) {
+    padding-bottom: 20px;
+    font-size: 17px;
+    line-height: 30px;
+  }
+}
+
+.modal_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 260px;
+  margin: 0 auto;
+  margin-bottom: 31px;
+  padding: 0;
+  list-style-type: none;
+
+  @media (min-width: $width-tablet) {
+    max-width: 350px;
+  }
+}
+
+.modal__item {
+  min-width: 82px;
+  min-height: 52px;
+  outline: 2px solid rgba($color-border-secondary, 0.1);
+  outline-offset: -2px;
+
+  @media (min-width: $width-tablet) {
+    min-width: 112px;
+  }
+}
+
+.modal__link {
+  display: block;
+  padding: 18px 21px;
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.modal__button {
+  min-width: 260px;
+  margin: 0 auto;
+  box-sizing: border-box;
+
+  @media (min-width: $width-tablet) {
+    min-width: 350px;
+  }
+}

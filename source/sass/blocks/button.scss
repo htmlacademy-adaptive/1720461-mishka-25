@@ -13,4 +13,13 @@
   color: $color-text-secondary;
   background-color: $color-bg-primary;
   border: 2px solid $color-border-secondary;
+  cursor: pointer;
+
+  &--secondary {
+    color: $color-text-inverse;
+    text-transform: uppercase;
+    background-color: $color-brand;
+    border: none;
+    cursor: pointer;
+  }
 }
