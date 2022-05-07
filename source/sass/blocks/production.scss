@@ -75,19 +75,29 @@
   }
 }
 
+.production__image-wrapper {
+  margin: 0;
+
+  @media (min-width: $width-tablet) {
+    order: -1;
+  }
+
+  @media (min-width: $width-desktop) {
+    grid-area: image;
+  }
+}
+
 .production__image {
   display: block;
   padding-bottom: 35px;
 
   @media (min-width: $width-tablet) {
-    order: -1;
     min-width: 668px;
     min-height: 455px;
     padding-bottom: 41px;
   }
 
   @media (min-width: $width-desktop) {
-    grid-area: image;
     min-width: 682px;
     min-height: 455px;
     padding-bottom: 0;

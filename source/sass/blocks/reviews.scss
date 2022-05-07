@@ -16,8 +16,12 @@
     padding-left: 50px;
     background-image: url("../../img/backgrounds/bg-lace-tablet.jpg");
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: 350px 457px;
     background-position: 0 0;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/backgrounds/bg-lace-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: $width-desktop) {

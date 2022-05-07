@@ -17,9 +17,11 @@
     <div class="main-header__wrapper">
       <div class="main-header__logo-wrapper">
         <a class="main-header__logo logo" href="index.html">
-          <img class="logo__image-mobile" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип магазина MISHKA.">
-          <img class="logo__image-tablet" src="img/logo-tablet.svg" width="114" height="46" alt="Логотип магазина MISHKA.">
-          <img class="logo__image-desktop" src="img/logo-desktop.svg" width="149" height="72" alt="Логотип магазина MISHKA.">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img class="logo__image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип магазина MISHKA.">
+          </picture>
         </a>
       </div>
       <nav class="main-navigation main-navigation--closed main-navigation--nojavascript ">
@@ -87,7 +89,11 @@
           <li class="catalog-products-list__item item product-card">
             <article class="product-card__wrapper">
               <a class="product-card__link link" href="#">
-                <img class="product-card__image" src="img/products/product-image-blue-toy-mobile.jpg" width="260" height="195" alt="Вязанная детская игрушка голубого цвета в виде зайчика.">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/products/product-image-blue-toy-desktop.jpg 1x, img/products/product-image-blue-toy-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/products/product-image-blue-toy-tablet.jpg 1x, img/products/product-image-blue-toy-tablet@2x.jpg 2x">
+                  <img class="product-card__image" src="img/products/product-image-blue-toy-mobile.jpg" width="260" height="195" srcset="img/products/product-image-blue-toy-mobile@2x.jpg 2x" alt="Вязанная детская игрушка голубого цвета в виде зайчика.">
+                </picture>
               </a>
               <div class="product-card__layout-wrapper">
                 <a class="product-card__link link" href="">
@@ -110,7 +116,11 @@
           <li class="catalog-products-list__item item product-card">
             <article class="product-card__wrapper">
               <a class="product-card__link link" href="#">
-                <img class="product-card__image" src="img/products/product-image-white-orange-basket-mobile.jpg" width="260" height="195" alt="Вязанная корзинка бело-оранжевого цвета.">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/products/product-image-white-orange-basket-desktop.jpg 1x, img/products/product-image-white-orange-basket-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/products/product-image-white-orange-basket-tablet.jpg 1x, img/products/product-image-white-orange-basket-tablet@2x.jpg 2x">
+                  <img class="product-card__image" src="img/products/product-image-white-orange-basket-mobile.jpg" width="260" height="195" srcset="img/products/product-image-white-orange-basket-mobile@2x.jpg 2x" alt="Вязанная корзинка бело-оранжевого цвета.">
+                </picture>
               </a>
               <div class="product-card__layout-wrapper">
                 <a class="product-card__link link" href="">
@@ -133,7 +143,11 @@
           <li class="catalog-products-list__item item product-card">
             <article class="product-card__wrapper">
               <a class="product-card__link link" href="#">
-                <img class="product-card__image" src="img/products/product-image-big-basket-with-toys-mobile.jpg" width="260" height="195" alt="Большая, вязанная корзинка бело-зеленного цвета, наполненная игрушками.">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/products/product-image-big-basket-with-toys-desktop.jpg 1x, img/products/product-image-big-basket-with-toys-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/products/product-image-big-basket-with-toys-tablet.jpg 1x, img/products/product-image-big-basket-with-toys-tablet@2x.jpg 2x">
+                  <img class="product-card__image" src="img/products/product-image-big-basket-with-toys-mobile.jpg" width="260" height="195" srcset="img/products/product-image-big-basket-with-toys-mobile@2x.jpg 2x" alt="Большая, вязанная корзинка бело-зеленного цвета, наполненная игрушками.">
+                </picture>
               </a>
               <div class="product-card__layout-wrapper">
                 <a class="product-card__link link" href="">
@@ -160,7 +174,13 @@
       <div class="production__wrapper">
         <article class="production__article">
           <h2 class="production__title title title--medium">Процесс производства</h2>
-          <img class="production__image" src="img/products/product-image-green-basket-mobile.jpg" width="260" height="150" alt="Вязанная зеленая корзинка.">
+          <p class="production__image-wrapper">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/products/product-image-green-basket-desktop.jpg 1x, img/products/product-image-green-basket-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/products/product-image-green-basket-tablet.jpg 1x, img/products/product-image-green-basket-tablet@2x.jpg 2x">
+              <img class="production__image" src="img/products/product-image-green-basket-mobile.jpg" width="260" height="150" srcset="img/products/product-image-green-basket-mobile@2x.jpg 2x" alt="Вязанная зеленая корзинка.">
+            </picture>
+          </p>
           <p class="production__text-content">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
           <a class="production__order-button button button--primary link" href="#">Сделать заказ</a>
         </article>

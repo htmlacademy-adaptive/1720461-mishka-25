@@ -17,9 +17,11 @@
     <div class="main-header__wrapper">
       <div class="main-header__logo-wrapper">
         <a class="main-header__logo logo" href="index.html">
-          <img class="logo__image-mobile" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип магазина MISHKA.">
-          <img class="logo__image-tablet" src="img/logo-tablet.svg" width="114" height="46" alt="Логотип магазина MISHKA.">
-          <img class="logo__image-desktop" src="img/logo-desktop.svg" width="149" height="72" alt="Логотип магазина MISHKA.">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img class="logo__image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип магазина MISHKA.">
+          </picture>
         </a>
       </div>
       <nav class="main-navigation main-navigation--closed main-navigation--nojavascript ">
