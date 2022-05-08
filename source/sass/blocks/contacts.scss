@@ -11,6 +11,9 @@
 
   @media (min-width: $width-desktop) {
     background-image: url("../../img/zigzag-line-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: 1050px;
+    background-position: top center;
   }
 }
 
@@ -172,26 +175,27 @@
 
 .contacts__button {
   display: block;
-  min-width: 260px;
+  max-width: 260px;
+  margin: 0 auto;
   margin-bottom: 39px;
-  margin-right: auto;
-  margin-left: auto;
   padding: 15px 38px;
+  box-sizing: border-box;
   font-size: 18px;
   line-height: 20px;
   font-weight: 700;
   text-align: center;
 
   @media (min-width: $width-tablet) {
+    max-width: 230px;
     margin-top: 55px;
     margin-bottom: 57px;
+    padding: 16px 28px;
   }
 
   @media (min-width: $width-desktop) {
     grid-area: button;
     margin: 0;
-    width: 230px;
-    padding: 0;
+    padding: 14px 27px;
   }
 }
 

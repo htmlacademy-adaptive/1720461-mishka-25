@@ -10,4 +10,11 @@
     width: 149px;
     height: 72px;
   }
+
+  &--footer {
+    @media (min-width: $width-tablet) {
+      width: 102px;
+      height: 34px;
+    }
+  }
 }

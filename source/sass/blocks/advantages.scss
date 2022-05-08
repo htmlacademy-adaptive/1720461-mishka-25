@@ -11,6 +11,9 @@
 
   @media (min-width: $width-desktop) {
     background-image: url("../../img/zigzag-line-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: 1050px;
+    background-position: top center;
   }
 }
 

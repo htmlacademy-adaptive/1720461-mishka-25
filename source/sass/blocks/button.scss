@@ -9,14 +9,16 @@
   font-size: 17px;
   line-height: 16px;
   font-weight: 700;
-  text-transform: uppercase;
   color: $color-text-secondary;
+  text-decoration: none;
+  text-transform: uppercase;
   background-color: $color-bg-primary;
   border: 2px solid $color-border-secondary;
   cursor: pointer;
 
   &--secondary {
     color: $color-text-inverse;
+    text-decoration: none;
     text-transform: uppercase;
     background-color: $color-brand;
     border: none;

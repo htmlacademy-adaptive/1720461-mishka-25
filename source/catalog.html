@@ -96,7 +96,7 @@
                 </picture>
               </a>
               <div class="product-card__layout-wrapper">
-                <a class="product-card__link link" href="">
+                <a class="product-card__link link" href="#">
                   <h3 class="product-card__title title title--small">Зайчик-попрыгайчик</h3>
                 </a>
                 <p class="product-card__text-description">Рост 30 см, вес 200 г</p>
@@ -123,7 +123,7 @@
                 </picture>
               </a>
               <div class="product-card__layout-wrapper">
-                <a class="product-card__link link" href="">
+                <a class="product-card__link link" href="#">
                   <h3 class="product-card__title title title--small">Корзинка для белья</h3>
                 </a>
                 <p class="product-card__text-description">Диаметр 15 см, высота 10 см</p>
@@ -150,7 +150,7 @@
                 </picture>
               </a>
               <div class="product-card__layout-wrapper">
-                <a class="product-card__link link" href="">
+                <a class="product-card__link link" href="#">
                   <h3 class="product-card__title title title--small">Большая корзинка для игрушек</h3>
                 </a>
                 <p class="product-card__text-description">Диаметр 30 см, высота 30</p>
@@ -191,6 +191,12 @@
 
   <footer class="main-footer">
     <div class="main-footer__wrapper">
+      <div class="main-footer__logo-wrapper">
+        <a class="main-footer__logo logo" href="index.html">
+            <img class="logo__image--footer" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип магазина MISHKA.">
+        </a>
+      </div>
+
       <div class="main-footer__social social">
         <h2 class="visually-hidden">Наши социальные сети</h2>
         <ul class="social__list list">
@@ -234,6 +240,28 @@
 
     </div>
   </footer>
+
+  <div class="modal">
+    <div class="modal__container">
+      <p class="modal__title">Добавить в&nbsp;корзину</p>
+      <p class="modal__text-content">Выберите размер:</p>
+      <div class="modal_list-wrapper">
+        <ul class="modal_list">
+          <li class="modal__item modal__item--size-s">
+            <a class="modal__link link" href="#">S</a>
+          </li>
+          <li class="modal__item modal__item--size-m">
+            <a class="modal__link link" href="#">M</a>
+          </li>
+          <li class="modal__item modal__item--size-l">
+            <a class="modal__link link" href="#">L</a>
+          </li>
+        </ul>
+      </div>
+      <button class="modal__button button button--secondary">Добавить</button>
+    </div>
+</div>
+
   <script src="js/script.js"></script>
 </body>
 </html>

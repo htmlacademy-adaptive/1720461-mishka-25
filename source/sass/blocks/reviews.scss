@@ -113,15 +113,11 @@
 
 .reviews__control {
   display: flex;
+  justify-content: flex-end;
   padding-bottom: 38px;
 
   @media (min-width: $width-tablet) {
     grid-area: control;
-  }
-
-  @media (min-width: $width-desktop) {
-    // top: 320px;
-    // right: 65px;
   }
 }
 
@@ -131,9 +127,11 @@
   padding: 12px 38px;
   background-color: $color-bg-primary;
   border: 1px solid $color-border-control-button;
+  cursor: pointer;
 
   @media (min-width: $width-tablet) {
     padding-right: 18px;
+    padding-left: 18px;
     border: none;
   }
 
@@ -165,6 +163,7 @@
   min-width: 260px;
   margin-bottom: 45px;
   padding: 15px 65px;
+  box-sizing: border-box;
   font-size: 18px;
   line-height: 20px;
   font-weight: 700;
