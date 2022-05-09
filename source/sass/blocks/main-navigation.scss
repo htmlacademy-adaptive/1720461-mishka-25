@@ -13,6 +13,11 @@
   cursor: pointer;
   border: none;
 
+  &:focus-visible {
+    border: none;
+    outline: none;
+  }
+
   @media (min-width: $width-tablet) {
     display: none;
   }
@@ -64,6 +69,30 @@
 }
 
 
+.main-navigation--closed .main-navigation__toogle:hover::before {
+  background-color: rgba($color-toogle-primary, 0.6);
+  box-shadow:
+    0 6px 0 0 rgba($color-toogle-primary, 0.6),
+    0 12px 0 0 rgba($color-toogle-primary, 0.6);
+}
+
+
+.main-navigation--closed .main-navigation__toogle:active::before {
+  background-color: rgba($color-toogle-primary, 0.3);
+  box-shadow:
+    0 6px 0 0 rgba($color-toogle-primary, 0.3),
+    0 12px 0 0 rgba($color-toogle-primary, 0.3);
+}
+
+
+.main-navigation--closed .main-navigation__toogle:focus-visible::before {
+  background-color: $color-intense;
+  box-shadow:
+    0 6px 0 0 $color-intense,
+    0 12px 0 0 $color-intense;
+}
+
+
 .main-navigation--opened .main-navigation__toogle {
   &::before,
   &::after {
@@ -84,6 +113,24 @@
   &::after {
     transform: rotate(-45deg);
   }
+}
+
+
+.main-navigation--opened .main-navigation__toogle:hover::before,
+.main-navigation--opened .main-navigation__toogle:hover::after {
+  background-color: rgba($color-toogle-primary, 0.6);
+}
+
+
+.main-navigation--opened .main-navigation__toogle:active::before,
+.main-navigation--opened .main-navigation__toogle:active::after {
+  background-color: rgba($color-toogle-primary, 0.3);
+}
+
+
+.main-navigation--opened .main-navigation__toogle:focus-visible::before,
+.main-navigation--opened .main-navigation__toogle:focus-visible::after {
+  background-color: $color-intense;
 }
 
 

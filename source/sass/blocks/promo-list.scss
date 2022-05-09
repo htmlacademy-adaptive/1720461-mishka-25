@@ -1,5 +1,6 @@
 @import "global/variables.scss";
 
+
 .promo-list {
   display: none;
 
@@ -11,13 +12,29 @@
   }
 }
 
+
 .promo-list__item {
   @media (min-width: $width-desktop) {
     display: flex;
   }
 }
 
+
 .promo-list__link {
+  &:hover {
+    color: rgba($color-text-primary, 0.6);
+  }
+
+  &:active {
+    color: rgba($color-text-primary, 0.3);
+  }
+
+  &:focus-visible {
+    color: $color-intense;
+    border: none;
+    outline: none;
+  }
+
   @media (min-width: $width-desktop) {
     display: block;
     margin: auto;
@@ -30,6 +47,7 @@
     background-color: transparent;
   }
 }
+
 
 .promo-list__sale-link {
   @media (min-width: $width-desktop) {
