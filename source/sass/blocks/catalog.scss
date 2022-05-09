@@ -58,6 +58,8 @@
 
 .catalog__item {
   display: block;
+  min-width: 320px;
+  min-height: 103px;
   background-repeat: no-repeat;
   background-size: auto;
   background-position: right bottom;
@@ -67,7 +69,7 @@
     min-height: 127px;
     // декоративная волна видна только если элементу поставить z-index -1,
     // но тогда перестает нажиматься ссылка в этом элементе
-    z-index: -1;
+    // z-index: -1;
   }
 
   @media (min-width: $width-desktop) {
@@ -81,8 +83,22 @@
     background-image: url("../../img/icons/interior.svg");
     background-position: 88% 50%;
 
+    &:hover {
+      min-height: 108px;
+    }
+
+    @media (min-width: $width-tablet) {
+      &:hover {
+        min-height: 132px;
+      }
+    }
+
     @media (min-width: $width-desktop) {
       background-position: 88% 40%;
+
+      &:hover {
+        min-height: 141px;
+      }
     }
   }
 
@@ -91,8 +107,22 @@
     background-image: url("../../img/icons/toy.svg");
     background-position: 90% 50%;
 
+    &:hover {
+      min-height: 108px;
+    }
+
+    @media (min-width: $width-tablet) {
+      &:hover {
+        min-height: 132px;
+      }
+    }
+
     @media (min-width: $width-desktop) {
       background-position: 88% 40%;
+
+      &:hover {
+        min-height: 141px;
+      }
     }
   }
 }

@@ -16,6 +16,25 @@
   border: 2px solid $color-border-secondary;
   cursor: pointer;
 
+  &--primary {
+    &:hover {
+      color: $color-text-inverse;
+      background-color: $color-bg-button-hover;
+    }
+
+    &:active {
+      color: rgba($color-text-inverse, 0.3);
+      background-color: $color-bg-button-hover;
+    }
+
+    &:focus-visible {
+      color: $color-intense;
+      background-color: none;
+      border: 2px solid $color-intense;
+      outline: none;
+    }
+  }
+
   &--secondary {
     color: $color-text-inverse;
     text-decoration: none;

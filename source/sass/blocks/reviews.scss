@@ -129,6 +129,12 @@
   border: 1px solid $color-border-control-button;
   cursor: pointer;
 
+  &:focus-visible {
+    fill: $color-intense;
+    border: none;
+    outline: none;
+  }
+
   @media (min-width: $width-tablet) {
     padding-right: 18px;
     padding-left: 18px;
@@ -155,6 +161,14 @@
 
 .reviews__control-button-icon {
   display: block;
+
+  &:hover {
+    fill: rgba($color-text-primary, 0.6);
+  }
+
+  &:active {
+    fill: rgba($color-text-primary, 0.3);
+  }
 }
 
 

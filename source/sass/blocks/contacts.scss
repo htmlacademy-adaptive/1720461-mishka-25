@@ -119,6 +119,21 @@
 .contacts__e-mail {
   padding-bottom: 3px;
   border-bottom: 1px solid $color-text-brand-underline;
+
+  &:hover {
+    color: $color-intense-secondary;
+    border-color: $color-text-brand-underline-secondary;
+  }
+
+  &:active {
+    border: none;
+  }
+
+  &:focus-visible {
+    color: $color-intense;
+    border: none;
+    outline: none;
+  }
 }
 
 
