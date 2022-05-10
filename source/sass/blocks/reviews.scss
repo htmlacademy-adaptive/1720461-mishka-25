@@ -16,8 +16,12 @@
     padding-left: 50px;
     background-image: url("../../img/backgrounds/bg-lace-tablet.jpg");
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: 350px 457px;
     background-position: 0 0;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/backgrounds/bg-lace-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: $width-desktop) {
@@ -109,15 +113,11 @@
 
 .reviews__control {
   display: flex;
+  justify-content: flex-end;
   padding-bottom: 38px;
 
   @media (min-width: $width-tablet) {
     grid-area: control;
-  }
-
-  @media (min-width: $width-desktop) {
-    // top: 320px;
-    // right: 65px;
   }
 }
 
@@ -127,9 +127,17 @@
   padding: 12px 38px;
   background-color: $color-bg-primary;
   border: 1px solid $color-border-control-button;
+  cursor: pointer;
+
+  &:focus-visible {
+    fill: $color-intense;
+    border: none;
+    outline: none;
+  }
 
   @media (min-width: $width-tablet) {
     padding-right: 18px;
+    padding-left: 18px;
     border: none;
   }
 
@@ -153,6 +161,14 @@
 
 .reviews__control-button-icon {
   display: block;
+
+  &:hover {
+    fill: rgba($color-text-primary, 0.6);
+  }
+
+  &:active {
+    fill: rgba($color-text-primary, 0.3);
+  }
 }
 
 
@@ -161,6 +177,7 @@
   min-width: 260px;
   margin-bottom: 45px;
   padding: 15px 65px;
+  box-sizing: border-box;
   font-size: 18px;
   line-height: 20px;
   font-weight: 700;

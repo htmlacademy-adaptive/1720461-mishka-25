@@ -15,7 +15,8 @@
 
   @media (min-width: $width-tablet) {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
     width: $width-tablet;
     box-sizing: border-box;
     padding-right: 50px;
@@ -24,12 +25,24 @@
 
   @media (min-width: $width-desktop) {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
     width: $width-desktop;
     box-sizing: border-box;
     padding-right: 75px;
     padding-left: 75px;
   }
+}
+
+.main-footer__logo-wrapper {
+  @media (max-width: $width-mobile-only) {
+    display: none;
+  }
+}
+
+.main-footer__logo {
+  display: block;
+  height: 35px;
 }
 
 .main-footer__copyright {

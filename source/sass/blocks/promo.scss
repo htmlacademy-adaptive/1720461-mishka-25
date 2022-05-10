@@ -9,12 +9,24 @@
     background-position: 50% 0;
     background-size: cover;
 
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/backgrounds/bg-image-house-shelf-mobile@2x.jpg");
+    }
+
     @media (min-width: $width-tablet) {
       background-image: url("../../img/backgrounds/bg-image-house-shelf-tablet.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../img/backgrounds/bg-image-house-shelf-tablet@2x.jpg");
+      }
     }
 
     @media (min-width: $width-desktop) {
       background-image: url("../../img/backgrounds/bg-image-house-shelf-desktop.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../img/backgrounds/bg-image-house-shelf-desktop@2x.jpg");
+      }
     }
   }
 

@@ -1,18 +1,15 @@
 @import "global/variables.scss";
 
 
-.catalog {
-  @media (min-width: $width-tablet) {
-    background-image: url("../../img/zigzag-fill-tablet.svg");
-    background-repeat: repeat-x;
-    background-position: 0 101%;
-    z-index: 5;
-  }
+// .catalog {
+//   @media (min-width: $width-tablet) {
 
-  @media (min-width: $width-desktop) {
-    background-image: url("../../img/zigzag-fill-desktop.svg");
-  }
-}
+//   }
+
+//   @media (min-width: $width-desktop) {
+
+//   }
+// }
 
 
 .catalog__wrapper {
@@ -44,16 +41,25 @@
   @media (min-width: $width-tablet) {
     flex-direction: row;
     margin: 0;
+
+    background-image: url("../../img/zigzag-fill-tablet.svg");
+    background-repeat: repeat-x;
+    background-position: 0 101%;
+    // z-index: 5;
   }
 
   @media (min-width: $width-desktop) {
     justify-content: center;
+
+    background-image: url("../../img/zigzag-fill-desktop.svg");
   }
 }
 
 
 .catalog__item {
   display: block;
+  min-width: 320px;
+  min-height: 103px;
   background-repeat: no-repeat;
   background-size: auto;
   background-position: right bottom;
@@ -61,7 +67,9 @@
   @media (min-width: $width-tablet) {
     min-width: 334px;
     min-height: 127px;
-    z-index: -1;
+    // декоративная волна видна только если элементу поставить z-index -1,
+    // но тогда перестает нажиматься ссылка в этом элементе
+    // z-index: -1;
   }
 
   @media (min-width: $width-desktop) {
@@ -75,8 +83,22 @@
     background-image: url("../../img/icons/interior.svg");
     background-position: 88% 50%;
 
+    &:hover {
+      min-height: 108px;
+    }
+
+    @media (min-width: $width-tablet) {
+      &:hover {
+        min-height: 132px;
+      }
+    }
+
     @media (min-width: $width-desktop) {
       background-position: 88% 40%;
+
+      &:hover {
+        min-height: 141px;
+      }
     }
   }
 
@@ -85,8 +107,22 @@
     background-image: url("../../img/icons/toy.svg");
     background-position: 90% 50%;
 
+    &:hover {
+      min-height: 108px;
+    }
+
+    @media (min-width: $width-tablet) {
+      &:hover {
+        min-height: 132px;
+      }
+    }
+
     @media (min-width: $width-desktop) {
       background-position: 88% 40%;
+
+      &:hover {
+        min-height: 141px;
+      }
     }
   }
 }

@@ -1,37 +1,20 @@
 @import "global/variables.scss";
 
-.logo__image-mobile {
-  display: block;
-
+.logo__image {
   @media (min-width: $width-tablet) {
-    display: none;
+    width: 114px;
+    height: 46px;
   }
 
   @media (min-width: $width-desktop) {
-    display: none;
-  }
-}
-
-.logo__image-tablet {
-  display: none;
-
-  @media (min-width: $width-tablet) {
-    display: block;
+    width: 149px;
+    height: 72px;
   }
 
-  @media (min-width: $width-desktop) {
-    display: none;
-  }
-}
-
-.logo__image-desktop {
-  display: none;
-
-  @media (min-width: $width-tablet) {
-    display: none;
-  }
-
-  @media (min-width: $width-desktop) {
-    display: block;
+  &--footer {
+    @media (min-width: $width-tablet) {
+      width: 102px;
+      height: 34px;
+    }
   }
 }

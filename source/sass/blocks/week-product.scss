@@ -62,10 +62,11 @@
       "table image image"
       "price image image"
       "button image image";
+    padding-left: 0;
   }
 
   @media (min-width: $width-desktop) {
-    grid-template-columns: 175px 292px 200px 380px;
+    grid-template-columns: 292px 200px 380px;
     grid-template-rows:
       207px
       130px
@@ -73,11 +74,12 @@
       57px
       125px;
     grid-template-areas:
-      ". title title title"
-      ". text image image"
-      ". table image image"
-      ". price image image"
-      ". button image image";
+      "title title title"
+      "text image image"
+      "table image image"
+      "price image image"
+      "button image image";
+    padding-left: 175px;
   }
 }
 
@@ -94,6 +96,7 @@
   @media (min-width: $width-desktop) {
     padding-top: 115px;
     padding-bottom: 35px;
+    z-index: 1;
   }
 }
 
@@ -148,11 +151,19 @@
   padding-bottom: 26px;
 
   @media (min-width: $width-tablet) {
+    min-width: 334px;
+    min-height: 404px;
+    padding-top: 0;
     padding-left: 42px;
   }
 
   @media (min-width: $width-desktop) {
+    grid-area: image;
+    min-width: 525px;
+    min-height: 636px;
+    margin-top: -173px;
     padding-left: 58px;
+    // z-index: -1;
   }
 }
 
