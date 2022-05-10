@@ -42,5 +42,20 @@
     background-color: $color-brand;
     border: none;
     cursor: pointer;
+
+    &:hover {
+      background-color: rgba($color-brand, 0.6);
+    }
+
+    &:active {
+      background-color: rgba($color-brand, 0.3);
+    }
+
+    &:focus-visible {
+      color: $color-intense;
+      background-color: $color-bg-primary;
+      outline: 2px solid $color-intense;
+      outline-offset: -2px;
+    }
   }
 }
