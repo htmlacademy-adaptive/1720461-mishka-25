@@ -1,5 +1,6 @@
 @import "global/variables.scss";
 
+
 .order-form-name__field,
 .order-form-surname__field,
 .order-form-patronymic__field {
@@ -8,4 +9,8 @@
   font-weight: 700;
   color: $color-text-primary;
   background-color: $color-bg-primary;
+
+  &:hover {
+    color: $color-brand;
+  }
 }

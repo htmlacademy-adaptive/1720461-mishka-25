@@ -252,6 +252,16 @@
   border: none;
   border-bottom: 2px solid $color-border-primary;
 
+  &:hover,
+  &:active,
+  &:focus {
+    border-bottom: 2px solid $color-brand;
+  }
+
+  &:focus-visible {
+    outline: none;
+  }
+
   @media (min-width: $width-tablet) {
     flex-grow: 1;
     font-size: 19px;
@@ -334,6 +344,7 @@
   border: none;
   border-bottom: 2px solid $color-border-primary;
 
+
   @media (min-width: $width-tablet) {
     min-width: 501px;
     font-size: 19px;
@@ -351,6 +362,16 @@
   background-repeat: no-repeat;
   background-position: 96% 40%;
 
+  &:hover,
+  &:active,
+  &:focus {
+    border-bottom: 2px solid $color-brand;
+  }
+
+  &:focus-visible {
+    outline: none;
+  }
+
   @media (min-width: $width-tablet) {
     background-position: 94% 50%;
   }
@@ -366,6 +387,16 @@
   background-image: url("../../img/icons/email.svg");
   background-repeat: no-repeat;
   background-position: 98% 40%;
+
+  &:hover,
+  &:active,
+  &:focus {
+    border-bottom: 2px solid $color-brand;
+  }
+
+  &:focus-visible {
+    outline: none;
+  }
 
   @media (min-width: $width-tablet) {
     background-position: 94.5% 55%;
@@ -385,6 +416,16 @@
   padding-right: 17px;
   padding-left: 17px;
   border: 2px solid $color-border-primary;
+
+  &:hover,
+  &:active,
+  &:focus {
+    border: 2px solid $color-brand;
+  }
+
+  &:focus-visible {
+    outline: none;
+  }
 }
 
 

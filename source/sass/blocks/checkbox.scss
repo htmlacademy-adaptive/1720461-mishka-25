@@ -47,3 +47,35 @@
     font-size: 19px;
   }
 }
+
+
+.checkbox__custom + .checkbox__field:hover::before {
+  background-image: url("../../img/icons/checkbox-empty-hover.svg");
+}
+
+
+.checkbox__custom + .checkbox__field:active::before {
+  background-image: url("../../img/icons/checkbox-empty-active.svg");
+}
+
+
+.checkbox__custom:focus + .checkbox__field::before {
+  outline: 2px solid $color-brand;
+  outline-offset: -2px;
+}
+
+
+.checkbox__custom:focus-visible + .checkbox__field::before {
+  border: none;
+  outline: none;
+}
+
+
+.checkbox__custom:checked + .checkbox__field:hover::before {
+  background-image: url("../../img/icons/checkbox-checked-hover.svg");
+}
+
+
+.checkbox__custom:checked + .checkbox__field:active::before {
+  background-image: url("../../img/icons/checkbox-checked-active.svg");
+}
