@@ -1,7 +1,7 @@
 @import "global/variables.scss";
 
 
-.main-header__logo[href] .logo-header {
+.main-header__logo[href] .logo__header {
   &:hover {
     opacity: 0.6;
   }
@@ -12,7 +12,7 @@
 }
 
 
-.logo-header {
+.logo__header {
   &--mobile {
     @media (min-width: $width-tablet) {
       display: none;
