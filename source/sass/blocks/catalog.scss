@@ -1,17 +1,6 @@
 @import "global/variables.scss";
 
 
-// .catalog {
-//   @media (min-width: $width-tablet) {
-
-//   }
-
-//   @media (min-width: $width-desktop) {
-
-//   }
-// }
-
-
 .catalog__wrapper {
   width: 320px;
   margin: 0 auto;
@@ -57,6 +46,7 @@
 
 
 .catalog__item {
+  position: relative;
   display: block;
   min-width: 320px;
   min-height: 103px;
@@ -80,8 +70,6 @@
   &--interior {
     color: $color-text-inverse;
     background-color: $color-brand;
-    background-image: url("../../img/icons/interior.svg");
-    background-position: 88% 50%;
 
     &:hover {
       min-height: 108px;
@@ -94,8 +82,6 @@
     }
 
     @media (min-width: $width-desktop) {
-      background-position: 88% 40%;
-
       &:hover {
         min-height: 141px;
       }
@@ -104,8 +90,6 @@
 
   &--toys {
     background-color: $color-intense;
-    background-image: url("../../img/icons/toy.svg");
-    background-position: 90% 50%;
 
     &:hover {
       min-height: 108px;
@@ -118,8 +102,6 @@
     }
 
     @media (min-width: $width-desktop) {
-      background-position: 88% 40%;
-
       &:hover {
         min-height: 141px;
       }
@@ -163,6 +145,32 @@
     @media (min-width: $width-desktop) {
       max-width: 140px;
       padding-right: 350px;
+    }
+  }
+}
+
+
+.catalog__icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto 0;
+
+  &--interior {
+    margin-right: 36px;
+  }
+
+
+  &--toy {
+    margin-right: 27px;
+
+    @media (min-width: $width-tablet) {
+      margin-right: 33px;
+    }
+
+    @media (min-width: $width-desktop) {
+      margin-right: 35px;
     }
   }
 }
