@@ -73,6 +73,8 @@
 
     &:hover {
       min-height: 108px;
+      background-color: $color-intense-tertiary;
+      transition-duration: 0.5s;
     }
 
     @media (min-width: $width-tablet) {
@@ -93,6 +95,8 @@
 
     &:hover {
       min-height: 108px;
+      background-color: $color-intense-secondary;
+      transition-duration: 0.5s;
     }
 
     @media (min-width: $width-tablet) {
@@ -150,6 +154,12 @@
 }
 
 
+.catalog__item:hover .catalog__link {
+  padding-top: 30px;
+  transition-duration: 0.5s;
+}
+
+
 .catalog__icon {
   position: absolute;
   top: 0;
@@ -159,11 +169,15 @@
 
   &--interior {
     margin-right: 36px;
+    fill: $color-accent;
+    opacity: 0.5;
   }
 
 
   &--toy {
     margin-right: 27px;
+    fill: $color-accent;
+    opacity: 0.5;
 
     @media (min-width: $width-tablet) {
       margin-right: 33px;
@@ -173,4 +187,14 @@
       margin-right: 35px;
     }
   }
+}
+
+
+.catalog__item:hover .catalog__icon {
+  opacity: 0.7;
+  transition-duration: 0.3s;
+}
+
+.catalog__item:active .catalog__icon {
+  opacity: 0.3;
 }
