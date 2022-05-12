@@ -1,20 +1,67 @@
 @import "global/variables.scss";
 
-.logo__image {
-  @media (min-width: $width-tablet) {
-    width: 114px;
-    height: 46px;
+
+.main-header__logo[href] .logo__header {
+  &:hover {
+    opacity: 0.6;
   }
 
-  @media (min-width: $width-desktop) {
-    width: 149px;
-    height: 72px;
+  &:active {
+    opacity: 0.3;
   }
+}
 
-  &--footer {
+
+.logo__header {
+  &--mobile {
     @media (min-width: $width-tablet) {
-      width: 102px;
-      height: 34px;
+      display: none;
     }
+  }
+
+  &--tablet {
+    display: none;
+
+    @media (min-width: $width-tablet) {
+      display: block;
+    }
+
+    @media (min-width: $width-desktop) {
+      display: none;
+    }
+  }
+
+  &--desktop {
+    display: none;
+
+    @media (min-width: $width-desktop) {
+      display: block;
+    }
+  }
+}
+
+.main-footer__logo[href] {
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $color-brand;
+  }
+}
+
+.logo__footer {
+  fill: $color-text-primary;
+}
+
+
+.main-footer__logo[href] .logo__footer {
+  &:hover {
+    fill: $color-brand;
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }

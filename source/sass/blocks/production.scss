@@ -59,21 +59,22 @@
 
 
 .production__title {
+  position: relative;
   min-width: 260px;
   padding: 0 13px 27px 91px;
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
   box-sizing: border-box;
-  background-repeat: no-repeat;
-  background-size: auto;
-  background-image: url("../../img/icons/video-camera.svg");
-  background-position: 14% 25%;
+  // background-repeat: no-repeat;
+  // background-size: auto;
+  // background-image: url("../../img/icons/video-camera.svg");
+  // background-position: 14% 25%;
 
   @media (min-width: $width-tablet) {
     padding: 41px 0 25px 107px;
     font-size: 20px;
-    background-position: 7% 57%;
+    // background-position: 7% 57%;
   }
 
   @media (min-width: $width-desktop) {
@@ -82,7 +83,27 @@
     padding-top: 96px;
     padding-left: 30px;
     padding-bottom: 28px;
-    background-position: 14% 25%;
+    // background-position: 14% 25%;
+  }
+}
+
+
+.production__icon {
+  position: absolute;
+  top: 18%;
+  bottom: 0;
+  left: 12%;
+
+  @media (min-width: $width-tablet) {
+    top: 43%;
+    bottom: 0;
+    left: 6.5%;
+  }
+
+  @media (min-width: $width-desktop) {
+    top: 24%;
+    bottom: 0;
+    left: 11.5%;
   }
 }
 

@@ -14,4 +14,21 @@
 .social__link {
   display: flex;
   background-color: $color-bg-footer;
+
+  &:hover {
+    fill: $color-intense-secondary;
+  }
+
+  &:active {
+    fill: $color-intense-secondary;
+    opacity: 0.3;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $color-brand;
+  }
 }
