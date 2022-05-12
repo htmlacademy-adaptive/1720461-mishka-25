@@ -39,3 +39,29 @@
     }
   }
 }
+
+.main-footer__logo[href] {
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $color-brand;
+  }
+}
+
+.logo__footer {
+  fill: $color-text-primary;
+}
+
+
+.main-footer__logo[href] .logo__footer {
+  &:hover {
+    fill: $color-brand;
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

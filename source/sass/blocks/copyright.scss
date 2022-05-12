@@ -11,6 +11,20 @@
 
 .copyright__link {
   display: flex;
-  padding-left: 27px;
+  margin-left: 27px;
   background-color: $color-bg-footer;
+}
+
+
+.copyright__icon {
+  fill: $color-brand;
+
+  &:hover {
+    fill: $color-intense-secondary;
+  }
+
+  &:active {
+    fill: $color-intense-secondary;
+    opacity: 0.3;
+  }
 }

@@ -396,6 +396,8 @@
   &--phone {
     margin-top: 10px;
     margin-right: 4px;
+    opacity: 0.2;
+    fill: $color-text-primary;
 
     @media (min-width: $width-tablet) {
       margin-top: 16px;
@@ -412,6 +414,8 @@
   &--email {
     margin-top: 12px;
     margin-right: 1px;
+    opacity: 0.2;
+    fill: $color-text-primary;
 
     @media (min-width: $width-tablet) {
       margin-top: 16px;
@@ -426,6 +430,20 @@
 }
 
 
+.order-form-phone__input:hover + .order-form__icon--phone,
+.order-form-email__input:hover + .order-form__icon--email {
+  fill: $color-brand;
+  opacity: 1;
+}
+
+
+.order-form-phone__input:active + .order-form__icon--phone,
+.order-form-email__input:active + .order-form__icon--email {
+  fill: $color-brand;
+  opacity: 0.6;
+}
+
+
 .order-form-textarea__input {
   min-height: 142px;
   box-sizing: border-box;
@@ -436,9 +454,12 @@
   border: 2px solid $color-border-primary;
 
   &:hover,
-  &:active,
   &:focus {
     border: 2px solid $color-brand;
+  }
+
+  &:active {
+    border: 2px solid rgba($color-brand, 0.6);
   }
 
   &:focus-visible {
