@@ -26,12 +26,12 @@
 }
 
 
-.radiobutton__field:hover::before {
+.radiobutton__custom:not(:disabled) + .radiobutton__field:hover::before {
   background-image: url("../../img/icons/radiobutton-empty-hover.svg");
 }
 
 
-.radiobutton__field:active::before {
+.radiobutton__custom:not(:disabled) + .radiobutton__field:active::before {
   background-image: url("../../img/icons/radiobutton-empty-active.svg");
 }
 
@@ -43,8 +43,13 @@
 
 
 .radiobutton__custom:focus-visible + .radiobutton__field::before {
-  border: none;
-  outline: none;
+  outline: 3px solid $color-brand;
+  outline-offset: -2px;
+}
+
+
+.radiobutton__custom:disabled + .radiobutton__field::before {
+  background-color: darken($color-bg-secondary, 10%);
 }
 
 
