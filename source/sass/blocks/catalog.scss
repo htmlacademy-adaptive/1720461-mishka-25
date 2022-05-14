@@ -30,17 +30,10 @@
   @media (min-width: $width-tablet) {
     flex-direction: row;
     margin: 0;
-
-    background-image: url("../../img/zigzag-fill-tablet.svg");
-    background-repeat: repeat-x;
-    background-position: 0 101%;
-    // z-index: 5;
   }
 
   @media (min-width: $width-desktop) {
     justify-content: center;
-
-    background-image: url("../../img/zigzag-fill-desktop.svg");
   }
 }
 
@@ -57,9 +50,6 @@
   @media (min-width: $width-tablet) {
     min-width: 334px;
     min-height: 127px;
-    // декоративная волна видна только если элементу поставить z-index -1,
-    // но тогда перестает нажиматься ссылка в этом элементе
-    // z-index: -1;
   }
 
   @media (min-width: $width-desktop) {

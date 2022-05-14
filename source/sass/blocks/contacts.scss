@@ -19,6 +19,11 @@
 
 
 .contacts__wrapper {
+  @media (min-width: $width-tablet) {
+    display: flex;
+    flex-direction: column;
+  }
+
   @media (min-width: $width-desktop) {
     display: grid;
     width: $width-desktop;
@@ -235,6 +240,11 @@
 
 
 .contacts__map-container {
+  @media (min-width: $width-tablet) {
+    width: 100%;
+    margin: 0 auto;
+  }
+
   @media (min-width: $width-desktop) {
     grid-area: map;
   }
@@ -247,27 +257,33 @@
 
 
 // стили для nojs
-// .contacts__map-nojs .contacts__iframe {
-//   display: none;
-// }
+.contacts__map-nojs {
+  display: flex;
+  justify-content: center;
+}
 
 
-// .contacts__map-nojs .contacts__map-nojs-container {
-//   display: block;
-//   padding-bottom: 42px;
+.contacts__map-nojs .contacts__iframe {
+  display: none;
+}
 
-//   @media (min-width: $width-tablet) {
-//     width: 768px;
-//     height: 457px;
-//     padding-bottom: 0;
-//   }
 
-//   @media (min-width: $width-desktop) {
-//     grid-area: map;
-//     width: 527px;
-//     height: 457px;
-//   }
-// }
+.contacts__map-nojs .contacts__map-nojs-container {
+  display: block;
+  padding-bottom: 42px;
+
+  @media (min-width: $width-tablet) {
+    width: 768px;
+    height: 457px;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $width-desktop) {
+    grid-area: map;
+    width: 527px;
+    height: 457px;
+  }
+}
 
 
 .contacts__map-nojs-image {
@@ -284,4 +300,3 @@
     height: 457px;
   }
 }
-

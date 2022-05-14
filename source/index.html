@@ -28,7 +28,8 @@
           </svg>
         </a>
       </div>
-      <nav class="main-navigation main-navigation--closed main-navigation--nojs">
+
+      <nav class="main-navigation main-navigation--opened"> <!-- для main-navigation--nojs прописаны стили в scss -->
         <button class="main-navigation__toogle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -92,28 +93,29 @@
       <div class="promo__wrapper promo__wrapper--main">
         <h1 class="promo__title title title--main">Милые штуки ручной работы для дома</h1>
       </div>
+      <section class="catalog">
+        <div class="catalog__wrapper">
+          <h2 class="visually-hidden">Каталог различных товаров</h2>
+          <ul class="catalog__list">
+            <li class="catalog__item catalog__item--interior">
+              <a class="catalog__link catalog__link--interior link" href="#" >Предметы интерьера</a>
+              <svg class="catalog__icon catalog__icon--interior" width="40" height="62">
+                <use xlink:href="img/sprite.svg#catalog__icon--interior"></use>
+              </svg>
+            </li>
+            <li class="catalog__item catalog__item--toys">
+              <a class="catalog__link catalog__link--toys link" href="#">Детские игрушки</a>
+              <svg class="catalog__icon catalog__icon--toy" width="60" height="60">
+                <use xlink:href="img/sprite.svg#catalog__icon--toy"></use>
+              </svg>
+            </li>
+          </ul>
+        </div>
+      </section>
     </section>
 
 
-    <section class="catalog">
-      <div class="catalog__wrapper">
-        <h2 class="visually-hidden">Каталог различных товаров</h2>
-        <ul class="catalog__list">
-          <li class="catalog__item catalog__item--interior">
-            <a class="catalog__link catalog__link--interior link" href="#" >Предметы интерьера</a>
-            <svg class="catalog__icon catalog__icon--interior" width="40" height="62">
-              <use xlink:href="img/sprite.svg#catalog__icon--interior"></use>
-            </svg>
-          </li>
-          <li class="catalog__item catalog__item--toys">
-            <a class="catalog__link catalog__link--toys link" href="#">Детские игрушки</a>
-            <svg class="catalog__icon catalog__icon--toy" width="60" height="60">
-              <use xlink:href="img/sprite.svg#catalog__icon--toy"></use>
-            </svg>
-          </li>
-        </ul>
-      </div>
-    </section>
+
 
 
     <section class="week-product">
@@ -221,7 +223,7 @@
           </dl>
         </div>
 
-        <div class="contacts__map-container contacts__map-nojs">
+        <div class="contacts__map-container"> <!-- для contacts__map-nojs прописаны стили в scss -->
           <iframe class="contacts__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.3018931483289!2d30.322276154757713!3d59.938716497749525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x62740c0ffcd8a91f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsIDEwMSwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsINCg0L7RgdGB0LjRjywgMTkxMTg2!5e0!3m2!1sru!2suk!4v1649000168325!5m2!1sru!2suk" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Офис компании 'Мишка'"></iframe>
           <div class="contacts__map-nojs-container">
             <picture>
