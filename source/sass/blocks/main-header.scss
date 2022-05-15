@@ -5,6 +5,7 @@
   @media (min-width: $width-tablet) {
     position: relative;
     border-bottom: 2px solid $color-border-navigation;
+    z-index: 3;
   }
 }
 

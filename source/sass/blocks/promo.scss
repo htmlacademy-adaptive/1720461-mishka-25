@@ -8,20 +8,21 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    min-height: 490px;
+    min-height: 506px;
     background-color: $color-bg-primary;
     background-image: url("../../img/backgrounds/bg-image-house-shelf-mobile.jpg");
     background-repeat: no-repeat;
     background-position: 50% 0;
-    background-size: cover;
+    background-size: 100% auto;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../../img/backgrounds/bg-image-house-shelf-mobile@2x.jpg");
     }
 
     @media (min-width: $width-tablet) {
-      min-height: 746px;
+      min-height: 758px;
       background-image: url("../../img/backgrounds/bg-image-house-shelf-tablet.jpg");
+      background-size: cover;
 
       @media (min-resolution: 2dppx) {
         background-image: url("../../img/backgrounds/bg-image-house-shelf-tablet@2x.jpg");
@@ -29,6 +30,7 @@
     }
 
     @media (min-width: $width-desktop) {
+      min-height: 779px;
       background-image: url("../../img/backgrounds/bg-image-house-shelf-desktop.jpg");
 
       @media (min-resolution: 2dppx) {
@@ -45,7 +47,7 @@
       background-image: url("../../img/zigzag-fill-tablet.svg");
       background-repeat: repeat-x;
       background-position: 0 101%;
-      z-index: 5;
+      z-index: 2;
     }
 
     @media (min-width: $width-desktop) {
