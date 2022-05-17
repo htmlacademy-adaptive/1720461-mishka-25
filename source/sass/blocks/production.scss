@@ -66,15 +66,10 @@
   line-height: 24px;
   font-weight: 700;
   box-sizing: border-box;
-  // background-repeat: no-repeat;
-  // background-size: auto;
-  // background-image: url("../../img/icons/video-camera.svg");
-  // background-position: 14% 25%;
 
   @media (min-width: $width-tablet) {
     padding: 41px 0 25px 107px;
     font-size: 20px;
-    // background-position: 7% 57%;
   }
 
   @media (min-width: $width-desktop) {
@@ -83,7 +78,6 @@
     padding-top: 96px;
     padding-left: 30px;
     padding-bottom: 28px;
-    // background-position: 14% 25%;
   }
 }
 
@@ -130,14 +124,16 @@
   margin: auto;
 
   &:hover {
+    transition: 0.2s;
     width: 122px;
     height: 93px;
   }
 
   &:active {
+    transition: 0.25s;
     width: 80px;
     height: 62px;
-    opacity: 0.35;
+    opacity: 0.4;
   }
 }
 

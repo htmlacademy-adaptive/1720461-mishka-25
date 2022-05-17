@@ -40,19 +40,16 @@
     max-width: 260px;
     margin: 0 auto;
     padding-top: 90px;
-    padding-bottom: 120px;
     text-align: center;
 
     @media (min-width: $width-tablet) {
       max-width: 668px;
       padding-top: 155px;
-      padding-bottom: 372px;
     }
 
     @media (min-width: $width-desktop) {
       max-width: 700px;
       padding-top: 157px;
-      padding-bottom: 355px;
     }
   }
 

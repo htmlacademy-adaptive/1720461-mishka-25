@@ -2,15 +2,15 @@
 
 
 .contacts {
-  background-image: url("../../img/zigzag-line-mobile.svg");
+  background-image: url("../../img/svg/zigzag-line-mobile.svg");
   background-repeat: repeat-x;
 
   @media (min-width: $width-tablet) {
-    background-image: url("../../img/zigzag-line-tablet.svg");
+    background-image: url("../../img/svg/zigzag-line-tablet.svg");
   }
 
   @media (min-width: $width-desktop) {
-    background-image: url("../../img/zigzag-line-desktop.svg");
+    background-image: url("../../img/svg/zigzag-line-desktop.svg");
     background-repeat: no-repeat;
     background-size: 1050px;
     background-position: top center;
@@ -19,9 +19,15 @@
 
 
 .contacts__wrapper {
+  @media (min-width: $width-tablet) {
+    display: flex;
+    flex-direction: column;
+  }
+
   @media (min-width: $width-desktop) {
     display: grid;
     width: $width-desktop;
+    margin: 0 auto;
     box-sizing: border-box;
     grid-template-columns: 170px 350px 527px;
     grid-template-rows:
@@ -90,7 +96,7 @@
     display: flex;
     width: 47px;
     height: 81px;
-    background-image: url("../../img/icons/flag.svg");
+    background-image: url("../../img/svg/flag.svg");
     background-repeat: no-repeat;
     background-size: auto;
   }
@@ -227,7 +233,69 @@
   }
 
   @media (min-width: $width-desktop) {
+    width: 527px;
+    height: 457px;
+  }
+}
+
+
+.contacts__map-container {
+  @media (min-width: $width-tablet) {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $width-desktop) {
     grid-area: map;
+  }
+}
+
+
+.contacts__map-nojs-container {
+  display: none;
+}
+
+
+// стили для nojs
+.contacts__map-nojs {
+  display: flex;
+  justify-content: center;
+}
+
+
+.contacts__map-nojs .contacts__iframe {
+  display: none;
+}
+
+
+.contacts__map-nojs .contacts__map-nojs-container {
+  display: block;
+  padding-bottom: 42px;
+
+  @media (min-width: $width-tablet) {
+    width: 768px;
+    height: 457px;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $width-desktop) {
+    grid-area: map;
+    width: 527px;
+    height: 457px;
+  }
+}
+
+
+.contacts__map-nojs-image {
+  display: block;
+  margin: 0 auto;
+
+  @media (min-width: $width-tablet) {
+    width: 768px;
+    height: 457px;
+  }
+
+  @media (min-width: $width-desktop) {
     width: 527px;
     height: 457px;
   }

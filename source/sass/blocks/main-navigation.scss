@@ -151,11 +151,12 @@
     width: 100%;
   }
 
-  .main-navigation--nojavascript .main-navigation__toogle {
+  // стили nojs
+  .main-navigation--nojs .main-navigation__toogle {
     display: none;
   }
 
-  .main-navigation--nojavascript .main-navigation__wrapper {
+  .main-navigation--nojs .main-navigation__wrapper {
     position: static;
   }
 }
