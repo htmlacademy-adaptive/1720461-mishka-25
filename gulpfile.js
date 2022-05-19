@@ -59,8 +59,9 @@ export const styles = () => {
 
 // Scripts
 const scripts = () => {
-  return gulp.src('source/js/*.js')
+  return gulp.src('source/js/script.js')
   .pipe(terser())
+  .pipe(rename('script.min.js'))
   .pipe(gulp.dest('build/js'));
 }
 
@@ -80,12 +81,20 @@ const copyImages = () => {
 
 
 // WebP
-const createWebp = () => {
+const createWebp_products = () => {
   return gulp.src('source/img/products/*.{jpg,png}')
   .pipe(squoosh( {
     webp: {}
   }))
   .pipe(gulp.dest('build/img/products'));
+}
+
+const createWebp_content_images = () => {
+  return gulp.src('source/img/content-images/*.{jpg,png}')
+  .pipe(squoosh( {
+    webp: {}
+  }))
+  .pipe(gulp.dest('build/img/content-images'));
 }
 
 
@@ -139,7 +148,8 @@ export const build = gulp.series(
     html,
     styles,
     scripts,
-    createWebp,
+    createWebp_products,
+    createWebp_content_images,
     svg,
     sprite,
   )
@@ -155,7 +165,8 @@ export default gulp.series(
     html,
     styles,
     scripts,
-    createWebp,
+    createWebp_products,
+    createWebp_content_images,
     svg,
     sprite,
   ),
