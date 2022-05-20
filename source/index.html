@@ -38,7 +38,7 @@
         </a>
       </div>
 
-      <nav class="main-navigation main-navigation--opened"> <!-- для main-navigation--nojs прописаны стили в scss -->
+      <nav class="main-navigation main-navigation--opened">
         <button class="main-navigation__toogle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -230,18 +230,17 @@
           </dl>
         </div>
 
-        <div class="contacts__map-container"> <!-- для contacts__map-nojs прописаны стили в scss -->
+        <div class="contacts__map-container">
           <iframe class="contacts__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.3018931483289!2d30.322276154757713!3d59.938716497749525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x62740c0ffcd8a91f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsIDEwMSwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsINCg0L7RgdGB0LjRjywgMTkxMTg2!5e0!3m2!1sru!2suk!4v1649000168325!5m2!1sru!2suk" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Офис компании 'Мишка'"></iframe>
           <div class="contacts__map-nojs-container">
             <picture>
-              <source type="image/webp" media="(min-width: 1200px)" srcset="img/content-images/map-nojs-desktop.webp 1x, img/content-images/map-nojs-desktop@2x.webp 2x" loading="lazy">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/content-images/map-nojs-tablet.webp 1x, img/content-images/map-nojs-tablet@2x.webp 2x" loading="lazy">
-              <source type="image/webp" srcset="img/content-images/map-nojs-mobile.webp 1x, img/content-images/map-nojs-mobile@2x.webp 2x" loading="lazy">
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/content-images/map-nojs-desktop.webp 1x, img/content-images/map-nojs-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/content-images/map-nojs-tablet.webp 1x, img/content-images/map-nojs-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/content-images/map-nojs-mobile.webp 1x, img/content-images/map-nojs-mobile@2x.webp 2x">
+              <source type="image/png" media="(min-width: 1200px)" srcset="img/content-images/map-nojs-desktop.png 1x, img/content-images/map-nojs-desktop@2x.png 2x">
+              <source type="image/png" media="(min-width: 768px)" srcset="img/content-images/map-nojs-tablet.png 1x, img/content-images/map-nojs-tablet@2x.png 2x">
 
-              <source type="image/png" media="(min-width: 1200px)" srcset="img/content-images/map-nojs-desktop.png 1x, img/content-images/map-nojs-desktop@2x.png 2x" loading="lazy">
-              <source type="image/png" media="(min-width: 768px)" srcset="img/content-images/map-nojs-tablet.png 1x, img/content-images/map-nojs-tablet@2x.png 2x" loading="lazy">
-
-              <img class="contacts__map-nojs-image" src="img/content-images/map-nojs-mobile.png" width="320" height="455" alt="Как до нас добраться" srcset="img/backgrounds/map-nojs-mobile@2x.png 2x" loading="lazy">
+              <img class="contacts__map-nojs-image" src="img/content-images/map-nojs-mobile.png" width="320" height="455" alt="Как до нас добраться" srcset="img/backgrounds/map-nojs-mobile@2x.png 2x">
             </picture>
           </div>
         </div>
