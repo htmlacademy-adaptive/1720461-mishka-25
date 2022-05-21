@@ -102,7 +102,7 @@
 }
 
 
-.production__image-wrapper {
+.production__video-wrapper {
   position: relative;
   margin: 0;
 
@@ -114,6 +114,12 @@
     grid-area: image;
   }
 }
+
+
+.production__video-container {
+  display: none;
+}
+
 
 .production__play-button {
   position: absolute;

@@ -265,12 +265,14 @@
     margin-right: 36px;
     fill: $color-accent;
     opacity: 0.5;
+    cursor: pointer;
   }
 
   &--toy {
     margin-right: 27px;
     fill: $color-accent;
     opacity: 0.5;
+    cursor: pointer;
 
     @media (min-width: $width-tablet) {
       margin-right: 33px;

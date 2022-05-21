@@ -40,15 +40,6 @@
   }
 }
 
-.main-footer__logo[href] {
-  &:focus {
-    outline: none;
-  }
-
-  &:focus-visible {
-    outline: 2px solid $color-brand;
-  }
-}
 
 .logo__footer {
   fill: $color-text-primary;
