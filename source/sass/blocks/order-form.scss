@@ -2,7 +2,6 @@
 
 
 .order-form__group {
-  margin: 0;
   padding: 0;
   border: none;
 
@@ -51,11 +50,14 @@
 
 
 .order-form__wrapper {
+  position: relative;
   width: 320px;
   margin: 0 auto;
+  padding: 0;
   padding-right: 30px;
   padding-left: 30px;
   box-sizing: border-box;
+  border: none;
 
   @media (min-width: $width-tablet) {
     display: grid;
@@ -123,6 +125,8 @@
   text-transform: uppercase;
 
   @media (min-width: $width-tablet) {
+    position: absolute;
+    top: 0;
     grid-area: legend;
     min-width: 167px;
     padding-top: 17px;
