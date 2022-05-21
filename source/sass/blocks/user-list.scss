@@ -57,7 +57,7 @@
 .user-list__link {
   position: relative;
   display: block;
-  padding: 28px 0;
+  padding: 27px 0;
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
@@ -124,6 +124,8 @@
 
 
 .user-list__link-cart-icon {
+  top: 38%;
+  left: -21%;
   flex-shrink: 0;
   opacity: 0.2;
 

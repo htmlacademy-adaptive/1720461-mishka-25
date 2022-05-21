@@ -59,7 +59,7 @@
 .product-card__layout-wrapper {
   padding-top: 28px;
   padding-right: 27px;
-  padding-bottom: 27px;
+  padding-bottom: 23px;
   padding-left: 28px;
   box-sizing: border-box;
 
@@ -78,6 +78,7 @@
 
 
 .product-card__title {
+  padding-bottom: 6px;
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;

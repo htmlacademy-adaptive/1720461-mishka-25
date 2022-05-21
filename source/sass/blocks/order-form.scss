@@ -264,7 +264,7 @@
 .order-form__surname-input,
 .order-form__patronymic-input {
   padding-top: 17px;
-  padding-bottom: 17px;
+  padding-bottom: 14.5px;
   font-size: 17px;
   line-height: 18px;
   font-weight: 400;
@@ -357,7 +357,7 @@
 .order-form__textarea-input {
   min-width: 260px;
   padding-top: 14px;
-  padding-bottom: 20px;
+  padding-bottom: 16px;
   font-size: 17px;
   line-height: 18px;
   font-weight: 400;
@@ -391,7 +391,8 @@
 
 
 .order-form__email-input {
-  padding-bottom: 18px;
+  padding-top: 17px;
+  padding-bottom: 15px;
 
   &:hover,
   &:active,
@@ -414,7 +415,7 @@
 
   &--phone {
     margin-top: 10px;
-    margin-right: 4px;
+    margin-right: 10px;
     opacity: 0.2;
     fill: $color-text-primary;
 
@@ -431,8 +432,8 @@
 
 
   &--email {
-    margin-top: 12px;
-    margin-right: 1px;
+    margin-top: 16px;
+    margin-right: 7px;
     opacity: 0.2;
     fill: $color-text-primary;
 
@@ -467,9 +468,9 @@
   min-height: 142px;
   box-sizing: border-box;
   resize: vertical;
-  padding-top: 17px;
+  padding-top: 14px;
   padding-right: 17px;
-  padding-left: 17px;
+  padding-left: 16px;
   border: 2px solid $color-border-primary;
 
   &:hover,

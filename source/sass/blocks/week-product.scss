@@ -32,6 +32,10 @@
   background-color: $color-bg-primary;
   text-transform: uppercase;
 
+  @media (max-width: $width-mobile-only) {
+    margin-bottom: 18px;
+  }
+
   @media (min-width: $width-tablet) {
     max-width: 100px;
     line-height: 17px;
@@ -103,7 +107,7 @@
 .week-product__text-content {
   grid-area: text;
   margin: 0;
-  padding-bottom: 28px;
+  padding-bottom: 26px;
   font-size: 15px;
   line-height: 24px;
   font-weight: 400;
@@ -133,9 +137,9 @@
 }
 
 .week-product__data {
-  min-width: 100px;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  min-width: 67px;
+  padding-top: 9px;
+  padding-bottom: 9px;
   font-weight: 400;
   text-align: left;
   border-bottom: 1px solid $color-border-navigation;
@@ -148,7 +152,7 @@
 .week-product__image {
   grid-area: image;
   padding-top: 26px;
-  padding-bottom: 26px;
+  padding-bottom: 19px;
 
   @media (min-width: $width-tablet) {
     min-width: 334px;

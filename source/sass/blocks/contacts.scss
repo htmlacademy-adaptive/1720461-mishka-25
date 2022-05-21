@@ -120,7 +120,7 @@
 
 
 .contacts__e-mail {
-  padding-bottom: 3px;
+  padding-bottom: 2px;
   border-bottom: 1px solid $color-text-brand-underline;
 
   &:hover {
@@ -222,7 +222,7 @@
 .contacts__iframe {
   width: 100%;
   height: 454px;
-  padding-bottom: 42px;
+  padding-bottom: 34px;
   border: none;
 
   @media (min-width: $width-tablet) {

@@ -2,8 +2,10 @@
 
 .button {
   display: block;
-  padding-top: 18px;
-  padding-bottom: 18px;
+  min-height: 52px;
+  padding-top: 15px;
+  padding-bottom: 14px;
+  box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-size: 17px;

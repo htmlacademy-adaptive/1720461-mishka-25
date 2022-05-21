@@ -8,11 +8,11 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    min-height: 506px;
+    min-height: 488px;
     background-color: $color-bg-primary;
     background-image: url("../../img/backgrounds/bg-image-house-shelf-mobile.jpg");
     background-repeat: no-repeat;
-    background-position: 50% 0;
+    background-position: 50% -19px;
     background-size: 100% auto;
 
     @media (min-resolution: 2dppx) {

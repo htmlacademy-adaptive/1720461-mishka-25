@@ -3,7 +3,8 @@
 
 .site-list {
   @media (min-width: $width-tablet) {
-    // margin-bottom: -74px;
+    // с отрицательным margin не проходит тест на переполнение
+    margin-bottom: -74px;
 
     grid-area: site;
     justify-content: space-between;
@@ -76,7 +77,7 @@
 
 .site-list__link {
   display: block;
-  padding: 28px 0;
+  padding: 26px 0;
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
