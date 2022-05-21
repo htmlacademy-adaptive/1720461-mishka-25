@@ -124,6 +124,7 @@
 
 
 .user-list__link-cart-icon {
+  flex-shrink: 0;
   opacity: 0.2;
 
   @media (min-width: $width-tablet) {

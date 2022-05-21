@@ -148,6 +148,7 @@
   display: block;
   min-width: 320px;
   min-height: 103px;
+  max-height: 220px;
   background-repeat: no-repeat;
   background-size: auto;
   background-position: right bottom;
@@ -211,7 +212,8 @@
 
 .promo__navigation-link {
   display: block;
-  padding: 24px 160px 31px 30px;
+  width: 60%;
+  padding: 24px 0 31px 30px;
   font-size: 19px;
   line-height: 24px;
   font-weight: 700;

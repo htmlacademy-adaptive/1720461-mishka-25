@@ -163,21 +163,21 @@
 
 
 .contacts__term {
-  width: 90px;
+  word-wrap: break-word;
 }
 
 
 .contacts__item {
   display: grid;
   grid-template-columns: 76px 183px;
-  grid-template-rows: 50px;
+
 
   @media (min-width: $width-tablet) {
     grid-template-columns: 90px 230px;
   }
 
-  &--second {
-    grid-template-rows: 90px;
+  &--first {
+    padding-bottom: 30px;
   }
 }
 
@@ -196,7 +196,6 @@
   max-width: 260px;
   margin: 0 auto;
   margin-bottom: 39px;
-  padding: 15px 38px;
   box-sizing: border-box;
   font-size: 18px;
   line-height: 20px;

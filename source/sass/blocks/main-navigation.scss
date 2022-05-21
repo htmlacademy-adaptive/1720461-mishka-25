@@ -165,7 +165,6 @@
 .main-navigation__list {
   @media (min-width: $width-tablet) {
     display: flex;
-    flex-wrap: wrap;
   }
 }
 
@@ -178,7 +177,7 @@
     align-self: center;
     justify-self: flex-end;
     grid-area: delivery;
-    margin-bottom: -74px;  // при переполнении это не помогает
+    // margin-bottom: -74px;
     background-color: transparent;
   }
 }

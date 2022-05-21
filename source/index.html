@@ -10,8 +10,8 @@
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="preload" href="css/style.min.css" as="style">
-  <link rel="preload" href="/fonts/opensans.woff2" as="font">
-  <link rel="preload" href="/fonts/opensansbold.woff2" as="font">
+  <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="img/backgrounds/bg-image-house-shelf-mobile.jpg" as="image">
   <link rel="preload" href="img/backgrounds/bg-image-house-shelf-mobile@2x.jpg" as="image">
   <link rel="preload" href="img/backgrounds/bg-image-house-shelf-tablet.jpg" as="image">
@@ -106,13 +106,13 @@
         <h2 class="visually-hidden">Каталог различных товаров</h2>
         <ul class="promo__navigation-list">
           <li class="promo__navigation-item promo__navigation-item--interior">
-            <a class="promo__navigation-link promo__navigation-link--interior link" href="#" >Предметы интерьера</a>
+            <a class="promo__navigation-link promo__navigation-link--interior link" href="#" >Предметы<br>интерьера</a>
             <svg class="promo__navigation-icon promo__navigation-icon--interior" width="40" height="62">
               <use xlink:href="img/sprite.svg#interior-icon"></use>
             </svg>
           </li>
           <li class="promo__navigation-item promo__navigation-item--toys">
-            <a class="promo__navigation-link promo__navigation-link--toys link" href="#">Детские игрушки</a>
+            <a class="promo__navigation-link promo__navigation-link--toys link" href="#">Детские<br> игрушки</a>
             <svg class="promo__navigation-icon promo__navigation-icon--toy" width="60" height="60">
               <use xlink:href="img/sprite.svg#toy-icon"></use>
             </svg>
@@ -124,10 +124,11 @@
 
     <section class="week-product">
       <div class="week-product__wrapper">
-        <h2 class="week-product__title title title--medium_decorated">Товар недели</h2>
+        <!-- <h2 class="week-product__title title title--medium_decorated">Товар недели</h2> -->
 
         <article class="week-product__article article">
-          <h3 class="week-product__subtitle title title--medium">Вязаные корзинки</h3>
+          <h2 class="week-product__title title title--medium">Вязаные корзинки</h2>
+          <p class="week-product__subtitle title title--medium_decorated">Товар<br>недели</p>
           <p class="week-product__text-content">Экологически чистая пряжа, ручная&nbsp;работа. Доступны в шести расцветках и трёх размерах.</p>
 
           <table class="week-product__table">

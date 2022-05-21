@@ -3,7 +3,8 @@
 
 .site-list {
   @media (min-width: $width-tablet) {
-    margin-bottom: -74px;
+    // margin-bottom: -74px;
+
     grid-area: site;
     justify-content: space-between;
   }
