@@ -11,5 +11,9 @@
   // это свойство больше мешает, чем помогает
   // background-color: $color-bg-primary;
   text-decoration: none;
+}
+
+
+.link[href] {
   cursor: pointer;
 }

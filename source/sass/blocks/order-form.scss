@@ -230,9 +230,9 @@
 }
 
 
-.order-form-name__wrapper,
-.order-form-surname__wrapper,
-.order-form-patronymic__wrapper {
+.order-form__name-wrapper,
+.order-form__surname-wrapper,
+.order-form__patronymic-wrapper {
   display: flex;
   flex-direction: column;
   padding-bottom: 22px;
@@ -245,9 +245,24 @@
 }
 
 
-.order-form-name__input,
-.order-form-surname__input,
-.order-form-patronymic__input {
+.order-form__name-field,
+.order-form__surname-field,
+.order-form__patronymic-field {
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 700;
+  color: $color-text-primary;
+  background-color: $color-bg-primary;
+
+  &:hover {
+    color: $color-brand;
+  }
+}
+
+
+.order-form__name-input,
+.order-form__surname-input,
+.order-form__patronymic-input {
   padding-top: 17px;
   padding-bottom: 17px;
   font-size: 17px;
@@ -273,7 +288,7 @@
 }
 
 
-.order-form-name__input {
+.order-form__name-input {
   @media (min-width: $width-tablet) {
     margin-left: 24px;
     padding-left: 18px;
@@ -281,7 +296,7 @@
 }
 
 
-.order-form-surname__input {
+.order-form__surname-input {
   @media (min-width: $width-tablet) {
     margin-left: 25px;
     padding-left: 16px;
@@ -289,7 +304,7 @@
 }
 
 
-.order-form-patronymic__input {
+.order-form__patronymic-input {
   @media (min-width: $width-tablet) {
     margin-left: 27px;
     padding-left: 17px;
@@ -297,9 +312,9 @@
 }
 
 
-.order-form-name__input::placeholder,
-.order-form-surname__input::placeholder,
-.order-form-patronymic__input::placeholder {
+.order-form__name-input::placeholder,
+.order-form__surname-input::placeholder,
+.order-form__patronymic-input::placeholder {
   font-family: "Open Sans", sans-serif;
   font-size: 17px;
   line-height: 18px;
@@ -337,9 +352,9 @@
 }
 
 
-.order-form-phone__input,
-.order-form-email__input,
-.order-form-textarea__input {
+.order-form__phone-input,
+.order-form__email-input,
+.order-form__textarea-input {
   min-width: 260px;
   padding-top: 14px;
   padding-bottom: 20px;
@@ -362,7 +377,7 @@
 }
 
 
-.order-form-phone__input {
+.order-form__phone-input {
   &:hover,
   &:active,
   &:focus {
@@ -375,7 +390,7 @@
 }
 
 
-.order-form-email__input {
+.order-form__email-input {
   padding-bottom: 18px;
 
   &:hover,
@@ -434,21 +449,21 @@
 }
 
 
-.order-form-phone__input:hover + .order-form__icon--phone,
-.order-form-email__input:hover + .order-form__icon--email {
+.order-form__phone-input:hover + .order-form__icon--phone,
+.order-form__email-input:hover + .order-form__icon--email {
   fill: $color-brand;
   opacity: 1;
 }
 
 
-.order-form-phone__input:active + .order-form__icon--phone,
-.order-form-email__input:active + .order-form__icon--email {
+.order-form__phone-input:active + .order-form__icon--phone,
+.order-form__email-input:active + .order-form__icon--email {
   fill: $color-brand;
   opacity: 0.6;
 }
 
 
-.order-form-textarea__input {
+.order-form__textarea-input {
   min-height: 142px;
   box-sizing: border-box;
   resize: vertical;
@@ -472,9 +487,9 @@
 }
 
 
-.order-form-phone__input::placeholder,
-.order-form-email__input::placeholder,
-.order-form-textarea__input::placeholder {
+.order-form__phone-input::placeholder,
+.order-form__email-input::placeholder,
+.order-form__textarea-input::placeholder {
   font-family: "Open Sans", sans-serif;
   font-size: 17px;
   line-height: 18px;
