@@ -31,8 +31,9 @@
     }
 
     @media (min-width: $width-desktop) {
-      min-height: 779px;
+      min-height: 761px;
       background-image: url("../../img/backgrounds/bg-image-house-shelf-desktop.jpg");
+      background-position: -6px -8px;
 
       @media (min-resolution: 2dppx) {
         background-image: url("../../img/backgrounds/bg-image-house-shelf-desktop@2x.jpg");
@@ -53,6 +54,8 @@
 
     @media (min-width: $width-desktop) {
       background-image: url("../../img/svg/zigzag-fill-desktop.svg");
+      background-position-x: 6px;
+      background-size: 89%;
     }
   }
 }
@@ -75,6 +78,7 @@
   @media (min-width: $width-desktop) {
     height: 34px;
     background-image: url("../../img/svg/zigzag-fill-desktop.svg");
+    background-position-x: 25px;
   }
 }
 
@@ -103,6 +107,10 @@
 
 .promo__title {
   margin-right: 2px;
+
+  @media (min-width: $width-desktop) {
+    margin-right: auto;
+  }
 }
 
 .promo__navigation-wrapper {
@@ -273,6 +281,10 @@
     fill: $color-accent;
     opacity: 0.5;
     cursor: pointer;
+
+    @media (min-width: $width-desktop) {
+      top: -3px;
+    }
   }
 
   &--toy {
@@ -286,6 +298,7 @@
     }
 
     @media (min-width: $width-desktop) {
+      top: -3px;
       margin-right: 35px;
     }
   }

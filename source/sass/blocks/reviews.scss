@@ -27,7 +27,7 @@
 
   @media (min-width: $width-desktop) {
     width: $width-desktop;
-
+    margin-bottom: 66px;
     padding-right: 75px;
     padding-left: 250px;
     background-position: 75px 0;
@@ -84,6 +84,7 @@
 
   @media (min-width: $width-desktop) {
     max-width: 810px;
+    padding-bottom: 43px;
   }
 }
 
@@ -106,6 +107,10 @@
     font-size: 18px;
     line-height: 24px;
   }
+
+  @media (min-width: $width-desktop) {
+    font-size: 17px;
+  }
 }
 
 
@@ -126,6 +131,10 @@
   @media (min-width: $width-tablet) {
     grid-area: control;
     margin-top: 6px;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin-right: -2px;
   }
 }
 
@@ -200,7 +209,7 @@
   }
 
   @media (min-width: $width-desktop) {
-    top: 60px;
+    top: 78px;
     right: 75px;
   }
 }

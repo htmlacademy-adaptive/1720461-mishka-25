@@ -29,7 +29,7 @@
     width: $width-desktop;
     margin: 0 auto;
     box-sizing: border-box;
-    grid-template-columns: 170px 350px 527px;
+    grid-template-columns: 160px auto 527px;
     grid-template-rows:
       79px
       92px
@@ -105,7 +105,8 @@
 
   @media (min-width: $width-desktop) {
     position: absolute;
-    left: -35%;
+    top: -8%;
+    left: -33%;
     order: -1;
   }
 }
@@ -146,6 +147,10 @@
 
   @media (min-width: $width-tablet) {
     padding-bottom: 3px;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding-bottom: 7px;
   }
 }
 
@@ -226,9 +231,10 @@
 
   @media (min-width: $width-desktop) {
     grid-area: button;
+    max-width: 230px;
+    min-width: auto;
     margin: 0;
     margin-left: 15px;
-    padding: 14px 27px;
   }
 }
 

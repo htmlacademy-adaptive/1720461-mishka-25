@@ -17,6 +17,10 @@
   @media (min-width: $width-tablet) {
     margin-left: 20px;
   }
+
+  @media (min-width: $width-desktop) {
+    margin-left: 22px;
+  }
 }
 
 

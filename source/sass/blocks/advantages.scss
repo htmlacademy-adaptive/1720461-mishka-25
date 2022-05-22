@@ -34,7 +34,8 @@
 
   @media (min-width: $width-desktop) {
     width: $width-desktop;
-    padding-right: 375px;
+    padding-right: 250px;
+    padding-bottom: 64px;
     padding-left: 250px;
   }
 }
@@ -73,6 +74,17 @@
   background-size: auto;
   background-position: 4px 29px;
 
+  @media (min-width: $width-tablet) {
+    padding-top: 85px;
+    padding-bottom: 26px;
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding-top: 87px;
+  }
+
   &--ecological {
     background-image: url("../../img/svg/flower-icon.svg");
     background-position: 7px 27px;
@@ -80,6 +92,10 @@
     @media (min-width: $width-tablet) {
       background-position: 7px 29px;
       order: 0;
+    }
+
+    @media (min-width: $width-desktop) {
+      background-position: 7px 30px;
     }
   }
 
@@ -92,6 +108,10 @@
       background-position: 0 30px;
       order: 2;
     }
+
+    @media (min-width: $width-desktop) {
+      background-position: 1px 30px;
+    }
   }
 
   &--like {
@@ -102,6 +122,10 @@
       background-position: 7px 35px;
       order: 4;
     }
+
+    @media (min-width: $width-desktop) {
+      background-position: 7px 37px;
+    }
   }
 
   &--handmade {
@@ -111,6 +135,10 @@
     @media (min-width: $width-tablet) {
       background-position: 3px 32px;
       order: 1;
+    }
+
+    @media (min-width: $width-desktop) {
+      background-position: 3px 34px;
     }
   }
 
@@ -123,6 +151,10 @@
       background-position: -6px 34px;
       order: 3;
     }
+
+    @media (min-width: $width-desktop) {
+      background-position: -7px 33px;
+    }
   }
 
   &--gift {
@@ -133,12 +165,9 @@
       background-position: 3px 33px;
       order: 5;
     }
-  }
 
-  @media (min-width: $width-tablet) {
-    padding-top: 85px;
-    padding-bottom: 26px;
-    font-size: 20px;
-    line-height: 22px;
+    @media (min-width: $width-desktop) {
+      background-position: 3px 34px;
+    }
   }
 }

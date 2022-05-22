@@ -120,4 +120,10 @@
     padding: 0;
     padding-right: 35px;
   }
+
+  &--link2 {
+    @media (min-width: $width-desktop) {
+      padding-right: 45px;
+    }
+  }
 }

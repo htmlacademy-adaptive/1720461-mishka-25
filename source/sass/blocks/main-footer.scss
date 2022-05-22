@@ -53,6 +53,10 @@
   align-items: center;
   padding-top: 21px;
   padding-bottom: 22px;
+
+  @media (min-width: $width-desktop) {
+    padding-top: 19px;
+  }
 }
 
 .main-footer__decoration {

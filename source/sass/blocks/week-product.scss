@@ -16,10 +16,30 @@
 
   @media (min-width: $width-desktop) {
     width: $width-desktop;
+    padding-top: 20px;
     padding-right: 75px;
     padding-left: 75px;
   }
 }
+
+
+.week-product__title {
+  grid-area: title;
+  padding-top: 31px;
+  padding-bottom: 4px;
+
+  @media (min-width: $width-tablet) {
+    padding-top: 38px;
+    padding-bottom: 50px;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding-top: 95px;
+    padding-bottom: 22px;
+    z-index: 1;
+  }
+}
+
 
 .week-product__subtitle {
   grid-area: subtitle;
@@ -46,9 +66,9 @@
 
   @media (min-width: $width-desktop) {
     position: absolute;
-    top: 125px;
-    left: 100px;
-    max-width: 150px;
+    top: 123px;
+    left: 92px;
+    max-width: 130px;
   }
 }
 
@@ -72,11 +92,11 @@
   }
 
   @media (min-width: $width-desktop) {
-    grid-template-columns: 292px 200px 380px;
+    grid-template-columns: auto 203px 380px;
     grid-template-rows:
       min-content
-      130px
-      223px
+      162px
+      auto
       57px
       125px;
     grid-template-areas:
@@ -89,22 +109,6 @@
   }
 }
 
-.week-product__title {
-  grid-area: title;
-  padding-top: 31px;
-  padding-bottom: 4px;
-
-  @media (min-width: $width-tablet) {
-    padding-top: 38px;
-    padding-bottom: 50px;
-  }
-
-  @media (min-width: $width-desktop) {
-    padding-top: 115px;
-    padding-bottom: 35px;
-    z-index: 1;
-  }
-}
 
 .week-product__text-content {
   grid-area: text;
@@ -121,6 +125,11 @@
     font-size: 17px;
     line-height: 30px;
   }
+
+  @media (min-width: $width-desktop) {
+    margin-top: 14px;
+    padding-bottom: 0;
+  }
 }
 
 .week-product__table {
@@ -136,7 +145,7 @@
   }
 
   @media (min-width: $width-desktop) {
-    padding-bottom: 109px;
+    padding-bottom: 110px;
   }
 }
 
@@ -149,11 +158,9 @@
   border-bottom: 1px solid $color-border-navigation;
 
   @media (min-width: $width-tablet) {
-    // max-width: 50px;
     min-width: auto;
     padding-top: 7px;
     padding-bottom: 10px;
-    // box-sizing: border-box;
   }
 }
 
@@ -177,9 +184,8 @@
     grid-area: image;
     min-width: 525px;
     min-height: 636px;
-    margin-top: -173px;
+    margin-top: -140px;
     padding-left: 58px;
-    // z-index: -1;
   }
 }
 

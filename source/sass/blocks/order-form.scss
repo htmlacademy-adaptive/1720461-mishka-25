@@ -9,11 +9,19 @@
     @media (min-width: $width-tablet) {
       padding-top: 49px;
     }
+
+    @media (min-width: $width-desktop) {
+      padding-top: 48px;
+    }
   }
 
   &--color {
     @media (min-width: $width-tablet) {
       padding-top: 50px;
+    }
+
+    @media (min-width: $width-desktop) {
+      padding-top: 48px;
     }
   }
 
@@ -72,7 +80,7 @@
   }
 
   @media (min-width: $width-desktop) {
-    grid-template-columns: 180px 262px 264px 175px;
+    grid-template-columns: 176px 262px 264px 175px;
     grid-template-areas:
       ". text text text"
       "legend form form form";
@@ -110,7 +118,7 @@
 
   @media (min-width: $width-desktop) {
     max-width: 702px;
-    padding-top: 116px;
+    padding-top: 103px;
   }
 }
 
@@ -136,7 +144,7 @@
 
   @media (min-width: $width-desktop) {
     min-width: 176px;
-    padding-left: 30%;
+    padding-left: 35%;
   }
 
   &--type {
@@ -208,7 +216,10 @@
 
     @media (min-width: $width-desktop) {
       display: grid;
+      min-width: 750px;
       grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 39px;
+      padding-bottom: 26px;
     }
   }
 
@@ -232,6 +243,10 @@
 
     @media (min-width: $width-tablet) {
       padding-bottom: 24px;
+    }
+
+    @media (min-width: $width-desktop) {
+      padding-bottom: 25px;
     }
   }
 }
