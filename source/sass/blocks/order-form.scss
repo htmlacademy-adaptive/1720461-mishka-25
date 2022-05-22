@@ -7,7 +7,7 @@
 
   &--type {
     @media (min-width: $width-tablet) {
-      padding-top: 50px;
+      padding-top: 49px;
     }
   }
 
@@ -20,12 +20,13 @@
   &--name-surname-patronymic {
     @media (min-width: $width-tablet) {
       padding-top: 50px;
+      padding-bottom: 13px;
     }
   }
 
   &--phone {
     @media (min-width: $width-tablet) {
-      padding-top: 50px;
+      padding-top: 48px;
     }
   }
 
@@ -61,7 +62,7 @@
 
   @media (min-width: $width-tablet) {
     display: grid;
-    grid-template-columns: 167px 250px 250px;
+    grid-template-columns: 168px 250px 250px;
     grid-template-areas:
       "text text text"
       "legend form form";
@@ -101,7 +102,7 @@
 
   @media (min-width: $width-tablet) {
     grid-area: text;
-    padding-top: 66px;
+    padding-top: 58px;
     padding-bottom: 13px;
     font-size: 17px;
     line-height: 30px;
@@ -126,7 +127,8 @@
 
   @media (min-width: $width-tablet) {
     position: absolute;
-    top: 0;
+    top: 1px;
+    left: -1px;
     grid-area: legend;
     min-width: 167px;
     padding-top: 17px;
@@ -159,6 +161,11 @@
 
   &--textarea {
     padding-bottom: 23px;
+
+    @media (min-width: $width-tablet) {
+      top: 3px;
+      left: -2px;
+    }
   }
 }
 
@@ -195,7 +202,7 @@
 
     @media (min-width: $width-tablet) {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 11fr 10fr;
       padding-bottom: 26px;
     }
 
@@ -257,6 +264,10 @@
   &:hover {
     color: $color-brand;
   }
+
+  @media (min-width: $width-tablet) {
+    font-size: 19px;
+  }
 }
 
 
@@ -283,6 +294,8 @@
 
   @media (min-width: $width-tablet) {
     flex-grow: 1;
+    padding-top: 15px;
+    padding-bottom: 13px;
     font-size: 19px;
   }
 }
@@ -366,7 +379,8 @@
 
 
   @media (min-width: $width-tablet) {
-    min-width: 501px;
+    min-width: 482px;
+    padding-left: 16px;
     font-size: 19px;
     background-color: transparent;
   }
@@ -403,6 +417,11 @@
   &:focus-visible {
     outline: none;
   }
+
+  @media (min-width: $width-tablet) {
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
 }
 
 
@@ -420,8 +439,8 @@
     fill: $color-text-primary;
 
     @media (min-width: $width-tablet) {
-      margin-top: 16px;
-      margin-right: 20px;
+      margin-top: 13px;
+      margin-right: 26px;
     }
 
     @media (min-width: $width-desktop) {
@@ -439,7 +458,7 @@
 
     @media (min-width: $width-tablet) {
       margin-top: 16px;
-      margin-right: 17px;
+      margin-right: 22px;
     }
 
     @media (min-width: $width-desktop) {
@@ -484,6 +503,11 @@
 
   &:focus-visible {
     outline: none;
+  }
+
+  @media (min-width: $width-tablet) {
+    min-width: 500px;
+    padding-left: 14px;
   }
 }
 
@@ -546,6 +570,8 @@
 
   @media (min-width: $width-tablet) {
     padding-bottom: 0;
+    font-size: 17px;
+    line-height: 30px;
   }
 }
 

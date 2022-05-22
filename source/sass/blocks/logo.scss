@@ -24,6 +24,8 @@
 
     @media (min-width: $width-tablet) {
       display: block;
+      margin-top: 1px;
+      margin-left: -2px;
     }
 
     @media (min-width: $width-desktop) {

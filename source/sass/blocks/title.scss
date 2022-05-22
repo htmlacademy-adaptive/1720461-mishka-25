@@ -64,8 +64,9 @@
 
     @media (min-width: $width-tablet) {
       min-width: 420px;
-      padding-top: 101px;
-      padding-bottom: 87px;
+      padding-top: 100px;
+      padding-bottom: 83px;
+      padding-left: 2px;
     }
 
     @media (min-width: $width-desktop) {

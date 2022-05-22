@@ -14,6 +14,7 @@
 
 .modal__container {
   min-width: 320px;
+  min-height: 336px;
   height: auto;
   margin: auto;
   margin-top: 130px;
@@ -26,6 +27,7 @@
   @media (min-width: $width-tablet) {
     min-width: auto;
     max-width: 566px;
+    padding: 37px 30px 46px 30px;
     border: none;
     outline: 1px solid $color-border-modal;
     box-shadow: 0 5px 10px rgba($color-box-shadow-modal, 0.25);
