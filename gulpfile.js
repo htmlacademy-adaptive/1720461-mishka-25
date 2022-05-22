@@ -52,8 +52,9 @@ export const styles = () => {
       csso()
     ]))
     .pipe(rename('style.min.css'))
-    // .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
-    .pipe(gulp.dest('source/css', { sourcemaps: '.' }))
+    .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
+    // для тестирования сборки из папки source
+    // .pipe(gulp.dest('source/css', { sourcemaps: '.' }))
     .pipe(browser.stream());
 }
 
@@ -122,8 +123,9 @@ const sprite = () => {
 const server = (done) => {
   browser.init({
     server: {
-      // baseDir: 'build'
-      baseDir: 'source'
+      baseDir: 'build'
+      // для тестирования сборки из папки source
+      // baseDir: 'source'
     },
     cors: true,
     notify: false,
