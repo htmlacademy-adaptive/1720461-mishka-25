@@ -16,15 +16,35 @@
 
   @media (min-width: $width-desktop) {
     width: $width-desktop;
+    padding-top: 20px;
     padding-right: 75px;
     padding-left: 75px;
   }
 }
 
+
 .week-product__title {
-  position: absolute;
-  top: 62px;
-  left: 30px;
+  grid-area: title;
+  padding-top: 31px;
+  padding-bottom: 4px;
+
+  @media (min-width: $width-tablet) {
+    padding-top: 38px;
+    padding-bottom: 50px;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding-top: 95px;
+    padding-bottom: 22px;
+    z-index: 1;
+  }
+}
+
+
+.week-product__subtitle {
+  grid-area: subtitle;
+  align-self: center;
+  justify-self: flex-end;
   font-size: 17px;
   line-height: 20px;
   font-weight: 700;
@@ -32,32 +52,38 @@
   background-color: $color-bg-primary;
   text-transform: uppercase;
 
+  @media (max-width: $width-mobile-only) {
+    margin-bottom: 18px;
+  }
+
   @media (min-width: $width-tablet) {
-    top: 50px;
-    left: 600px;
     max-width: 100px;
+    margin-right: 11px;
+    margin-bottom: 15px;
     line-height: 17px;
     text-align: center;
   }
 
   @media (min-width: $width-desktop) {
-    top: 125px;
-    left: 100px;
+    position: absolute;
+    top: 123px;
+    left: 92px;
+    max-width: 130px;
   }
 }
 
 .week-product__article {
   @media (min-width: $width-tablet) {
     display: grid;
-    grid-template-columns: 292px 120px 214px;
+    grid-template-columns: 292px 140px 234px;
     grid-template-rows:
-      128px
-      118px
-      170px
+      min-content
+      124px
+      171px
       57px
       104px;
     grid-template-areas:
-      "title title title"
+      "title title subtitle"
       "text image image"
       "table image image"
       "price image image"
@@ -66,11 +92,11 @@
   }
 
   @media (min-width: $width-desktop) {
-    grid-template-columns: 292px 200px 380px;
+    grid-template-columns: auto 203px 380px;
     grid-template-rows:
-      207px
-      130px
-      223px
+      min-content
+      162px
+      auto
       57px
       125px;
     grid-template-areas:
@@ -83,27 +109,11 @@
   }
 }
 
-.week-product__subtitle {
-  grid-area: title;
-  padding-top: 31px;
-  padding-bottom: 41px;
-
-  @media (min-width: $width-tablet) {
-    padding-top: 40px;
-    padding-bottom: 38px;
-  }
-
-  @media (min-width: $width-desktop) {
-    padding-top: 115px;
-    padding-bottom: 35px;
-    z-index: 1;
-  }
-}
 
 .week-product__text-content {
   grid-area: text;
   margin: 0;
-  padding-bottom: 28px;
+  padding-bottom: 26px;
   font-size: 15px;
   line-height: 24px;
   font-weight: 400;
@@ -111,7 +121,14 @@
   background-color: $color-bg-primary;
 
   @media (min-width: $width-tablet) {
-    padding-bottom: 48px;
+    margin-top: -12px;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin-top: 14px;
+    padding-bottom: 0;
   }
 }
 
@@ -128,17 +145,23 @@
   }
 
   @media (min-width: $width-desktop) {
-    padding-bottom: 109px;
+    padding-bottom: 110px;
   }
 }
 
 .week-product__data {
-  min-width: 100px;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  min-width: 67px;
+  padding-top: 9px;
+  padding-bottom: 9px;
   font-weight: 400;
   text-align: left;
   border-bottom: 1px solid $color-border-navigation;
+
+  @media (min-width: $width-tablet) {
+    min-width: auto;
+    padding-top: 7px;
+    padding-bottom: 10px;
+  }
 }
 
 .week-product__row:first-child .week-product__data {
@@ -148,7 +171,7 @@
 .week-product__image {
   grid-area: image;
   padding-top: 26px;
-  padding-bottom: 26px;
+  padding-bottom: 19px;
 
   @media (min-width: $width-tablet) {
     min-width: 334px;
@@ -161,9 +184,8 @@
     grid-area: image;
     min-width: 525px;
     min-height: 636px;
-    margin-top: -173px;
+    margin-top: -140px;
     padding-left: 58px;
-    // z-index: -1;
   }
 }
 
@@ -188,13 +210,13 @@
 
   grid-area: button;
   margin-bottom: 36px;
-  padding: 16px 86px;
   font-size: 18px;
   line-height: 20px;
   text-align: center;
 
   @media (min-width: $width-tablet) {
-    margin-bottom: 48px;
+    margin-bottom: 52px;
+    font-size: 17px;
   }
 
   @media (min-width: $width-desktop) {

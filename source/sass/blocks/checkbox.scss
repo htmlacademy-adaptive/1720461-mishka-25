@@ -44,6 +44,8 @@
   user-select: none;
 
   @media (min-width: $width-tablet) {
+    grid-template-columns: 52px 1fr;
+    column-gap: 28px;
     font-size: 19px;
   }
 }

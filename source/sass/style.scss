@@ -1,4 +1,5 @@
 // global styles
+@use "global/global-styles.scss";
 @use "global/variables.scss";
 @use "global/fonts.scss";
 @use "blocks/body.scss";
@@ -18,7 +19,6 @@
 @use "blocks/promo-list.scss";
 
 // main file
-@use "blocks/main-container.scss";
 @use "blocks/promo.scss";
 @use "blocks/week-product.scss";
 @use "blocks/advantages.scss";
@@ -42,4 +42,3 @@
 @use "blocks/order-form.scss";
 @use "blocks/radiobutton.scss";
 @use "blocks/checkbox.scss";
-@use "blocks/order-form-name.scss";

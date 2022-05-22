@@ -11,6 +11,7 @@
 
   @media (min-width: $width-tablet) {
     width: $width-tablet;
+    min-height: 457px;
     margin-bottom: 68px;
     padding-right: 50px;
     padding-left: 50px;
@@ -26,7 +27,7 @@
 
   @media (min-width: $width-desktop) {
     width: $width-desktop;
-
+    margin-bottom: 66px;
     padding-right: 75px;
     padding-left: 250px;
     background-position: 75px 0;
@@ -66,7 +67,7 @@
 
 .reviews__text-content {
   margin: 0;
-  padding-bottom: 33px;
+  padding-bottom: 32px;
   font-size: 15px;
   line-height: 30px;
   font-weight: 400;
@@ -76,13 +77,14 @@
   @media (min-width: $width-tablet) {
     grid-area: review;
     max-width: 668px;
-    padding-bottom: 61px;
+    padding-bottom: 60px;
     font-size: 17px;
     background-color: transparent;
   }
 
   @media (min-width: $width-desktop) {
     max-width: 810px;
+    padding-bottom: 43px;
   }
 }
 
@@ -95,10 +97,20 @@
 
 
 .reviews__author-name {
-  padding-bottom: 5px;
+  margin-bottom: 4px;
   font-size: 17px;
-  line-height: 24px;
+  line-height: 30px;
   font-weight: 700;
+
+  @media (min-width: $width-tablet) {
+    display: block;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $width-desktop) {
+    font-size: 17px;
+  }
 }
 
 
@@ -118,13 +130,18 @@
 
   @media (min-width: $width-tablet) {
     grid-area: control;
+    margin-top: 6px;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin-right: -2px;
   }
 }
 
 
 .reviews__control-button {
   display: block;
-  padding: 12px 38px;
+  padding: 11px 39px;
   background-color: $color-bg-primary;
   border: 1px solid $color-border-control-button;
   cursor: pointer;
@@ -176,7 +193,6 @@
   display: block;
   min-width: 260px;
   margin-bottom: 45px;
-  padding: 15px 65px;
   box-sizing: border-box;
   font-size: 18px;
   line-height: 20px;
@@ -185,14 +201,15 @@
 
   @media (min-width: $width-tablet) {
     position: absolute;
-    top: 60px;
+    top: 79px;
     right: 50px;
     min-width: 175px;
-    padding: 15px 26px;
+    padding: 14px 26px;
+    font-size: 17px;
   }
 
   @media (min-width: $width-desktop) {
-    top: 60px;
+    top: 78px;
     right: 75px;
   }
 }

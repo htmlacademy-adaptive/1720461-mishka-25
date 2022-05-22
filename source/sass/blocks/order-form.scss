@@ -2,13 +2,16 @@
 
 
 .order-form__group {
-  margin: 0;
   padding: 0;
   border: none;
 
   &--type {
     @media (min-width: $width-tablet) {
-      padding-top: 50px;
+      padding-top: 49px;
+    }
+
+    @media (min-width: $width-desktop) {
+      padding-top: 48px;
     }
   }
 
@@ -16,17 +19,22 @@
     @media (min-width: $width-tablet) {
       padding-top: 50px;
     }
+
+    @media (min-width: $width-desktop) {
+      padding-top: 48px;
+    }
   }
 
   &--name-surname-patronymic {
     @media (min-width: $width-tablet) {
       padding-top: 50px;
+      padding-bottom: 13px;
     }
   }
 
   &--phone {
     @media (min-width: $width-tablet) {
-      padding-top: 50px;
+      padding-top: 48px;
     }
   }
 
@@ -51,15 +59,18 @@
 
 
 .order-form__wrapper {
+  position: relative;
   width: 320px;
   margin: 0 auto;
+  padding: 0;
   padding-right: 30px;
   padding-left: 30px;
   box-sizing: border-box;
+  border: none;
 
   @media (min-width: $width-tablet) {
     display: grid;
-    grid-template-columns: 167px 250px 250px;
+    grid-template-columns: 168px 250px 250px;
     grid-template-areas:
       "text text text"
       "legend form form";
@@ -69,7 +80,7 @@
   }
 
   @media (min-width: $width-desktop) {
-    grid-template-columns: 180px 262px 264px 175px;
+    grid-template-columns: 176px 262px 264px 175px;
     grid-template-areas:
       ". text text text"
       "legend form form form";
@@ -99,7 +110,7 @@
 
   @media (min-width: $width-tablet) {
     grid-area: text;
-    padding-top: 66px;
+    padding-top: 58px;
     padding-bottom: 13px;
     font-size: 17px;
     line-height: 30px;
@@ -107,7 +118,7 @@
 
   @media (min-width: $width-desktop) {
     max-width: 702px;
-    padding-top: 116px;
+    padding-top: 103px;
   }
 }
 
@@ -123,6 +134,9 @@
   text-transform: uppercase;
 
   @media (min-width: $width-tablet) {
+    position: absolute;
+    top: 1px;
+    left: -1px;
     grid-area: legend;
     min-width: 167px;
     padding-top: 17px;
@@ -130,7 +144,7 @@
 
   @media (min-width: $width-desktop) {
     min-width: 176px;
-    padding-left: 30%;
+    padding-left: 35%;
   }
 
   &--type {
@@ -155,6 +169,11 @@
 
   &--textarea {
     padding-bottom: 23px;
+
+    @media (min-width: $width-tablet) {
+      top: 3px;
+      left: -2px;
+    }
   }
 }
 
@@ -191,13 +210,16 @@
 
     @media (min-width: $width-tablet) {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 11fr 10fr;
       padding-bottom: 26px;
     }
 
     @media (min-width: $width-desktop) {
       display: grid;
+      min-width: 750px;
       grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 39px;
+      padding-bottom: 26px;
     }
   }
 
@@ -222,13 +244,17 @@
     @media (min-width: $width-tablet) {
       padding-bottom: 24px;
     }
+
+    @media (min-width: $width-desktop) {
+      padding-bottom: 25px;
+    }
   }
 }
 
 
-.order-form-name__wrapper,
-.order-form-surname__wrapper,
-.order-form-patronymic__wrapper {
+.order-form__name-wrapper,
+.order-form__surname-wrapper,
+.order-form__patronymic-wrapper {
   display: flex;
   flex-direction: column;
   padding-bottom: 22px;
@@ -241,11 +267,30 @@
 }
 
 
-.order-form-name__input,
-.order-form-surname__input,
-.order-form-patronymic__input {
+.order-form__name-field,
+.order-form__surname-field,
+.order-form__patronymic-field {
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 700;
+  color: $color-text-primary;
+  background-color: $color-bg-primary;
+
+  &:hover {
+    color: $color-brand;
+  }
+
+  @media (min-width: $width-tablet) {
+    font-size: 19px;
+  }
+}
+
+
+.order-form__name-input,
+.order-form__surname-input,
+.order-form__patronymic-input {
   padding-top: 17px;
-  padding-bottom: 17px;
+  padding-bottom: 14.5px;
   font-size: 17px;
   line-height: 18px;
   font-weight: 400;
@@ -264,12 +309,14 @@
 
   @media (min-width: $width-tablet) {
     flex-grow: 1;
+    padding-top: 15px;
+    padding-bottom: 13px;
     font-size: 19px;
   }
 }
 
 
-.order-form-name__input {
+.order-form__name-input {
   @media (min-width: $width-tablet) {
     margin-left: 24px;
     padding-left: 18px;
@@ -277,7 +324,7 @@
 }
 
 
-.order-form-surname__input {
+.order-form__surname-input {
   @media (min-width: $width-tablet) {
     margin-left: 25px;
     padding-left: 16px;
@@ -285,7 +332,7 @@
 }
 
 
-.order-form-patronymic__input {
+.order-form__patronymic-input {
   @media (min-width: $width-tablet) {
     margin-left: 27px;
     padding-left: 17px;
@@ -293,9 +340,9 @@
 }
 
 
-.order-form-name__input::placeholder,
-.order-form-surname__input::placeholder,
-.order-form-patronymic__input::placeholder {
+.order-form__name-input::placeholder,
+.order-form__surname-input::placeholder,
+.order-form__patronymic-input::placeholder {
   font-family: "Open Sans", sans-serif;
   font-size: 17px;
   line-height: 18px;
@@ -330,15 +377,19 @@
   @media (min-width: $width-tablet) {
     padding-bottom: 53px;
   }
+
+  @media (min-width: $width-desktop) {
+    padding-bottom: 49px;
+  }
 }
 
 
-.order-form-phone__input,
-.order-form-email__input,
-.order-form-textarea__input {
+.order-form__phone-input,
+.order-form__email-input,
+.order-form__textarea-input {
   min-width: 260px;
   padding-top: 14px;
-  padding-bottom: 20px;
+  padding-bottom: 16px;
   font-size: 17px;
   line-height: 18px;
   font-weight: 400;
@@ -347,7 +398,8 @@
 
 
   @media (min-width: $width-tablet) {
-    min-width: 501px;
+    min-width: 482px;
+    padding-left: 16px;
     font-size: 19px;
     background-color: transparent;
   }
@@ -358,7 +410,7 @@
 }
 
 
-.order-form-phone__input {
+.order-form__phone-input {
   &:hover,
   &:active,
   &:focus {
@@ -371,8 +423,9 @@
 }
 
 
-.order-form-email__input {
-  padding-bottom: 18px;
+.order-form__email-input {
+  padding-top: 17px;
+  padding-bottom: 15px;
 
   &:hover,
   &:active,
@@ -382,6 +435,11 @@
 
   &:focus-visible {
     outline: none;
+  }
+
+  @media (min-width: $width-tablet) {
+    padding-top: 14px;
+    padding-bottom: 14px;
   }
 }
 
@@ -395,63 +453,73 @@
 
   &--phone {
     margin-top: 10px;
-    margin-right: 4px;
+    margin-right: 10px;
     opacity: 0.2;
     fill: $color-text-primary;
 
     @media (min-width: $width-tablet) {
-      margin-top: 16px;
-      margin-right: 20px;
+      margin-top: 13px;
+      margin-right: 26px;
     }
 
     @media (min-width: $width-desktop) {
-      margin-top: 16px;
-      margin-right: 4px;
+      margin-top: 13px;
+      margin-right: 9px;
     }
   }
 
 
   &--email {
-    margin-top: 12px;
-    margin-right: 1px;
+    margin-top: 16px;
+    margin-right: 7px;
     opacity: 0.2;
     fill: $color-text-primary;
 
     @media (min-width: $width-tablet) {
       margin-top: 16px;
-      margin-right: 17px;
+      margin-right: 22px;
     }
 
     @media (min-width: $width-desktop) {
       margin-top: 16px;
-      margin-right: 1px;
+      margin-right: 6px;
     }
   }
 }
 
 
-.order-form-phone__input:hover + .order-form__icon--phone,
-.order-form-email__input:hover + .order-form__icon--email {
+.order-form__phone-input:hover + .order-form__icon--phone,
+.order-form__email-input:hover + .order-form__icon--email {
   fill: $color-brand;
   opacity: 1;
 }
 
 
-.order-form-phone__input:active + .order-form__icon--phone,
-.order-form-email__input:active + .order-form__icon--email {
+.order-form__phone-input:active + .order-form__icon--phone,
+.order-form__email-input:active + .order-form__icon--email {
   fill: $color-brand;
   opacity: 0.6;
 }
 
 
-.order-form-textarea__input {
+.order-form__textarea-input {
   min-height: 142px;
   box-sizing: border-box;
   resize: vertical;
-  padding-top: 17px;
+  padding-top: 14px;
   padding-right: 17px;
-  padding-left: 17px;
+  padding-left: 16px;
   border: 2px solid $color-border-primary;
+
+  @media (min-width: $width-tablet) {
+    min-width: 500px;
+    padding-left: 14px;
+  }
+
+  @media (min-width: $width-desktop) {
+    min-width: 700px;
+    padding-top: 16px;
+  }
 
   &:hover,
   &:focus {
@@ -468,9 +536,9 @@
 }
 
 
-.order-form-phone__input::placeholder,
-.order-form-email__input::placeholder,
-.order-form-textarea__input::placeholder {
+.order-form__phone-input::placeholder,
+.order-form__email-input::placeholder,
+.order-form__textarea-input::placeholder {
   font-family: "Open Sans", sans-serif;
   font-size: 17px;
   line-height: 18px;
@@ -512,6 +580,10 @@
     margin: 0;
     padding: 0;
   }
+
+  @media (min-width: $width-desktop) {
+    margin-right: -3px;
+  }
 }
 
 
@@ -526,6 +598,8 @@
 
   @media (min-width: $width-tablet) {
     padding-bottom: 0;
+    font-size: 17px;
+    line-height: 30px;
   }
 }
 
@@ -537,5 +611,9 @@
   @media (min-width: $width-tablet) {
     min-width: 230px;
     margin-bottom: 0;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin-left: -1px;
   }
 }

@@ -3,7 +3,7 @@
 
 .main-navigation__toogle {
   position: absolute;
-  top: 26px;
+  top: 29px;
   right: 30px;
   display: block;
   width: 21px;
@@ -165,7 +165,6 @@
 .main-navigation__list {
   @media (min-width: $width-tablet) {
     display: flex;
-    flex-wrap: wrap;
   }
 }
 
@@ -178,7 +177,8 @@
     align-self: center;
     justify-self: flex-end;
     grid-area: delivery;
-    margin-bottom: -74px;  // при переполнении это не помогает
+    // с отрицательным margin не проходит тест на переполнение
+    margin-bottom: -68px;
     background-color: transparent;
   }
 }

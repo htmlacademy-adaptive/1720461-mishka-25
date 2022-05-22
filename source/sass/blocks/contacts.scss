@@ -29,7 +29,7 @@
     width: $width-desktop;
     margin: 0 auto;
     box-sizing: border-box;
-    grid-template-columns: 170px 350px 527px;
+    grid-template-columns: 160px auto 527px;
     grid-template-rows:
       79px
       92px
@@ -78,8 +78,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 63px;
-    padding-bottom: 49px;
+    padding-top: 73px;
+    padding-bottom: 39px;
   }
 
   @media (min-width: $width-desktop) {
@@ -96,6 +96,8 @@
     display: flex;
     width: 47px;
     height: 81px;
+    margin-top: -9px;
+    margin-right: 3px;
     background-image: url("../../img/svg/flag.svg");
     background-repeat: no-repeat;
     background-size: auto;
@@ -103,7 +105,8 @@
 
   @media (min-width: $width-desktop) {
     position: absolute;
-    left: -35%;
+    top: -8%;
+    left: -33%;
     order: -1;
   }
 }
@@ -116,11 +119,15 @@
   font-weight: 400;
   color: $color-text-secondary;
   background-color: $color-bg-primary;
+
+  @media (min-width: $width-tablet) {
+    font-size: 17px;
+  }
 }
 
 
 .contacts__e-mail {
-  padding-bottom: 3px;
+  padding-bottom: 2px;
   border-bottom: 1px solid $color-text-brand-underline;
 
   &:hover {
@@ -136,6 +143,14 @@
     color: $color-intense;
     border: none;
     outline: none;
+  }
+
+  @media (min-width: $width-tablet) {
+    padding-bottom: 3px;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding-bottom: 7px;
   }
 }
 
@@ -163,21 +178,21 @@
 
 
 .contacts__term {
-  width: 90px;
+  word-wrap: break-word;
 }
 
 
 .contacts__item {
   display: grid;
   grid-template-columns: 76px 183px;
-  grid-template-rows: 50px;
+
 
   @media (min-width: $width-tablet) {
-    grid-template-columns: 90px 230px;
+    grid-template-columns: 78px 255px;
   }
 
-  &--second {
-    grid-template-rows: 90px;
+  &--first {
+    padding-bottom: 30px;
   }
 }
 
@@ -196,7 +211,6 @@
   max-width: 260px;
   margin: 0 auto;
   margin-bottom: 39px;
-  padding: 15px 38px;
   box-sizing: border-box;
   font-size: 18px;
   line-height: 20px;
@@ -205,17 +219,22 @@
   order: 2;
 
   @media (min-width: $width-tablet) {
-    max-width: 230px;
-    margin-top: 55px;
-    margin-bottom: 57px;
-    padding: 16px 28px;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    max-width: 460px;
+    min-width: 230px;
+    margin-top: 48px;
+    margin-bottom: 56px;
+    font-size: 17px;
   }
 
   @media (min-width: $width-desktop) {
     grid-area: button;
+    max-width: 230px;
+    min-width: auto;
     margin: 0;
     margin-left: 15px;
-    padding: 14px 27px;
   }
 }
 
@@ -223,7 +242,7 @@
 .contacts__iframe {
   width: 100%;
   height: 454px;
-  padding-bottom: 42px;
+  padding-bottom: 34px;
   border: none;
 
   @media (min-width: $width-tablet) {

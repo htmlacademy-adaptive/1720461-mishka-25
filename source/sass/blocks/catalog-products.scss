@@ -15,22 +15,23 @@
 
   @media (min-width: $width-desktop) {
     width: $width-desktop;
+    padding-top: 45px;
     padding-right: 75px;
     padding-left: 75px;
   }
 }
 
 .catalog-products-list {
-  padding-top: 30px;
+  padding-top: 29px;
 
   @media (min-width: $width-tablet) {
-    padding-top: 67px;
+    padding-top: 70px;
   }
 
   @media (min-width: $width-desktop) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 50px;
+    column-gap: 51px;
     max-width: 316px;
   }
 }

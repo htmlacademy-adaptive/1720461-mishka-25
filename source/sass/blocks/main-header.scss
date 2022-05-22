@@ -25,6 +25,7 @@
 
   @media (min-width: $width-desktop) {
     min-width: $width-desktop;
+    max-width: 1200px;
     padding-right: 75px;
     padding-left: 75px;
   }
@@ -35,7 +36,7 @@
   display: flex;
   flex-wrap: wrap;
   min-width: 320px;
-  min-height: 79px;
+  min-height: 78px;
   border-top: 1px solid $color-border-navigation;
   border-bottom: 1px solid $color-border-navigation;
 
@@ -43,12 +44,14 @@
     position: absolute;
     min-width: 35.5%;
     min-height: 88px;
+    margin-right: 2px;
     border: none;
   }
 
   @media (min-width: $width-desktop) {
-    left: 43.5%;
-    min-width: 13%;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 10%;
   }
 }
 
@@ -56,10 +59,12 @@
 .main-header__logo {
   height: 35px;
   margin: auto;
+  padding-right: 1px;
 
   @media (min-width: $width-tablet) {
     height: 46px;
     margin: auto 0;
+    margin-right: 2px;
   }
 
   @media (min-width: $width-desktop) {

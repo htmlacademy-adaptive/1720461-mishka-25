@@ -10,8 +10,8 @@
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="preload" href="css/style.min.css" as="style">
-  <link rel="preload" href="/fonts/opensans.woff2" as="font">
-  <link rel="preload" href="/fonts/opensansbold.woff2" as="font">
+  <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="img/backgrounds/bg-image-house-shelf-mobile.jpg" as="image">
   <link rel="preload" href="img/backgrounds/bg-image-house-shelf-mobile@2x.jpg" as="image">
   <link rel="preload" href="img/backgrounds/bg-image-house-shelf-tablet.jpg" as="image">
@@ -38,7 +38,7 @@
         </a>
       </div>
 
-      <nav class="main-navigation main-navigation--opened"> <!-- для main-navigation--nojs прописаны стили в scss -->
+      <nav class="main-navigation main-navigation--closed"><!-- для работы без javascript нужно изменить класс main-navigation--closed на main-navigation--opened а также добавить main-navigation--nojs -->
         <button class="main-navigation__toogle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -46,20 +46,20 @@
         <div class="main-navigation__wrapper main-navigation__wrapper-layout">
           <ul class="main-navigation__list list site-list">
             <li class="site-list__item site-list__catalog-item item">
-              <div class="site-item-layout-wrapper">
+              <div class="site-list__item-layout-wrapper">
                 <a class="site-list__link site-list__order-link link" href="catalog.html">Каталог товаров</a>
               </div>
             </li>
             <li class="site-list__item site-list__order-item item">
-              <div class="site-item-layout-wrapper">
-                <a class="site-list__link site-list__order-link link" href="form.html">Вязание на заказ</a>
+              <div class="site-list__item-layout-wrapper">
+                <a class="site-list__link site-list__order-link link site-list__order-link--link2" href="form.html">Вязание на заказ</a>
               </div>
             </li>
           </ul>
 
           <ul class="main-navigation__list list user-list">
             <li class="user-list__item item">
-              <div class="site-item-layout-wrapper">
+              <div class="user-list__item-layout-wrapper">
                 <a class="user-list__link user-list__search-link link" href="#">
                   <svg class="user-list__link-search-icon" width="18" height="18">
                     <use xlink:href="img/sprite.svg#search-icon"></use>
@@ -69,7 +69,7 @@
               </div>
             </li>
             <li class="user-list__item item">
-              <div class="site-item-layout-wrapper">
+              <div class="user-list__item-layout-wrapper">
                 <a class="user-list__link user-list__cart-link link" href="#">
                   <svg class="user-list__link-cart-icon" width="21" height="18">
                     <use xlink:href="img/sprite.svg#cart-icon"></use>
@@ -100,19 +100,19 @@
   <main class="main-container">
     <section class="promo promo--main">
       <div class="promo__wrapper promo__wrapper--main">
-        <h1 class="promo__title title title--main">Милые штуки ручной работы для дома</h1>
+        <h1 class="promo__title title title--main">Милые штуки ручной работы&nbsp;для&nbsp;дома</h1>
       </div>
       <div class="promo__navigation-wrapper">
         <h2 class="visually-hidden">Каталог различных товаров</h2>
         <ul class="promo__navigation-list">
           <li class="promo__navigation-item promo__navigation-item--interior">
-            <a class="promo__navigation-link promo__navigation-link--interior link" href="#" >Предметы интерьера</a>
+            <a class="promo__navigation-link promo__navigation-link--interior link" href="#" >Предметы<br>интерьера</a>
             <svg class="promo__navigation-icon promo__navigation-icon--interior" width="40" height="62">
               <use xlink:href="img/sprite.svg#interior-icon"></use>
             </svg>
           </li>
           <li class="promo__navigation-item promo__navigation-item--toys">
-            <a class="promo__navigation-link promo__navigation-link--toys link" href="#">Детские игрушки</a>
+            <a class="promo__navigation-link promo__navigation-link--toys link" href="#">Детские<br> игрушки</a>
             <svg class="promo__navigation-icon promo__navigation-icon--toy" width="60" height="60">
               <use xlink:href="img/sprite.svg#toy-icon"></use>
             </svg>
@@ -122,15 +122,13 @@
     </section>
 
 
-
-
-
     <section class="week-product">
       <div class="week-product__wrapper">
-        <h2 class="week-product__title title title--medium_decorated">Товар недели</h2>
+        <!-- <h2 class="week-product__title title title--medium_decorated">Товар недели</h2> -->
 
         <article class="week-product__article article">
-          <h3 class="week-product__subtitle title title--medium">Вязаные корзинки</h3>
+          <h2 class="week-product__title title title--medium">Вязаные корзинки</h2>
+          <p class="week-product__subtitle title title--medium_decorated">Товар недели</p>
           <p class="week-product__text-content">Экологически чистая пряжа, ручная&nbsp;работа. Доступны в шести расцветках и трёх размерах.</p>
 
           <table class="week-product__table">
@@ -156,7 +154,7 @@
             <source media="(min-width: 768px)" srcset="img/products/product-image-triple-set-tablet.jpg 1x, img/products/product-image-triple-set-tablet@2x.jpg 2x">
             <img class="week-product__image" src="img/products/product-image-triple-set-mobile.jpg" width="260" height="315" srcset="img/products/product-image-triple-set-mobile@2x.jpg 2x" alt="Фото трех вязаных корзинок маленького, среднего, большого размера, а также зеленого и розового цветов.">
           </picture>
-          <span class="week-product__price">Цена 990 руб.</span>
+          <span class="week-product__price">Цена: 990 руб.</span>
           <a class="week-product__button open-modal button button--primary link" href="#">Заказать</a>
         </article>
 
@@ -168,10 +166,10 @@
       <div class="advantages__wrapper">
         <h2 class="advantages__title title title--medium">Коротко о нас:</h2>
         <ul class="advantages__list list">
-          <li class="advantages__item item advantages__item--ecological">Экологически чистые материалы</li>
+          <li class="advantages__item item advantages__item--ecological">Экологически чистые&nbsp;материалы</li>
           <li class="advantages__item item advantages__item--nordic">Скандинавский стиль по&nbsp;российской цене</li>
           <li class="advantages__item item advantages__item--like">Увеличивает лайки на&nbsp;фотографиях</li>
-          <li class="advantages__item item advantages__item--handmade">Связано вручную с&nbsp;любовью&nbsp;и умилением</li>
+          <li class="advantages__item item advantages__item--handmade">Связано вручную с&nbsp;любовью&nbsp;и&nbsp;умилением</li>
           <li class="advantages__item item advantages__item--national">Поддержка отечественного производителя</li>
           <li class="advantages__item item advantages__item--gift">Поставляется в&nbsp;подарочной&nbsp;упаковке</li>
         </ul>
@@ -183,19 +181,19 @@
       <div class="reviews__wrapper">
         <h2 class="reviews__title title title--medium">Отзывы</h2>
         <blockquote class="reviews__author-review">
-          <p class="reviews__text-content">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В&nbsp;отчаянии, я накупила аксессуаров и игрушек в Мишке, и&nbsp;мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+          <p class="reviews__text-content">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у&nbsp;популярных инстамамочек. В&nbsp;отчаянии, я накупила аксессуаров и игрушек в Мишке, и&nbsp;мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
           <span class="reviews__author">
             <b class="reviews__author-name">Анастасия Красильникова</b>
             <span class="reviews__author-nickname">@misssssiskras</span>
           </span>
           <div class="reviews__control buttons-control">
-            <button class="reviews__control-button reviews__control-button--left control-button" type="button">
+            <button class="reviews__control-button reviews__control-button--left" type="button">
               <svg class="reviews__control-button-icon" width="50" height="26">
                 <use xlink:href="img/sprite.svg#arrow-button-icon"></use>
               </svg>
               <span class="visually-hidden">Предыдущий отзыв</span>
             </button>
-            <button class="reviews__control-button reviews__control-button--right control-button" type="button">
+            <button class="reviews__control-button reviews__control-button--right" type="button">
               <svg class="reviews__control-button-icon" width="50" height="26">
                 <use xlink:href="img/sprite.svg#arrow-button-icon"></use>
               </svg>
@@ -230,18 +228,17 @@
           </dl>
         </div>
 
-        <div class="contacts__map-container"> <!-- для contacts__map-nojs прописаны стили в scss -->
+        <div class="contacts__map-container">
           <iframe class="contacts__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.3018931483289!2d30.322276154757713!3d59.938716497749525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x62740c0ffcd8a91f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsIDEwMSwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsINCg0L7RgdGB0LjRjywgMTkxMTg2!5e0!3m2!1sru!2suk!4v1649000168325!5m2!1sru!2suk" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Офис компании 'Мишка'"></iframe>
           <div class="contacts__map-nojs-container">
             <picture>
-              <source type="image/webp" media="(min-width: 1200px)" srcset="img/content-images/map-nojs-desktop.webp 1x, img/content-images/map-nojs-desktop@2x.webp 2x" loading="lazy">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/content-images/map-nojs-tablet.webp 1x, img/content-images/map-nojs-tablet@2x.webp 2x" loading="lazy">
-              <source type="image/webp" srcset="img/content-images/map-nojs-mobile.webp 1x, img/content-images/map-nojs-mobile@2x.webp 2x" loading="lazy">
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/content-images/map-nojs-desktop.webp 1x, img/content-images/map-nojs-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/content-images/map-nojs-tablet.webp 1x, img/content-images/map-nojs-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/content-images/map-nojs-mobile.webp 1x, img/content-images/map-nojs-mobile@2x.webp 2x">
+              <source type="image/png" media="(min-width: 1200px)" srcset="img/content-images/map-nojs-desktop.png 1x, img/content-images/map-nojs-desktop@2x.png 2x">
+              <source type="image/png" media="(min-width: 768px)" srcset="img/content-images/map-nojs-tablet.png 1x, img/content-images/map-nojs-tablet@2x.png 2x">
 
-              <source type="image/png" media="(min-width: 1200px)" srcset="img/content-images/map-nojs-desktop.png 1x, img/content-images/map-nojs-desktop@2x.png 2x" loading="lazy">
-              <source type="image/png" media="(min-width: 768px)" srcset="img/content-images/map-nojs-tablet.png 1x, img/content-images/map-nojs-tablet@2x.png 2x" loading="lazy">
-
-              <img class="contacts__map-nojs-image" src="img/content-images/map-nojs-mobile.png" width="320" height="455" alt="Как до нас добраться" srcset="img/backgrounds/map-nojs-mobile@2x.png 2x" loading="lazy">
+              <img class="contacts__map-nojs-image" src="img/content-images/map-nojs-mobile.png" width="320" height="455" alt="Как до нас добраться" srcset="img/backgrounds/map-nojs-mobile@2x.png 2x">
             </picture>
           </div>
         </div>
@@ -311,8 +308,8 @@
       <div class="modal__container">
         <p class="modal__title">Добавить в&nbsp;корзину</p>
         <p class="modal__text-content">Выберите размер:</p>
-        <div class="modal_list-wrapper">
-          <ul class="modal_list">
+        <div class="modal__list-wrapper">
+          <ul class="modal__list">
             <li class="modal__item modal__item--size-s">
               <a class="modal__link link" href="#">S</a>
             </li>

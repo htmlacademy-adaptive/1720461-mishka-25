@@ -53,6 +53,8 @@ export const styles = () => {
     ]))
     .pipe(rename('style.min.css'))
     .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
+    // для тестирования сборки из папки source
+    // .pipe(gulp.dest('source/css', { sourcemaps: '.' }))
     .pipe(browser.stream());
 }
 
@@ -122,6 +124,8 @@ const server = (done) => {
   browser.init({
     server: {
       baseDir: 'build'
+      // для тестирования сборки из папки source
+      // baseDir: 'source'
     },
     cors: true,
     notify: false,
