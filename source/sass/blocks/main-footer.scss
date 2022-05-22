@@ -1,5 +1,6 @@
 @import "global/variables.scss";
 
+
 .main-footer {
   background-color: $color-bg-footer;
 
@@ -9,6 +10,7 @@
     min-height: 143px;
   }
 }
+
 
 .main-footer__wrapper {
   margin: auto;
@@ -35,11 +37,13 @@
   }
 }
 
+
 .main-footer__logo-wrapper {
   @media (max-width: $width-mobile-only) {
     display: none;
   }
 }
+
 
 .main-footer__logo {
   display: block;
@@ -58,6 +62,7 @@
     padding-top: 19px;
   }
 }
+
 
 .main-footer__decoration {
   margin-right: 30px;

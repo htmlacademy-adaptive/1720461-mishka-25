@@ -1,5 +1,6 @@
 @import "global/variables.scss";
 
+
 .catalog-products__wrapper {
   width: 320px;
   margin: 0 auto;
@@ -21,7 +22,8 @@
   }
 }
 
-.catalog-products-list {
+
+.catalog-products__list {
   padding-top: 29px;
 
   @media (min-width: $width-tablet) {
@@ -33,5 +35,16 @@
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 51px;
     max-width: 316px;
+  }
+}
+
+
+.catalog-products__list-item:last-child > .product-card__wrapper {
+  @media (min-width: $width-tablet) {
+    margin-bottom: 53px;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin-bottom: 52px;
   }
 }

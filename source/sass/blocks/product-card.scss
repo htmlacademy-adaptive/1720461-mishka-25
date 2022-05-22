@@ -31,17 +31,6 @@
 }
 
 
-li:last-child > .product-card__wrapper {
-  @media (min-width: $width-tablet) {
-    margin-bottom: 53px;
-  }
-
-  @media (min-width: $width-desktop) {
-    margin-bottom: 52px;
-  }
-}
-
-
 .product-card__link {
   &:focus-visible {
     outline: 2px solid $color-intense;
