@@ -13,6 +13,10 @@
   display: flex;
   margin-left: 24px;
   background-color: $color-bg-footer;
+
+  @media (min-width: $width-tablet) {
+    margin-left: 20px;
+  }
 }
 
 

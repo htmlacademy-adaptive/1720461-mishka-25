@@ -44,6 +44,7 @@
     position: absolute;
     min-width: 35.5%;
     min-height: 88px;
+    margin-right: 2px;
     border: none;
   }
 
@@ -63,6 +64,7 @@
   @media (min-width: $width-tablet) {
     height: 46px;
     margin: auto 0;
+    margin-right: 2px;
   }
 
   @media (min-width: $width-desktop) {

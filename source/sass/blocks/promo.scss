@@ -23,6 +23,7 @@
       min-height: 758px;
       background-image: url("../../img/backgrounds/bg-image-house-shelf-tablet.jpg");
       background-size: cover;
+      background-position: -6px -8px;
 
       @media (min-resolution: 2dppx) {
         background-image: url("../../img/backgrounds/bg-image-house-shelf-tablet@2x.jpg");
@@ -100,6 +101,10 @@
 }
 
 
+.promo__title {
+  margin-right: 2px;
+}
+
 .promo__navigation-wrapper {
   position: relative;
   width: 320px;
@@ -155,7 +160,7 @@
 
   @media (min-width: $width-tablet) {
     min-width: 334px;
-    min-height: 127px;
+    min-height: 133px;
   }
 
   @media (min-width: $width-desktop) {
@@ -175,7 +180,7 @@
 
     @media (min-width: $width-tablet) {
       &:hover {
-        min-height: 132px;
+        min-height: 138px;
       }
     }
 
@@ -197,7 +202,7 @@
 
     @media (min-width: $width-tablet) {
       &:hover {
-        min-height: 132px;
+        min-height: 138px;
       }
     }
 
@@ -260,7 +265,7 @@
   position: absolute;
   top: 0;
   right: 0;
-  bottom: 0;
+  bottom: 10px;
   margin: auto 0;
 
   &--interior {

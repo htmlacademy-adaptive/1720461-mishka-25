@@ -4,7 +4,7 @@
 .site-list {
   @media (min-width: $width-tablet) {
     // с отрицательным margin не проходит тест на переполнение
-    margin-bottom: -74px;
+    margin-bottom: -69px;
 
     grid-area: site;
     justify-content: space-between;
