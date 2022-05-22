@@ -1,5 +1,6 @@
 @import "global/variables.scss";
 
+
 .week-product__wrapper {
   position: relative;
   width: 320px;
@@ -72,6 +73,7 @@
   }
 }
 
+
 .week-product__article {
   @media (min-width: $width-tablet) {
     display: grid;
@@ -132,6 +134,7 @@
   }
 }
 
+
 .week-product__table {
   min-width: 260px;
   grid-area: table;
@@ -149,6 +152,7 @@
   }
 }
 
+
 .week-product__data {
   min-width: 67px;
   padding-top: 9px;
@@ -164,9 +168,11 @@
   }
 }
 
+
 .week-product__row:first-child .week-product__data {
   padding-top: 0;
 }
+
 
 .week-product__image {
   grid-area: image;
@@ -189,6 +195,7 @@
   }
 }
 
+
 .week-product__price {
   display: block;
   grid-area: price;
@@ -206,8 +213,8 @@
   }
 }
 
-.week-product__button {
 
+.week-product__button {
   grid-area: button;
   margin-bottom: 36px;
   font-size: 18px;

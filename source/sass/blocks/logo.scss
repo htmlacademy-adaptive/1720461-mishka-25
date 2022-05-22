@@ -1,17 +1,6 @@
 @import "global/variables.scss";
 
 
-.main-header__logo[href] .logo__header {
-  &:hover {
-    opacity: 0.6;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
-}
-
-
 .logo__header {
   &--mobile {
     @media (min-width: $width-tablet) {
