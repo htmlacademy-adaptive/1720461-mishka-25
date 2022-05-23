@@ -143,7 +143,7 @@
   }
 
   @media (min-width: $width-desktop) {
-    min-width: 176px;
+    min-width: 113px;
     padding-left: 35%;
   }
 
@@ -343,7 +343,7 @@
 .order-form__name-input::placeholder,
 .order-form__surname-input::placeholder,
 .order-form__patronymic-input::placeholder {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 17px;
   line-height: 18px;
   font-weight: 400;
@@ -538,7 +538,7 @@
 .order-form__phone-input::placeholder,
 .order-form__email-input::placeholder,
 .order-form__textarea-input::placeholder {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 17px;
   line-height: 18px;
   font-weight: 400;

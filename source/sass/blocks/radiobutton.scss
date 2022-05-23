@@ -14,7 +14,7 @@
   width: 42px;
   height: 42px;
   border-radius: 50%;
-  background-image: url("../../img/svg/radiobutton-empty.svg");
+  background-image: url("../img/svg/radiobutton-empty.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: 100%;
@@ -27,12 +27,12 @@
 
 
 .radiobutton__custom:not(:disabled) + .radiobutton__field:hover::before {
-  background-image: url("../../img/svg/radiobutton-empty-hover.svg");
+  background-image: url("../img/svg/radiobutton-empty-hover.svg");
 }
 
 
 .radiobutton__custom:not(:disabled) + .radiobutton__field:active::before {
-  background-image: url("../../img/svg/radiobutton-empty-active.svg");
+  background-image: url("../img/svg/radiobutton-empty-active.svg");
 }
 
 
@@ -62,7 +62,7 @@
   width: 19px;
   height: 19px;
   border-radius: 50%;
-  background-image: url("../../img/svg/radiobutton-checked.svg");
+  background-image: url("../img/svg/radiobutton-checked.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: 100%;
