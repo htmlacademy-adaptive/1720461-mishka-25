@@ -2,15 +2,15 @@
 
 
 .contacts {
-  background-image: url("../../img/svg/zigzag-line-mobile.svg");
+  background-image: url("../img/svg/zigzag-line-mobile.svg");
   background-repeat: repeat-x;
 
   @media (min-width: $width-tablet) {
-    background-image: url("../../img/svg/zigzag-line-tablet.svg");
+    background-image: url("../img/svg/zigzag-line-tablet.svg");
   }
 
   @media (min-width: $width-desktop) {
-    background-image: url("../../img/svg/zigzag-line-desktop.svg");
+    background-image: url("../img/svg/zigzag-line-desktop.svg");
     background-repeat: no-repeat;
     background-size: 1050px;
     background-position: top center;
@@ -98,7 +98,7 @@
     height: 81px;
     margin-top: -9px;
     margin-right: 3px;
-    background-image: url("../../img/svg/flag.svg");
+    background-image: url("../img/svg/flag.svg");
     background-repeat: no-repeat;
     background-size: auto;
   }

@@ -2,15 +2,15 @@
 
 
 .advantages {
-  background-image: url("../../img/svg/zigzag-line-mobile.svg");
+  background-image: url("../img/svg/zigzag-line-mobile.svg");
   background-repeat: repeat-x;
 
   @media (min-width: $width-tablet) {
-    background-image: url("../../img/svg/zigzag-line-tablet.svg");
+    background-image: url("../img/svg/zigzag-line-tablet.svg");
   }
 
   @media (min-width: $width-desktop) {
-    background-image: url("../../img/svg/zigzag-line-desktop.svg");
+    background-image: url("../img/svg/zigzag-line-desktop.svg");
     background-repeat: no-repeat;
     background-size: 1050px;
     background-position: top center;
@@ -87,7 +87,7 @@
   }
 
   &--ecological {
-    background-image: url("../../img/svg/flower-icon.svg");
+    background-image: url("../img/svg/flower-icon.svg");
     background-position: 7px 27px;
 
     @media (min-width: $width-tablet) {
@@ -102,7 +102,7 @@
 
   &--nordic {
     padding-top: 82px;
-    background-image: url("../../img/svg/nordic-icon.svg");
+    background-image: url("../img/svg/nordic-icon.svg");
     background-position: 0 28px;
 
     @media (min-width: $width-tablet) {
@@ -116,7 +116,7 @@
   }
 
   &--like {
-    background-image: url("../../img/svg/heart-icon.svg");
+    background-image: url("../img/svg/heart-icon.svg");
     background-position: 7px 33px;
 
     @media (min-width: $width-tablet) {
@@ -130,7 +130,7 @@
   }
 
   &--handmade {
-    background-image: url("../../img/svg/tangle-icon.svg");
+    background-image: url("../img/svg/tangle-icon.svg");
     background-position: 3px 30px;
 
     @media (min-width: $width-tablet) {
@@ -145,7 +145,7 @@
 
   &--national {
     padding-top: 82px;
-    background-image: url("../../img/svg/rocket-icon.svg");
+    background-image: url("../img/svg/rocket-icon.svg");
     background-position: -6px 32px;
 
     @media (min-width: $width-tablet) {
@@ -159,7 +159,7 @@
   }
 
   &--gift {
-    background-image: url("../../img/svg/gift-icon.svg");
+    background-image: url("../img/svg/gift-icon.svg");
     background-position: 3px 31px;
 
     @media (min-width: $width-tablet) {
